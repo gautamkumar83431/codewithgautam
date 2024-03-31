@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>Switch Statement in java --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/variables_in_java.html">Variables in java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+
+<a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a>
+<a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a>
+<a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a>
+<a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a>
+<a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a>
+<a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a>
+<a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading in java</a>
+<a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding in java</a>
+<a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism in java </a>
+<a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+<a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection in java</a>
+<a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a>
+<a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a>
+<a href="file:///D:/example/Package%20in%20java.html">Java Package</a>
+<a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a>
+<a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class in java</a>
+<a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a>
+<a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class in java</a>
+<a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                    <div class="mega-url-list">
+                       
+                    </div></div></div>
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+
+            </div>
+            <div class="mega-url-list">
+                <h1>Java <code>break</code> and <code>continue</code> Statements</h1>
+                <style>.layout_size{min-height: 18px;overflow: hidden;margin-bottom:10px;} @media (max-width: 550px) { .layout_size {min-height: 320px; min-width: inherit; } }
+                </style>
+                <div class="layout_size">
+                    <div id="ezoic-pub-ad-placeholder-106"></div>
+                </div><p>Java <code>break</code> and <code>continue</code> statements are used to manage program flow. We can use them in a loop to control loop iterations. These statements let us to control loop and switch statements by enabling us to either break out of the loop or jump to the next iteration by skipping the current loop iteration.
+                </p><br>
+                <p>In this tutorial, we will discuss each in details with examples.
+                </p><br>
+                <h2 style="color: crimson;">Break Statement</h2><br>
+                <p>In Java, break is a statement that is used to <b>break current execution</b> flow of the program.</p><br>
+                <p>We can use break statement inside loop, switch case etc. </p><br>
+                <p>If break is used <b>inside loop</b> then it will terminate the loop.</p><br>
+                <p>If break is used <b>inside the innermost loop</b> then break will terminate the innermost loop only and execution will start from the outer loop.</p><br>
+                <p>If break is used in switch case then it will terminate the execution after the matched case. Use of break, we have covered in our switch case topic.</p><br>
+                <p><b>Syntax:</b></p><br>
+                <pre>
+                    <code class="language-java">
+                jump-statement;    
+                break;   
+                    </code>
+                </pre>
+                <p><b>Data Flow Diagram of break statement</b></p>
+                <img class="lazyload blur-up"src="C:\Users\Admin\Pictures/break-statement-DFD.webp" alt="break-statement-DFD " id="imgee">
+                <p><b>Example:</b></p><br>
+                <p>In this example, we are using break inside the loop, the loop will terminate when the value is 8.</p><br>
+               <textarea> <pre>
+                    <code class="language-java">
+                public class BreakDemo1 {  
+                public static void main(String[] args) {  
+                
+                for(inti=1;i<=10;i++){  
+                        if(i==8){
+                
+                            break;  
+                        }  
+                System.out.println(i);  	
+                    }  
+                }  
+                }  
+                    </code>
+                </pre></textarea><br>
+                <p class="output"><p><b>Output</b></p>
+                    <img class="lazyload blur-up"src="C:\Users\Admin\Pictures/break-statement-output.webp" alt="break-statement-output" id="imgee">
+                </p>
+                <p><b>Example using break in do while loop</b></p><br>
+                <p>Loop can be any one whether it is for or while, break statement will do the same. Here, we are using break inside the do while loop.</p><br>
+           <textarea>    <pre>
+                    <code class="language-java">
+                public class BreakDoWhileDemo1
+                {  
+                public static void main(String[] args) 
+                {    
+                        inti=1;   
+                        do
+                {  
+                            if(i==15)
+                {  
+                            i++;  
+                                break; 
+                            }  
+                            System.out.println(i);  
+                            i++;  
+                        }while(i<=20);  
+                 }  
+                }  
+                    </code>
+                </pre></textarea><br>
+                <p class="output">
+                    <p><b>Output</b></p>
+                    <img class="lazyload blur-up"src="C:\Users\Admin\Pictures/break-statement-output-do-while.webp" alt="break-statement-output-do-while " id="imgee">
+                </p>
+                <p><b>Example: Break in innermost loop</b></p>
+                <p>In this example, we are using <b>break inside the innermost loop</b>. But the loop breaks each time when j is equal to 2 and <b>control goes to outer loop</b> that starts from the next iteration. </p>
+            <textarea>    <pre>
+                    <code class="language-java">
+                public class Demo{          
+                    public static void main(String[] args) {  
+                        for(int i=1;i<=2;i++){  
+                            for (int j = 0; j <=3; j++) {
+                                if(j==2)
+                                    break;
+                                System.out.println(j);
+                            }          
+                        }  
+                    }  
+                }  
+                    </code>
+                </pre></textarea><br>
+                <p class="output">
+                    <p><b>Output</b></p>
+                0<br>
+                1<br>
+                0<br>
+                1<br>
+                </p><br>
+                <h2>continue Statement</h2><br>
+                <p>In Java, the continue statement is used to <b>skip the current iteration of the loop</b>. It <b>jumps to the next iteration</b> of the loop immediately. We can use continue statement with <b>for loop</b>, <b>while loop</b> and <b>do-while loop</b> as well.</p><br>
+                <pre>
+                    <code class="language-java">
+                jump-statement;    
+                continue;   
+                    </code>
+                </pre>
+                <p><b>Example:</b></p><br>
+                <p>In this example, we are using continue statement inside the for loop. See, it does not print 5 to the console because at fifth iteration continue statement skips the iteration that’s why print statement does not execute.</p><br>
+          <textarea>      <pre><code class="language-java">
+                public class ContinueDemo1
+                {  
+                public static void main(String[] args) 
+                {  
+                        for(inti=1;i<=10;i++)
+                        {
+                            if(i==5)
+                {
+                            continue;
+                            }  
+                            System.out.println(i);  
+                        }  
+                }  
+                }  </code>
+                </pre></textarea><br>
+                <p class="output">
+                    <p><b>Output</b></p>
+                    <img class="lazyload blur-up"src="C:\Users\Admin\Pictures/output-of-continue-statement.webp" alt="output-of-continue-statement" id="imgee">
+                </p>
+                <p><b>Example:</b></p><br>
+                <p>We can use <b>label along with continue statement</b> to <b>set flow control</b>. By using label, we can <b>transfer control at specified location.</b></p><br>
+                <p>In this example, we are transferring control to outer loop by using label.</p><br>
+              <textarea>  <pre><code class="language-java">
+                public class ContinueDemo2 {  
+                public static void main(String[] args) {  
+                xy:  
+                for(inti=1;i<=5;i++){    
+                pq:  
+                for(int j=1;j<=5;j++){    
+                                        if(i==2&&j==2){
+                                            continue xy;    
+                                        }    
+                System.out.println(i+" "+j);    
+                                    }    
+                            }    
+                }  
+                }</code>
+                </pre></textarea><br>
+                <p class="output">
+                    <p><b>Output</b></p>
+                    <img class="lazyload blur-up"src="C:\Users\Admin\Pictures/output-of-continue-statement-2.webp" alt="output-of-continue-statement " id="imgee">
+                </p><br>
+                <p><b>Example: Continue in While loop</b></p><br>
+                <p>continue statement can be used with while loop to manage the flow control of the program. As we already know continue statement is used to skip the current iteration of the loop. Here too, it will skip the execution if the value of variable is 5. </p><br>
+            <textarea>    <pre>
+                    <code class="language-java">
+                public class Demo{      
+                    
+                    public static void main(String[] args) {
+                        int i=1;
+                        
+                        while (i < 10) {
+                          if (i == 5) {
+                            i++;
+                            continue;
+                          }
+                          System.out.println(i);
+                          i++;
+                        }
+                    }  
+                }  
+                    </code>
+                </pre></textarea><br>
+                <p class="output">
+                    <p><b>Output</b></p>
+                1<br>
+                2<br>
+                3<br>
+                4<br>
+                6<br>
+                7<br>
+                8<br>
+                9<br>
+                </p>
+                <p>we can see the output, 5 is missing because at fifth iteration due to continue statement JVM skipped the print statement.</p>
+           
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;
+ 
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in c++</title>    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+   <!-- Animate CSS CDN -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="Finction in c++.css" rel="stylesheet" >
+    <link href="Java_Tutorial.css" rel="stylesheet" >
+</head>
+<body>
+    <nav>
+        <h1>CODE WITH GAUTAM </h1>
+        <ul class="navigation">
+          <li><a href="file:///D:/example/Home.html">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+  <div class="scrollmenu">
+    <a href="file:///D:/example/Home.html">Home</a>
+    <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+    <a href="file:///D:/example/codewithgautam.html">C++</a>
+  <a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a>
+     <a href="file:///D:/example/Input%20Output.html">Input Output  C++</a>
+
+       <a href="file:///D:/example/Decision%20Making.html">Decision Making C++</a>
+        <a href="file:///D:/example/c++%20string.html">C++ String</a>
+      <a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a>
+       <a href="file:///D:/example/opps.html">OOPS in C++</a>
+        <a href="file:///D:/example/C++%20STL.html">C++ STL.</a>
+         <a href="file:///D:/example/C++%20STL%20Containers.html">C++ STL Containers</a>
+      <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a>
+      <a href="file:///D:/example/Array.html">C++ Arrays</a>
+      <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a>
+      <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#support">Support</a>
+    <a href="#blog">Blog</a>
+   
+  </div>  
+<br><br>&nbsp;&nbsp;
+<br><div class="container text-justify"> 
+  <div class="row">
+      <div class="col-lg-12" >
+<h1>C++ Tutorial | Learn C++ Programming</h1><br>
+<p><strong> you look for the superset and successor of the C language, you will find C++. If you are familiar with the C language and seeking to upgrade yourself in the world of the C language, this C++ programming tutorial is right for you. This C++ tutorial gives you a detailed overview of the basic and advanced concepts of C plus plus.</strong></p>
+
+          <img src="C:\Users\Admin\Pictures\CTutorial.png" alt="Lights" style="width:80%">
+      
+ <br><br>
+
+<p><strong> if you are a college student or a working professional, bookmark this C ++ programming tutorial to upscale your programming skills. But before going in-depth with the C plus plus tutorial, let’s have a quick intro to C++ language.</strong></p>
+<h1>What is C++?</h1>
+<p><strong>++ is a middle-level programming language that was developed as an extension of the C programming language. In the early 1980s, Bell Labs was an enhancement of the C language to provide support for OOPs (Object Oriented Programming Systems) and additional features.
+
+  C++ is an efficient and powerful language and finds wide use in various GUI platforms, 3D graphics and real-time simulations. Because of the inclusion of rich function libraries, working in C++ becomes simpler and convenient than C. Being object-oriented programming like Java, C++ provides the support of inheritance, polymorphism, encapsulation, etc. Unlike C, C++ allows exception handling and function overloading. Bringing in the important topics under one roof, this tutorial to C++ is a very efficient and convenient way to learn C++ from scratch.</strong></p>
+
+<br>&nbsp;&nbsp;&nbsp;
+
+        <h1>Functions in C++</h1>
+        <p style="text-align: justify;"><strong>"A function is a set of statements that takes input, does some specific computation," </strong> "and produces output. The idea is to put some commonly or repeatedly "tasks together to make a "<strong> function</strong> "so that instead of writing the same code again and again for different inputs, we can call this function.
+
+            "In simple terms, a function is a block of code that runs only when it is called."</strong></p>
+            <p style="text-align: center;"><strong>Syntax:</strong></p>
+       
+          <img src="C:\Users\Admin\Pictures\function.png" alt="Lights" style="width:80%">
+      
+ <br><br>
+    
+   <p> <strong style="text-align: justify;">Example:</strong></p><br><br>
+    <div class="box">
+     <details open>   <summary>Example of Function</summary>
+            // C++ Program to demonstrate working of a function<br>
+#include iostream><br>
+using namespace std;<br>
+ 
+// Following function that takes two parameters 'x' and 'y'<br>
+// as input and returns max of two input numbers<br>
+int max(int x, int y)<br>
+{<br>
+    if (x > y)<br>
+        return x;<br>
+    else<br>
+        return y;<br>
+}<br>
+ <br>
+// main function that doesn't receive any parameter and<br>
+// returns integer<br>
+int main()<br>
+{<br>
+    int a = 10, b = 20;<br>
+ <br>
+    // Calling above function to find max of 'a' and 'b'<br>
+    int m = max(a, b);<br>
+ <br>
+    cout << "m is " << m;<br>
+    return 0;<br>
+}<br>
+
+     </details>
+
+<p style="text-align: center;"><strong>Output:</strong></p>
+<h2>m is 20</h2><br><br>
+<h1>Why Do We Need Functions?</h1><br><br>
+<ul>
+    <li><b>Functions help us in reducing code redundancy. If functionality is performed at multiple places in software, then rather than writing the same code, again and again, we create a function and call it everywhere. This also helps in maintenance as we have to make changes in only one place if we make changes to the functionality in future.</b></li><br><br>
+    <li><b>Functions make code modular. Consider a big file having many lines of code. It becomes really simple to read and use the code,  if the code is divided into functions.</b></li><br><br>
+    <li><b>Functions provide abstraction. For example, we can use library functions without worrying about their internal work.
+    </b></li><br><br>
+</ul><br><br>
+<h1>Function Declaration</h1><br>
+<p style="text-align: justify;"><strong>A function declaration tells the compiler about the number of parameters, data types of parameters, and returns type of function. Writing parameter names in the function declaration is optional but it is necessary to put them in the definition. Below is an example of function declarations. (parameter names are not present in the below declarations) </strong></p><br>
+  <br>
+  <img src="C:\Users\Admin\Pictures\Function1.png" alt="Lights" style="width:80%">
+     <br><br>
+<p style="text-align: center;">Example:</p><br><br>
+<details><summary>C++ Program to show function </summary>// C++ Program to show function that takes<br>
+    // two integers as parameters and returns<br>
+    // an integer<br>
+    int max(int, int);<br>
+     <br>
+    // A function that takes an int<br>
+    // pointer and an int variable<br>
+    // as parameters and returns<br>
+    // a pointer of type int<br>
+    int* swap(int*, int);<br>
+     <br>
+    // A function that takes<br>
+    // a char as parameter and<br>
+    // returns a reference variable<br>
+    char* call(char b);<br>
+     <br>
+    // A function that takes a<br>
+    // char and an int as parameters<br>
+    // and returns an integer<br>
+    int fun(char, int);</details><br>
+
+    <h1>Types of Functions</h1><br>
+      
+          <img src="C:\Users\Admin\Pictures\Typesoffunction.png" alt="Lights" style="width:80%">
+    
+ <br><br>
+    <h3>User Defined Function</h3><br>
+    <p style="text-align: justify;"><strong> functions are user/customer-defined blocks of code specially customized to reduce the complexity of big programs. They are also commonly known as “tailor-made functions” which are built only to satisfy the condition in which the user is facing issues meanwhile reducing the complexity of the whole program.</strong></p><br>
+     <p><b>Library Function 
+    </b></p>
+     <p style="text-align: justify;"><strong> functions are also called “built-in Functions“. These functions are part of a compiler package that is already defined and consists of a special function with special and different meanings. Built-in Function gives us an edge as we can directly use them without defining them whereas in the user-defined function we have to declare and define a function before using them.</strong> </p>
+     <p><i>For Example: sqrt(), setw(), strcat(), etc.</i></p><br>
+     <h2>Parameter Passing to Functions</h2><br>
+     <p style="text-align: justify;"><strong> parameters passed to the function are called<mark><i>actual parameters.</i></mark> For example, in the program below, 5 and 10 are actual parameters.</strong><br> 
+        The parameters received by the function are called<strong><i> formal parameters.</i></strong> For example, in the above program x and y are formal parameters. </p><br>
+                  <img src="C:\Users\Admin\Pictures\Actual.png" alt="Lights" style="width:80%">
+           
+         <br><br>
+
+        <h1>There are two most popular ways to pass parameters:</h1><br>
+        <ol>
+            <li>Pass by Value: In this parameter passing method, values of actual parameters are copied to the function’s formal parameters. The actual and formal parameters are stored in different memory locations so any changes made in the functions are not reflected in the actual parameters of the caller. </li><br>
+            <li>Pass by Reference: Both actual and formal parameters refer to the same locations, so any changes made inside the function are reflected in the actual parameters of the caller.</li>
+        </ol><br>
+        <h1>Function Definition</h1><br>
+        <p><strong>Pass by value is used where the value of x is not modified using the function fun().</strong></p><br>
+        <details><summary>C++ Program to demonstrate function definition</summary>// C++ Program to demonstrate function definition<br>
+            #include iostream><br>
+            using namespace std;<br>
+             <br>
+            void fun(int x)<br>
+            {<br>
+                // definition of<br>
+                // function<br>
+                x = 30;<br>
+            }<br>
+             <br>
+            int main()<br>
+            {<br>
+                int x = 20;<br>
+                fun(x);<br>
+                cout << "x = " << x;<br>
+                return 0;<br>
+            }</details><br>
+            <h3>Output</h3><br>
+            <h2>x = 20</h2><br><br>
+            <h1>Functions Using Pointers</h1><br>
+            <p style="text-align: justify;"><strong> function fun() expects a pointer ptr to an integer (or an address of an integer). It modifies the value at the address ptr. The dereference operator * is used to access the value at an address. In the statement ‘*ptr = 30’, the value at address ptr is changed to 30. The address operator & is used to get the address of a variable of any data type. In the function call statement ‘fun(&x)’, the address of x is passed so that x can be modified using its address.</strong> </p><br>
+            <details class="containerrr"><summary> C++ Program to demonstrate working of</summary>// C++ Program to demonstrate working of<br>
+                // function using pointers<br>
+                #include iostream><br>
+                using namespace std;<br>
+                 
+                void fun(int* ptr) { *ptr = 30; }<br>
+                 
+                int main()<br>
+                {<br>
+                    int x = 20;<br>
+                    fun(&x);<br>
+                    cout << "x = " << x;<br>
+                 
+                    return 0;<br>
+                }</details><br>
+                <p><b><i>Output</i></b></p>
+                <p>x = 30</p><br>
+                <h1>Difference between call by value and call by reference in C++ 
+                </h1><br>
+                <table class="table">
+                    <tr>
+                        <th>Call by value</th>
+                         <th>Call by reference</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            A copy of the value is passed to the function
+                        </td>
+                        <td>An address of value is passed to the function</td>
+                    </tr><tr>
+                        <td>Changes made inside the function are not 
+                            reflected on other functions</td>
+                        <td>Changes made inside the function are reflected 
+                            outside the function as well</td></tr><tr>
+                        <td>Actual and formal arguments will be created at 
+                            different memory location</td>
+                        <td>Actual and formal arguments will be created at 
+                            same memory location.</td>
+                            </tr>
+                    </tr>
+                  </table><br>
+                  <h1>Points to Remember About Functions in C++</h1><br>
+                  <ol>
+                    <li><b>Most C++ program has a function called main() that is called by the operating system when a user runs the program.</b></li>
+                    <li><b>Every function has a return type. If a function doesn’t return any value, then void is used as a return type. Moreover, if the return type of the function is void, we still can use the return statement in the body of the function definition by not specifying any constant, variable, etc. with it, by only mentioning the ‘return;’ statement which would symbolize the termination of the function as shown below: </b></li>
+                  
+                  <br>
+                
+                   <details><summary>Example of function</summary> function name(int a)<br>
+                        {<br>
+                            ....... // Function Body<br>
+                                return; // Function execution would get terminated<br>
+                        }</details><br>
+               
+                  <li><b>To declare a function that can only be called without any parameter, we should use “void fun(void)“. As a side note, in C++, an empty list means a function can only be called without any parameter. In C++, both void fun() and void fun(void) are same.</b></li>
+                  </ol><br>
+                  <br>
+                  <h1>Main Function </h1><br><br>
+                  <p style="text-align: justify;"><strong> main function is a special function. Every C++ program must contain a function named main. It serves as the entry point for the program. The computer will start running the code from the beginning of the main function. </strong></p>
+
+                  <h1>Types of Main Functions</h1><br>
+                  <p><b>1. Without parameters:</b></p><br>
+                  <p><b><i>// Without Parameters<br>
+                    int main() { ... return 0; }</i></b></p></div><br>
+                    <br>
+                    <p><b>2. With parameters:</b></p><br>
+                    <p><b><i>// With Parameters<br>
+                        int main(int argc, char* const argv[]) { ... return 0; }</i></b></p><br><br>
+
+    <p style="text-align: justify;">The reason for having the parameter option for the main function is to allow input from the command line. When you use the main function with parameters, it saves every group of characters (separated by a space) after the program name as elements in an array named argv. 
+        Since the main function has the return type of int, the</p>
+    <p style="text-align: justify;">programmer must always have a return statement in the code. The number that is returned is used to inform the calling program what the result of the program’s execution was. Returning 0 signals that there were no problems.</p>
+<br><br>
+<h1>C++ Recursion</h1><br><br>
+<p style="text-align: justify;">When function is called within the same function, it is known as recursion in C++. The function which calls the same function, is known as recursive function.</p>
+<p style="text-align: justify;">A function that calls itself, and doesn’t perform any task after function call, is known as tail recursion. In tail recursion, we generally call the same function with return statement.</p>
+<br>
+<p><strong>Syntax:</strong></p><br>
+
+    <p><i>recursionfunction()<br>
+        {<br>
+            recursionfunction(); // calling self function<br>
+        }</i></p>
+<br><br>
+<h1>C++ Passing Array to Function</h1>
+<p><b>In C++, to reuse the array logic, we can create a function. To pass an array to a function in C++,  we need to provide only the array name.</b></p><br>
+<p><i>function_name(array_name[]); //passing array to function</i></p>
+<br>
+<p><strong>Example: Print the minimum number in the given array.</strong></p><br>
+
+    <details open><summary> Print the minimum number </summary>#include iostream><br>
+        using namespace std;<br>
+        void printMin(int arr[5]);<br>
+        int main()<br>
+        {<br>
+            int ar[5] = { 30, 10, 20, 40, 50 };<br>
+            printMin(ar); // passing array to function<br>
+        }<br>
+        void printMin(int arr[5])<br>
+        {<br>
+            int min = arr[0];<br>
+            for (int i = 0; i < 5; i++) {<br>
+                if (min > arr[i]) {<br>
+                    min = arr[i];<br>
+                }<br>
+            }<br>
+            cout << "Minimum element is: " << min << "\n";<br>
+        }<br>
+         <br>
+        // Code submitted by Susobhan Akhuli</textarea><br>
+    </details><br>
+<p><b>Output</b></p>
+<i>Minimum element is: 10</i><br>
+<h1>C++ Overloading (Function)</h1><br>
+<p style="text-align: justify;">If we create two or more members having the same name but different in number or type of parameters, it is known as C++ overloading. In C++, we can overload:</p><br>
+<ul>
+    <li><i>methods,</i></li>
+    <li><i>constructors and</i></li>
+    <li><i>indexed properties</i></li>
+</ul><br>
+<strong>Types of overloading in C++ are:</strong><br>
+<ul>
+    <li><i>Function overloading</i></li>
+    <li><i>Operator overloading</i></li>
+</ul><br>
+<strong>C++ Function Overloading
+</strong><br>
+<br>
+        
+<p style="text-align: justify;"><strong> Overloading is defined as the process of having two or more functions with the same name, but different</strong></p>
+<p style="text-align: justify;"><strong> In function overloading, the function is redefined by using either different types or number of arguments. It is only through these differences a compiler can differentiate between the functions.
+    The advantage of Function overloading is that it increases</strong></p>
+    <p style="text-align: justify;"><strong> readability of the program because you don’t need to use different names for the same action.</strong></p><br>
+    <h1>Example: changing number of arguments of add() method</h1><br>
+    <details><summary>program of function overloading</summary>// program of function overloading when number of arguments<br>
+        // vary<br>
+        #include iostream><br>
+        using namespace std;<br>
+        class Cal {<br>
+        public:<br>
+            static int add(int a, int b) { return a + b; }<br>
+            static int add(int a, int b, int c)<br>
+            {<br>
+                return a + b + c;<br>
+            }<br>
+        };<br>
+        int main(void)<br>
+        {<br>
+            Cal C; // class object declaration.<br>
+            cout << C.add(10, 20) << endl;<br>
+            cout << C.add(12, 20, 23);<br>
+            return 0;<br>
+        }<br>
+         
+        // Code Submitted By Susobhan Akhuli</details><br>
+       <p><b>Output</b></p><br>
+       <p><strong>30</strong></p><br>
+       <p><strong>35</strong></p><br><br>
+       <h1>Example: when the type of the arguments vary.</h1><br>
+       <details><summary>Program of function overloading</summary>
+        // Program of function overloading with different types of<br>
+// arguments.<br>
+#include <iostream><br>
+using namespace std;<br>
+int mul(int, int);<br>
+float mul(float, int);<br>
+ <br>
+int mul(int a, int b) { return a * b; }<br>
+float mul(double x, int y) { return x * y; }<br>
+int main()<br>
+{<br>
+    int r1 = mul(6, 7);<br>
+    float r2 = mul(0.2, 3);<br>
+    cout << "r1 is : " << r1 << endl;<br>
+    cout << "r2 is : " << r2 << endl;<br>
+    return 0;<br>
+}<br>
+ <br>
+// Code Submitted By Susobhan Akhuli<br>
+</details><br><br>
+       <p><strong>Output</strong></p>
+       <p><b>r1 is : 42</b></p><br>
+       <p><b>r2 is : 0.6</b></p><br>
+       <h1>Function Overloading and Ambiguity</h1><br>
+       <p style="text-align: justify;"><strong> the compiler is unable to decide which function is to be invoked among the overloaded function, this situation is known as function overloading ambiguity.</strong></p>
+        <p style="text-align: justify;"><strong> the compiler shows the ambiguity error, the compiler does not run the program.</strong></p><br>
+            <h1>Causes of Ambiguity:
+
+            </h1><br>
+            <ul>
+                <li>Type Conversion.</li>
+                <li>Function with default arguments.</li>
+                <li>Function with pass-by-reference.</li>
+            </ul><br>
+            <h1>Type Conversion:-</h1><br>
+            <details><summary>Example of function</summary>#include iostream><br>
+                using namespace std;<br>
+                void fun(int);<br>
+                void fun(float);<br>
+                void fun(int i) { cout << "Value of i is : " << i << endl; }<br>
+                void fun(float j)<br>
+                {<br>
+                    cout << "Value of j is : " << j << endl;<br>
+                }<br>
+                int main()<br>
+                {<br>
+                    fun(12);<br>
+                    fun(1.2);<br>
+                    return 0;<br>
+                }<br>
+                
+                // Code Submitted By Susobhan Akhuli</details><br><br>
+              <p style="text-align: justify;"><strong>The above example shows an error “call of overloaded ‘fun(double)’ is ambiguous“. The fun(10) will call the first function. The fun(1.2) calls the</strong></p>
+             <p style="text-align: justify;"><strong>second function according to our prediction. But, this does not refer to any function as in C++, all the floating point constants are treated as double not as a float. </strong></p>
+             <p style="text-align: justify;"><strong>If we replace float to double, the program works. Therefore, this is a type conversion from float to double.</strong></p><br>
+             <h1>Function with Default Arguments:-</h1><br>
+             <details><summary>Example of function</summary>#include iostream><br>
+                using namespace std;<br>
+                void fun(int);<br>
+                void fun(int, int);<br>
+                void fun(int i) { cout << "Value of i is : " << i << endl; }<br>
+                void fun(int a, int b = 9)<br>
+                {<br>
+                    cout << "Value of a is : " << a << endl;<br>
+                    cout << "Value of b is : " << b << endl;<br>
+                }<br>
+                int main()<br>
+                {<br>
+                    fun(12);<br>
+                 <br>
+                    return 0;<br>
+                }<br>
+                 <br>
+                // Code Submitted By Susobhan Akhuli</details><br>
+                <p style="text-align: justify;"><strong>The above example shows an error “call of overloaded ‘fun(int)’ is ambiguous“. The fun(int a, int b=9) can be called in two ways: first is by calling the</strong></p>
+                <p style="text-align: justify;"><strong>function with one argument, i.e., fun(12) and another way is calling the function with two arguments, i.e., fun(4,5). The fun(int i) function is</strong></p>
+                <p style="text-align: justify;"><strong>invoked with one argument. Therefore, the compiler could not be able to select among fun(int i) and fun(int a,int b=9).
+
+                </strong></p><br>
+                <h1>Function with Pass By Reference:-</h1><br>
+                <details><summary>Function with Pass By Reference:</summary>#include iostream><br>
+                    using namespace std;<br>
+                    void fun(int);<br>
+                    void fun(int&);<br>
+                    int main()<br>
+                    {<br>
+                        int a = 10;<br>
+                        fun(a); // error, which fun()?<br>
+                        return 0;<br>
+                    }<br>
+                    void fun(int x) { cout << "Value of x is : " << x << endl; }<br>
+                    void fun(int& b)<br>
+                    {<br>
+                        cout << "Value of b is : " << b << endl;<br>
+                    }<br>
+                     <br>
+                    // Code Submitted By Susobhan Akhuli</details><br>
+                    <p style="text-align: justify;"><strong>The above example shows an error “call of overloaded ‘fun(int&)’ is ambiguous“. The first function takes one integer argument and the second</strong></p>
+                    <p style="text-align: justify;"><strong>function takes a reference parameter as an argument. In this case, the compiler does not know</strong></p>
+                    <p style="text-align: justify;"><strong>which function is needed by the user as there is no syntactical difference between the fun(int) and fun(int &).</strong></p><br>
+                    <h1>Friend Function</h1><br>
+                  <ul>
+                        <li>A friend function is a special function in C++ which in spite of not being a member function of a class has the privilege to access private and protected data of a class.</li><br>
+                        <li> A friend function is a non-member function or an ordinary function of a class, which is declared by using the keyword “friend” inside the class. By declaring a function as a friend, all the access permissions are given to the function.</li><br>
+                        <li>The keyword “friend” is placed only in the function declaration but not in the function definition.</li><br>
+                        <li>When the friend function is called neither the name of the object nor the dot operator is used. However, it may accept the object as an argument whose value it wants to access.</li><br>
+                        <li>A friend function can be declared in any section of the class i.e. public, private, or protected.</li><br>
+                    </ul><br>
+                    <h1>Declaration of friend function in C++</h1><br>
+                    <p><b>Syntax:</b></p><br>
+                    <p><i>class class_name> { <br>
+
+                        friend  return_type>  function_name>(argument/s);<br>
+
+             };</i></p><br>
+             <h1>Example_1: Find the largest of two numbers using Friend Function</h1><br>
+             <details><summary>C++ Friend Function</summary>#include iostream><br>
+        
+using namespace std;<br>
+class Largest {<br>
+    int a, b, m;<br>
+ <br>
+public:<br>
+    void set_data();<br>
+    friend void find_max(Largest);<br>
+};<br>
+ 
+void Largest::set_data()<br>
+{<br>
+    cout << "Enter the first number : ";<br>
+    cin >> a;<br>
+    cout << "\nEnter the second number : ";<br>
+    cin >> b;<br>
+}<br>
+ 
+void find_max(Largest t)<br>
+{<br>
+    if (t.a > t.b)<br>
+        t.m = t.a;<br>
+
+    else<br>
+        t.m = t.b;<br>
+
+ 
+    cout << "\nLargest number is " << t.m;<br>
+}<br>
+ 
+int main()<br>
+{<br>
+    Largest l;<br>
+    l.set_data();<br>
+    find_max(l);<br>
+    return 0;<br>
+}</details><br>
+<p><strong>Output</strong></p><br>
+<p><i><b>Enter the first number : 789</b></i></p>
+<p><i><b>Enter the second number : 982</b></i></p>
+<p><i><b>Largest number is 982</b></i></p><br></div></div></div>
+
+<br> <div class="container-fluid">
+      
+  <div class="row">
+   
+     <div class="col-sm-4">
+      <h5>JAVA TUTORIAL</h5>
+      <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+ 
+  <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+  <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+  <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+      <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+       <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+       <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+       <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+       <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+       <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+       <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+       <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+       <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+       <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+       <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+       <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+       <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+       <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+       <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+       <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+       <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+       <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+       <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+       <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+       <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+         <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+         <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+         <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+         <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+       <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+       <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+         <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+           <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+           <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+           <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+           <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+           <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+           <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+           <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+           <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+           <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+          
+         
+      <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+        <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+      <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+        <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+         <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+        <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+       <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+        <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+        <li>  <a href="file:///D:/example/C++%20STL%20Containers.html">C++ STL Containers</a></li>
+       <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+       <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+       <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+       <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+  
+ </div> 
+</div><br><br><br><br><br><br><br><br><br>
+<section class="hero" id="about">
+  <div class="bio animate__animated animate__shakeX">
+    <h2 class="bio-title">About Me</h2>
+    <p class="bio-text">
+      My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+
+    </p>
+  </div>
+</section><br>
+<section class="skills" id="skills">
+<h2 class="skill-header">My Top Skills</h2>
+
+<div class="skills-wrapper">
+  <div class="first-set animate__animated animate__pulse">
+    <img
+      src="C:\Users\Admin\Pictures\c++.png"
+      alt=""
+      loading="lazy"
+      class="icon icon-card"
+    />
+    <img
+      src="C:\Users\Admin\Pictures\java.png"
+      alt=""
+      loading="lazy"
+      class="icon icon-card"
+    />
+    <img
+      src="C:\Users\Admin\Pictures\html.png"
+      alt=""
+      loading="lazy"
+      class="icon icon-card"
+    />
+  </div>
+
+  <div class="second-set animate__animated animate__pulse">
+    <img
+      src="C:\Users\Admin\Pictures\css-3.png"
+      alt=""
+      loading="lazy"
+      class="icon icon-card"
+    />
+    <img
+      src="C:\Users\Admin\Pictures\js.png"
+      alt=""
+      loading="lazy"
+      class="icon icon-card"
+    />
+    <img
+      src="C:\Users\Admin\Pictures\icons-heroo.png"
+      alt=""
+      loading="lazy"
+      class="icon icon-card"
+    />
+  </div>
+</div>
+</section>
+<section class="projects" id="projects">
+<h2 class="projects-title">Some of my Recent Projects</h2>
+<div class="projects-container">
+  <div class="project-container project-card">
+    <img
+      src="C:\Users\Admin\Pictures\insta.png"
+      alt="instagram-clone"
+      loading="lazy"
+      class="project-pic"
+    />
+    <h3 class="project-title">Instagram Clone</h3>
+    <p class="project-details">
+      I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+    </p>
+    <a href="#" target="_blank" class="project-link">Check it Out</a>
+  </div>
+  <div class="project-container project-card">
+    <img
+      src="C:\Users\Admin\Pictures\quiz.jpg"
+      alt="quiz-app"
+      loading="lazy"
+      class="project-pic"
+    />
+    <h3 class="project-title">QUIZ</h3>
+    <p class="project-details">
+      I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+    </p>
+    <a href="#" target="_blank" class="project-link">Check it Out</a>
+  </div>
+  <div class="project-container project-card">
+    <img
+      src="C:\Users\Admin\Pictures\todo.jpg"
+      alt="todo-app"
+      loading="lazy"
+      class="project-pic"
+    />
+    <h3 class="project-title">TO DO APP</h3>
+    <p class="project-details">
+      I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+    </p>
+    <a href="#" target="_blank" class="project-link">Check it Out</a>
+  </div>
+</div>
+</section><section class="contact" id="contact">
+  <h2>Get In Touch With Me</h2>
+  <div class="contact-form-container">
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="sender-name"
+            placeholder="Enter Your Name"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="sender-email"
+            placeholder="Enter Your Email"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            cols="60"
+            rows="10"
+            placeholder="Enter Your Message"
+            name="message"
+            class="input-field"
+            required
+          ></textarea>
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          id="submit-btn"
+          class="submit-btn"
+        /><br>
+        <span id="success"></span>
+      </form>
+    </div>
+  </div>
+</section><br><br><br>
+<div class="container">
+  <div class="all flex-row">
+    <div class="menu flex-column">
+      <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+      <div class="profil-info">
+        <h2 class="name">Gautam Kumar</h2>
+        <h3 class="city">Patna,Bihar</h3>
+      </div></div></div></div></div>
+<div class="socials">
+  <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+    ><img
+      src="C:\Users\Admin\Pictures\insta.png"
+      alt="Instagram"
+      loading="lazy"
+      class="socicon"
+  />Instagram</a>
+  <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+    ><img
+      src="C:\Users\Admin\Pictures\facebookk.png"
+      alt="Facebook"
+      loading="lazy"
+      class="socicon"
+  />Facebook</a>
+  <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+    ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+  />Youtube</a>
+  <footer>
+      <p class="copy">&copy; Copyright 2024</p>
+      <p class="copy">
+        Built with &#x2661; by CODE WITH GAUTAM</Code>
+       
+      </p>
+</footer>
+<i class="scroll-up" id="scroll-up"
+><img
+  src="assets/icons/icons8-upward-arrow.gif"
+  class="socicon up-arrow"
+  alt="scroll-up"
+/></i>
+
+
+
+<script src="portfolio.js">
+</script>
+<script
+type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+nomodule
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+
+</body>
+</html>

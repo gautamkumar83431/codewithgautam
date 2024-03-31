@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+   <!-- Animate CSS CDN -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Standared Templete Library</title>
+    <link rel="stylesheet" href="Datatypes.css">
+    <link rel="stylesheet" href="Java_Tutorial.css">
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li><a href="file:///D:/example/Home.html">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+  <a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a>
+   <a href="file:///D:/example/Input%20Output.html">Input Output  C++</a>
+   <a  href="D:/example/Function%20in%20c++.html">Function C++ </a>
+     <a href="file:///D:/example/Decision%20Making.html">Decision Making C++</a>
+      <a href="file:///D:/example/c++%20string.html">C++ String</a>
+    <a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a>
+     <a href="file:///D:/example/opps.html">OOPS in C++</a>
+
+       <a href="file:///D:/example/C++%20STL%20Containers.html">C++ STL Containers</a>
+    <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a>
+    <a href="file:///D:/example/Array.html">C++ Arrays</a>
+    <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a>
+    <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+<br><br>&nbsp;&nbsp;
+<div class="container text-justify"> 
+    <div class="row">
+        <div class="col-lg-12">
+    <div class="mobile-header-list">
+        <div class="leftbar-dropdown header-sidebar__list-item" style="padding: 15px 0px!important;border-bottom: 1px solid rgba(158, 158, 158, 0.3) !important;">
+           <h1>The C++ Standard Template Library (STL)</h1><br>
+           <p style="text-align: justify;"><strong>In C++, the Standard Template Library (STL) provides a set of programming tools to implement algorithms and data structures like vectors, lists, queues, etc.</strong></p>
+           <p style="text-align: justify;"><strong>STL implements these data structures and algorithms using general-purpose classes and functions that have been tested rigorously.</strong></p><br>
+           <p style="text-align: justify;"><strong>C++ STL has 3 major components:</strong></p>
+           
+            <li>Containers</li>
+            <li>Iterators</li>
+            <li>Algorithms</li>
+           
+
+           <p style="text-align: justify;"><strong>In addition to these, STL also provides several other features, including function objects, smart pointers, and exception handling mechanisms.</strong></p><br><br>
+<h1></h1><br><br>
+<p style="text-align: justify;"><strong>STL containers store data and organize them in a specific manner as required.</strong></p>
+<p style="text-align: justify;"><strong>For example, vectors store data of the same type in a sequential order. Whereas, maps store data in key-value pairs.</strong></p>
+<p style="text-align: justify;"><strong>We can classify STL containers into 3 types:</strong></p><br>
+<h2>1. Sequence containers:</h2><br>
+<li>Array</li>
+<li>Vector</li>
+<li>Queue</li>
+<li>Deque</li>
+<li>Forward_list</li>
+<li>List</li><br>
+<h2>2. Associative containers:</h2><br>
+<li>Set</li>
+<li>Multiset</li>
+<li>Map</li>
+<li>Multimap</li>
+<br><h2>3. Unordered associative containers:</h2>
+<br>
+<li>Unordered_set</li>
+<li>Unordered_multiset</li>
+<li>Unordered_map</li>
+<li>Unordered_multimap</li>
+<br>
+<p style="text-align: justify;"><strong>To learn more about containers, visit our C++ STL Containers tutorial.</strong></p><br>
+<p style="text-align: justify;"><strong>Note: STL array is different from the common arrays we've been using so far. STL array is defined in the std::array class, which contains many useful functions and algorithms in addition to the array data structure. These features are not present in ordinary arrays.</strong></p><br>
+<h1>Example 1: C++ STL Containers: Vector</h1><br>
+<p style="text-align: justify;"><strong>In C++, vectors are like resizable arrays; they store data of the same type in a sequence and their size can be changed during runtime as needed.</strong></p><br>
+<p style="text-align: justify;"><strong>We need to import the &lt;vector&gt; header file to use a vector.</strong></p><br>
+
+<div class="codeblock"><textarea name="code" class="cpp">
+    #include &lt;iostream&gt;
+    #include &lt;vector&gt;
+   using namespace std;
+ 
+   int main()
+   {
+    // create vector of int type
+    vector &lt;int&gt; numbers {1, 2, 3, 4, 5};
+    // print vector elements using ranged loop
+    for (int number : numbers) {
+        cout << number << "  ";
+    }
+    
+    return 0;
+}
+   </textarea></div>
+   <br><br>
+   <h4>Output</h4><br>
+ &nbsp;&nbsp; &nbsp;&nbsp; <mark><b>1  2  3  4  5</b></mark><br>
+
+<p style="text-align: justify;"><strong>Here, we have created a vector of int type named numbers with 5 elements.<br>
+
+    We then used the ranged for loop to print all elements of the vector.
+    
+    </strong></p><br>
+
+
+    <p style="text-align: justify;"><strong>To learn more about vectors in C++, visit our C++ Vectors tutorial.
+
+    </strong></p><br>
+    <h1>C++ STL Iterators</h1><br>
+    <p style="text-align: justify;"><strong>Iterators are objects that are used to access elements of a container.
+
+    </strong></p>
+    <p style="text-align: justify;"><strong>We can declare an iterator for each container in the C++ Standard Template Library. For example,
+
+    </strong></p><br>
+<p style="background-color: rgb(241, 211, 113);">vector&lt;int&gt;::iterator it;</p>
+<p style="text-align: justify;"><strong>We often use iterator member functions like begin(), end(), etc. to return iterators that point to container elements. For example,</strong></p>
+<p style="background-color: rgb(241, 211, 113);">vector&lt;int&gt; numbers = {3, 2, 5, 1, 4};
+
+        vector&lt;int&gt;::iterator itr1 = numbers.begin();<br>
+        vector&lt;int&gt;::iterator itr2 = numbers.end();</p><br>
+<h2>Here,</h2><br>
+<li>numbers.begin() - returns an iterator that points to the beginning of the numbers vector i.e. the element 3</li><br>
+<li>numbers.end() - returns an iterator that points to the end of the numbers vector.</li>
+<p style="text-align: justify;"><strong><b>Note:</b> numbers.end() doesn't return an iterator to the final vector element 4. Instead, it returns an iterator to the theoretical element that comes after the final element. The same applies to all other container types.</strong></p><br>
+<p style="text-align: justify;"><strong>To learn more about iterators in STL, visit our tutorial on C++ STL Iterators.
+
+</strong></p><br>
+<h1></h1><br>
+
+<div class="codeblock"><textarea name="code" class="cpp">
+    #include &lt;iostream&gt;
+    #include &lt;vector&gt;
+   using namespace std;
+ 
+   int main()
+   {
+    // initialize vector of int type
+    vector &lt;int&gt; numbers {1, 2, 3, 4, 5};
+
+    // initialize vector iterator to point to the first element
+    vector&lt;int&gt;::iterator itr = numbers.begin();
+    cout << "First Element: " << *itr << "  "<<&lt;endl&gt;;
+
+    // change iterator to point to the last element
+    itr = numbers.end() - 1;
+    cout << "Last Element: " << *itr;
+
+    return 0;  
+}  </textarea></div>
+   <br><br>
+   <h3>Output</h3><br>
+   <p style="background-color: rgb(241, 211, 113);">First Element: 1  
+    Last Element: 5</p><br>
+    <p>Here, we have used numbers.end()- 1 instead of numbers.end().</p><br>
+    <p style="text-align: justify;"><strong>This is because the end() function points to the theoretical element that comes after the final element of the container.</strong></p>
+    <p style="text-align: justify;"><strong>So, we need to subtract 1 from numbers.end() in order to point to the final element. Similarly, using the code numbers.end()- 2 points to the second-last element, and so on.</strong></p>
+    <p style="text-align: justify;"><strong>Note: The asterisk * before itr indicates that the value of the element that the iterator points to is being accessed. This is similar to dereferencing pointers.</strong></p>
+    <p style="text-align: justify;"><strong>Also, when we try to print the iterators, we get an error.</strong></p>
+    <p style="background-color: rgb(241, 211, 113);">// error<br>
+        cout << itr << "  ";</p><br>
+        <p style="text-align: justify;"><strong>This is because, unlike pointers, we cannot print an iterator.</strong></p>
+<h1>C++ STL Algorithms</h1><br>
+<p style="text-align: justify;"><strong>An algorithm is a series of instructions to solve a particular problem.</strong></p>
+<p style="text-align: justify;"><strong>In C++, we can use the Standard Template Library to implement some of the commonly used algorithms. These STL components are simply known as the "algorithms library".
+
+</strong></p>
+<p style="text-align: justify;"><strong>Some of the most commonly used algorithms in the C++ Standard Template Library are:
+
+</strong></p><br>
+<li>Sorting algorithms
+</li>
+<li>Searching algorithms</li>
+<li>Copying algorithms</li>
+<li>Counting algorithms</li><br>
+<p style="text-align: justify;"><strong>To learn more about the algorithms library, visit our C++ STL Algorithms tutorial.</strong></p><br>
+<h1>Example 3: C++ STL Sorting Algorithm</h1><br>
+<div class="codeblock"><textarea name="code" class="cpp">
+    #include &lt;iostream&gt;
+    #include &lt;algorithm&gt;
+    #include &lt;vector&gt;
+   using namespace std;
+ 
+   int main()
+   {
+    // initialize vector of int type
+    vector &lt;int&gt; numbers {3, 2, 5,1, 4};
+    // sort vector elements in ascending order
+    sort(numbers.begin(), numbers.end());
+    // print the sorted  vector 
+    for (int number : numbers) {
+        cout << number << "  ";
+    }
+    
+    return 0;    
+}
+ </textarea></div>
+   <br><br>
+<h3>Output</h3><br>
+<p><b>1 2 3 4 5</b></p><br>
+<p style="text-align: justify;"><strong>In this example, we have used the sort() function to sort the elements of the numbers vector in ascending order.</strong></p>
+<p style="text-align: justify;"><strong>Notice that we have imported the <algorithm> header file to use the sort() function.</strong></p><br><br><br>
+
+   
+</div>
+
+        </div></div></div></div>
+    <br>
+    <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL%20Containers.html">C++ STL Containers</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> 
+    </div><br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+            My name is Gautam, I’ve been studying computer science for two years. In order to kick-start my career before I graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for four years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+
+        </p>
+      </div>
+  </section><br>
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+  
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="C:\Users\Admin\Pictures\c++.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="C:\Users\Admin\Pictures\java.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="C:\Users\Admin\Pictures\html.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+  
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="C:\Users\Admin\Pictures\css-3.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="C:\Users\Admin\Pictures\js.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="C:\Users\Admin\Pictures\icons-heroo.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="C:\Users\Admin\Pictures\insta.png"
+            alt="instagram-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Instagram Clone</h3>
+          <p class="project-details">
+            I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="C:\Users\Admin\Pictures\quiz.jpg"
+            alt="quiz-app"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">QUIZ</h3>
+          <p class="project-details">
+            I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="C:\Users\Admin\Pictures\todo.jpg"
+            alt="todo-app"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">TO DO APP</h3>
+          <p class="project-details">
+            I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div><br>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+  /></i>
+ 
+
+    <script src="portfolio.js">
+    </script>
+<script  type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script>
+</body>
+</html>

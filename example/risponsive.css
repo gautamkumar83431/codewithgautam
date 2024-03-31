@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo
+{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img
+{
+    width: 33%;
+    border:3px solid white ;
+    border-radius: 90px;
+
+}
+.navbar{
+    display: flex;
+}
+.nav-list{
+    width: 50%;
+    background-color: rgb(218, 218, 49);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(19, 156, 33);
+}
+.nav-list li a:hover{
+    text-decoration: hover;
+    color: grey;
+
+}
+.rightnav{
+    
+    width: 50%;
+    text-align: right;
+
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+.bacground{
+    background: rgb(0, 0, 0,0,7) url ("D:\dubai.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(233, 16, 16);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+   <!-- Animate CSS CDN -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C++ Templets</title>
+<link rel="stylesheet" href="Datatypes.css">
+<link rel="stylesheet" href="Java_Tutorial.css">
+</head>
+<body>
+    <nav>
+        <h1>CODE WITH GAUTAM </h1>
+        <ul class="navigation">
+          <li> <a href="file:///D:/example/Home.html">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+    <div class="scrollmenu">
+      <a href="file:///D:/example/Home.html">Home</a>
+      <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+      <a href="file:///D:/example/codewithgautam.html">C++</a>
+    <a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a>
+       <a href="file:///D:/example/Input%20Output.html">Input Output  C++</a>
+       <a  href="D:/example/Function%20in%20c++.html">Function C++ </a>
+         <a href="file:///D:/example/Decision%20Making.html">Decision Making C++</a>
+          <a href="file:///D:/example/c++%20string.html">C++ String</a>
+        <a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a>
+         <a href="file:///D:/example/opps.html">OOPS in C++</a>
+          <a href="file:///D:/example/C++%20STL.html">C++ STL.</a>
+           <a href="file:///D:/example/C++%20STL%20Containers.html">C++ STL Containers</a>
+
+        <a href="file:///D:/example/Array.html">C++ Arrays</a>
+        <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a>
+        <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#support">Support</a>
+      <a href="#blog">Blog</a>
+    </div>
+      
+    <br><br>&nbsp;&nbsp;
+    <div class="container text-justify"> 
+        <div class="row">
+            <div class="col-lg-12">
+        <h1>C++ Templates </h1><br>
+
+        <div class="codeblock"><textarea name="code" class="cpp">
+            #include &lt;iostream&gt;
+           using namespace std;
+           template&lt;class T&gt; T add(T &a,T &b)
+           {
+               T result = a+b;
+               return result;
+               
+           }
+           int main()
+           {
+             int i =2;
+             int j =3;
+             float m = 2.3;
+             float n = 1.2;
+             cout&lt;&lt;"Addition of i and j is :"&lt;&lt;add(i,j);
+             cout&lt;&lt;'\n';
+             cout&lt;&lt;"Addition of m and n is :"&lt;&lt;add(m,n);
+             return 0;
+           }
+           </textarea></div>
+           
+           <p><strong>Output:</strong></p>
+        <p style="text-align: justify;"><strong>A C++ template is a powerful feature added to C++. It allows you to define the generic classes and generic functions and thus provides support for generic programming. Generic programming is a technique where generic types are used as parameters in algorithms so that they can work for a variety of data types.</strong></p><br><br>
+        <mark><b>Templates can be represented in two ways:</b></mark><br><br>
+      
+            <li>Function templates</li><br>
+            <li>Class templates</li><br>
+    
+                      <img src="C:\Users\Admin\Pictures\cpp-templates.png" alt="Lights" style="width:80%"><br>
+                   
+                            <mark><b>Function Templates:</b></mark><br><br>
+                            <p style="text-align: justify;"><strong>We can define a template for a function. For example, if we have an add() function, we can create versions of the add function for adding the int, float or double type values.</strong></p><br><br>
+    <mark><b>Class Template:</b></mark><br>
+<p style="text-align: justify;"><strong>We can define a template for a class. For example, a class template can be created for the array class that can accept the array of various types such as int array, float array or double array.</strong></p><br><br>
+<br>
+<h1>Function Template</h1><br><br>
+<li>Generic functions use the concept of a function template. Generic functions define a set of operations that can be applied to the various types of data.</li><br>
+<li>The type of the data that the function will operate on depends on the type of the data passed as a parameter.</li><br>
+<li>For example, Quick sorting algorithm is implemented using a generic function, it can be implemented to an array of integers or array of floats.</li><br>
+<li>A Generic function is created by using the keyword template. The template defines what function will do.</li>
+<br><br>
+<mark><b>Syntax of Function Template</b></mark><br><br>
+<p style="background-color: rgb(238, 178, 224);">template < class Ttype> ret_type func_name(parameter_list)  <br>
+    {  <br>
+        // body of function. <br> 
+    }  </p><br>
+    <br>
+    <p style="text-align: justify;"><strong>Where<b>Ttype:</b> It is a placeholder name for a data type used by the function. It is used within the function definition. It is only a placeholder that the compiler will automatically replace this placeholder with the actual data type.</strong></p><br>
+    <p style="text-align: justify;"><strong><b>class:</b> A class keyword is used to specify a generic type in a template declaration.</strong></p><br>
+    <h1>Let's see a simple example of a function template:</h1><br>
+    <details><summary>example of a function template:</summary>
+        #include &lt;iostream&gt; <br> 
+            using namespace std; <br> 
+            template<class T> T add(T &a,T &b) <br> 
+            {  <br>
+                T result = a+b;  <br>
+                return result;  <br>
+                  
+            }  <br>
+            int main()  <br>
+            {  <br>
+              int i =2;  <br>
+              int j =3;  <br>
+              float m = 2.3;  <br>
+              float n = 1.2;  <br>
+              cout<<"Addition of i and j is :"add(i,j);  <br>
+              cout<<'\n';  <br>
+              cout<<"Addition of m and n is :"add(m,n);  <br>
+              return 0;  <br>
+            }  </details><br><br>
+            <h3>Output</h3><br><br>
+            <p style="background-color: rgb(238, 178, 224);">Addition of i and j is :5<br>
+                Addition of m and n is :3.5 </p><br>
+
+                <p style="text-align: justify;"><strong>In the above example, we create the function template which can perform the addition operation on any type either it can be integer, float or double.</strong></p><br>
+                <br>
+                <h1>Function Templates with Multiple Parameters</h1><br>
+                <p style="text-align: justify;"><strong>We can use more than one generic type in the template function by using the comma to separate the list.</strong></p><br><br>
+<mark><b>Syntax</b></mark><br><br>
+<p style="background-color: rgb(215, 147, 202);"> template class T1, class T2,.....>  <br>
+    return_type function_name (arguments of type T1, T2....)  <br>
+    {  <br>
+        // body of function.  <br>
+    }  <br></p><br><br>
+    <p style="text-align: justify;"><strong>In the above syntax, we have seen that the template function can accept any number of arguments of a different type.</strong></p><br>
+    <h1>Let's see a simple example:</h1><br><br>
+    <details><summary>Let's see a simple example:</summary>#include  iostream> --> <br>
+        using namespace std;  <br>
+        template<class X,class Y> void fun(X a,Y b)  <br>
+        {  <br>
+            std::cout << "Value of a is : "a<< std::endl; --> </p><br>
+            std::cout << "Value of b is : "b<< std::endl;  --><br>
+        }  <br>
+          
+        int main()  <br>
+        {  <br>
+           fun(15,12.3); <br> 
+           
+           return 0;  <br>
+        }  <br></details><br><br>
+<mark><b>Output</b></mark><br><br>
+<p style="background-color: rgb(244, 194, 230);">Value of a is : 15<br><br>
+    Value of b is : 12.3</p><br><br>
+<p><b>In the above example, we use two generic types in the template function, i.e., X and Y.</b></p><br><br>
+<h1>Overloading a Function Template</h1><br><br>
+<p style="text-align: justify;"><strong>We can overload the generic function means that the overloaded template functions can differ in the parameter list.</strong></p><br><br>
+<p style="text-align: justify;"><strong>Let's understand this through a simple example:</strong></p><br>
+<details><summary></summary>
+    #include iostream>  <br>
+        using namespace std;  <br>
+        template class X> void fun(X a)  <br>
+        {  <br>
+            std::cout << "Value of a is : " a<< std::endl;  <br>
+        }  <br>
+        template class X,class Y> void fun(X b ,Y c)  <br>
+        {  <br>
+            std::cout << "Value of b is : " b<< std::endl;  <br>
+            std::cout << "Value of c is : " c<< std::endl;  <br>
+        }  <br>
+        int main()  <br>
+        {  <br>
+           fun(10);  
+           fun(20,30.5);  <br>
+           return 0;  <br>
+        }  <br></details><br><br>
+        <h3>Output</h3><br.<br>
+        <mark><b>
+            Value of a is : 10<br><br>
+Value of b is : 20<br><br>
+Value of c is : 30.5<br><br>
+        </b></mark><br><br>
+        <p><b>In the above example, template of fun() function is overloaded.</b></p><br>
+        <h1>Restrictions of Generic Functions</h1><br><br><br>
+        <p style="text-align: justify;"><strong>Generic functions perform the same operation for all the versions of a function except the data type differs. Let's see a simple example of an overloaded function which cannot be replaced by the generic function as both the functions have different functionalities.</strong></p><br><br>
+        <h1>Let's understand this through a simple example:</h1><br>
+<details><summary></summary>#include iostream> <br> 
+    using namespace std;  <br>
+    void fun(double a)  <br>
+    {  <br>
+        cout<<"value of a is : "<<a<<'\n';  <br>
+    }  <br>
+      
+    void fun(int b)  <br>
+    {  <br>
+        if(b%2==0)  <br>
+        {  <br>
+            cout<<"Number is even";  <br>
+        }  <br>
+        else  <br>
+        {  <br>
+            cout<<"Number is odd";  <br>
+        }  <br>
+      
+    }  <br>
+      
+    int main()  <br>
+    {  <br>
+       fun(4.6);  <br>
+       fun(6);  <br>
+       return 0;  <br>
+    }  <br></details><br><br>
+    <h3>Output</h3><br><br>
+    <mark><b>value of a is : 4.6<br><br>
+        Number is even</b></mark><br><br>
+        <p style="text-align: justify;"><strong>In the above example, we overload the ordinary functions. We cannot overload the generic functions as both the functions have different functionalities. First one is displaying the value and the second one determines whether the number is even or not.</strong></p><br><br>
+<h1>CLASS TEMPLATE</h1><br><br>
+<p style="text-align: justify;"><strong><mark>Class Template</mark> can also be defined similarly to the Function Template. When a class uses the concept of Template, then the class is known as generic class.</strong></p><br>
+<h3>Syntax</h3><br><br>
+<mark><b>template class Ttype>  <br><br>
+    class class_name  <br><br>
+    {  <br><br>
+      .  <br><br>
+      .  <br><br>
+    } <br><br> </b></mark><br><br>
+    <p style="text-align: justify;"><strong><mark>Type</mark>is a placeholder name which will be determined when the class is instantiated. We can define more than one generic data type using a comma-separated list. The Ttype can be used inside the class body.
+
+        Now, we create an instance of a class</strong></p><br><br>
+        <h5>class_name type> ob;</h5>
+        <p><b>where class_name: It is the name of the class.</b></p>
+<br>
+<h1>CLASS TEMPLATE WITH MULTIPLE PARAMETERS</h1><br><br>
+<p style="text-align: justify;"><strong>We can use more than one generic data type in a class template, and each generic data type is separated by the comma.</strong></p><br>
+<h3>Syntax</h3><br><br>
+<mark><b>template class T1, class T2, ......>   <br><br>
+    class class_name  <br><br>
+    {  <br><br>
+       // Body of the class.  <br><br>
+    }  </b></mark><br><br>
+    <p style="text-align: justify;"><strong>Let's see a simple example when class template contains two generic data types.</strong></p><br><br>
+<details><summary>Let's see a simple example</summary>#include <iostream>  
+    using namespace std;  <br>
+    template<class T1, class T2>  <br>
+   class A   <br>
+   {  <br>
+        T1 a;  <br>
+        T2 b;  <br>
+        public:  <br>
+       A(T1 x,T2 y)  <br>
+      {  <br>
+          a = x;  <br>
+          b = y;  <br>
+       }  <br>
+          void display()  <br>
+         {  <br>
+                std::cout << "Values of a and b are : " << a<<" ,"b ,std::endl; <br> 
+          }  <br>
+     };  <br>
+ 
+     int main()  <br>
+    {  <br>
+          A<int,float> d(5,6.5);  <br>
+          d.display();  <br>
+          return 0;  <br>
+    }  <br></details><br><br>
+    <h3>Output</h3><br><br>
+    <mark><b>Values of a and b are : 5,6.5</b></mark><br>
+<h1>Nontype Template Arguments
+</h1><br><br>
+<p style="text-align: justify;"><strong>The template can contain multiple arguments, and we can also use the non-type arguments In addition to the type T argument, we can also use other types of arguments such as strings, function names, constant expression and built-in types.<mark> Let' s see the following example:</mark>
+
+</strong></p><br>
+<p style="border-color: rgb(233, 172, 228);">template<class T, int size>  <br>
+    class array  <br>
+    {  <br>
+            T arr[size];           // automatic array initialization.  <br>
+    };  <br></p><br><br>
+    <p style="text-align: justify;"><strong>In the above case, the nontype template argument is size and therefore, template supplies the size of the array as an argument.
+
+      <br>  Arguments are specified when the objects of a class are created:
+        
+        </strong></p><br><br>
+        <p style="border-color: rgb(233, 172, 228);">
+            array int, 15> t1;     <br>
+            <br>                   // array of 15 integers.  
+                array float, 10> t2;          <br>
+                <br>          // array of 10 floats.   
+                array char, 4> t3;          <br>
+                <br>            // array of 4 chars.   </p><br>  
+
+ <p style="text-align: justify;"><strong>Let's see a simple example of nontype template arguments.</strong></p><br><br>
+ <details><summary></summary>
+    #include iostream>  <br>
+        using namespace std;  <br>
+        template class T, int size>  <br>
+        class A   <br>
+        {  <br>
+            public:  <br>
+            T arr[size];  <br>
+            void insert()  <br>
+            {  <br>
+                int i =1;  <br>
+                for (int j=0;j size;j++)  <br>
+                {  <br>
+                    arr[j] = i;  <br>
+                    i++;  <br>
+                }  <br>
+            }  <br>
+              
+            void display()  <br>
+            {  <br>
+                for(int i=0;i size;i++)  <br>
+                {  <br>
+                    std::cout << arr[i] << " ";  <br>
+                }  <br>
+            }  <br>
+        };  <br>
+        int main()  <br>
+        {  <br>
+            A int,10> t1;  <br>
+            t1.insert();  <br>
+            t1.display();  <br>
+            return 0;  <br>
+        }  <br></details><br><br>
+        <h3>Output</h3><br><br>
+        <mark><b>1 2 3 4 5 6 7 8 9 10</b></mark><br><br>
+        <p style="text-align: justify;"><strong>In the above example, the class template is created which contains the nontype template argument, i.e., size. It is specified when the object of class 'A' is created.</strong></p><br>
+<b>Points to Remember</b><br><br>
+<li>C++ supports a powerful feature known as a template to implement the concept of generic programming.</li><br>
+<li>A template allows us to create a family of classes or family of functions to handle different data types.</li><br>
+<li>Template classes and functions eliminate the code duplication of different data types and thus makes the development easier and faster.</li><br>
+<li>Multiple parameters can be used in both class and function template.</li><br>
+<li>Template functions can also be overloaded.</li><br>
+<li>We can also use nontype arguments such as built-in or derived data types as template arguments.</li><br>
+                        <br><br><br>
+                      
+                          
+                            </div></div></div></div>
+                        <br> <div class="container-fluid">
+      
+                          <div class="row">
+                           
+                             <div class="col-sm-4">
+                              <h5>JAVA TUTORIAL</h5>
+                              <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+                         
+                          <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+                          <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+                          <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+                              <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+                               <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+                               <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+                               <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+                               <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+                               <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+                               <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+                               <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+                               <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+                               <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+                               <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+                               <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+                               <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+                               <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+                               <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+                               <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+                               <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+                               <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+                               <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+                               <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+                               <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+                                 <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+                                 <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+                                 <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+                                 <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+                               <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+                               <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+                                 <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+                                   <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+                                   <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+                                   <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+                                   <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+                                   <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+                                   <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+                                   <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+                                   <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+                                   <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+                                  
+                                 
+                              <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+                                <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+                              <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+                                <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+                                 <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+                                <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+                               <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+                                <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+                                <li>  <a href="file:///D:/example/C++%20STL%20Containers.html">C++ STL Containers</a></li>
+                                <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+                               <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+                               <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+                               <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+                          
+                         </div> 
+                        </div><br><br><br><br><br><br><br><br><br>
+                        <section class="hero" id="about">
+                          <div class="bio animate__animated animate__shakeX">
+                            <h2 class="bio-title">About Me</h2>
+                            <p class="bio-text">
+                                My name is Gautam, I’ve been studying computer science for two years. In order to kick-start my career before I graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for four years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+        
+                            </p>
+                          </div>
+                      </section><br>
+                        <section class="skills" id="skills">
+                          <h2 class="skill-header">My Top Skills</h2>
+                      
+                          <div class="skills-wrapper">
+                            <div class="first-set animate__animated animate__pulse">
+                              <img
+                                src="C:\Users\Admin\Pictures\c++.png"
+                                alt=""
+                                loading="lazy"
+                                class="icon icon-card"
+                              />
+                              <img
+                                src="C:\Users\Admin\Pictures\java.png"
+                                alt=""
+                                loading="lazy"
+                                class="icon icon-card"
+                              />
+                              <img
+                                src="C:\Users\Admin\Pictures\html.png"
+                                alt=""
+                                loading="lazy"
+                                class="icon icon-card"
+                              />
+                            </div>
+                      
+                            <div class="second-set animate__animated animate__pulse">
+                              <img
+                                src="C:\Users\Admin\Pictures\css-3.png"
+                                alt=""
+                                loading="lazy"
+                                class="icon icon-card"
+                              />
+                              <img
+                                src="C:\Users\Admin\Pictures\js.png"
+                                alt=""
+                                loading="lazy"
+                                class="icon icon-card"
+                              />
+                              <img
+                                src="C:\Users\Admin\Pictures\icons-heroo.png"
+                                alt=""
+                                loading="lazy"
+                                class="icon icon-card"
+                              />
+                            </div>
+                          </div>
+                        </section>
+                        <section class="projects" id="projects">
+                          <h2 class="projects-title">Some of my Recent Projects</h2>
+                          <div class="projects-container">
+                            <div class="project-container project-card">
+                              <img
+                                src="C:\Users\Admin\Pictures\insta.png"
+                                alt="instagram-clone"
+                                loading="lazy"
+                                class="project-pic"
+                              />
+                              <h3 class="project-title">Instagram Clone</h3>
+                              <p class="project-details">
+                                I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+                              </p>
+                              <a href="#" target="_blank" class="project-link">Check it Out</a>
+                            </div>
+                            <div class="project-container project-card">
+                              <img
+                                src="C:\Users\Admin\Pictures\quiz.jpg"
+                                alt="quiz-app"
+                                loading="lazy"
+                                class="project-pic"
+                              />
+                              <h3 class="project-title">QUIZ</h3>
+                              <p class="project-details">
+                                I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+                              </p>
+                              <a href="#" target="_blank" class="project-link">Check it Out</a>
+                            </div>
+                            <div class="project-container project-card">
+                              <img
+                                src="C:\Users\Admin\Pictures\todo.jpg"
+                                alt="todo-app"
+                                loading="lazy"
+                                class="project-pic"
+                              />
+                              <h3 class="project-title">TO DO APP</h3>
+                              <p class="project-details">
+                                I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+                              </p>
+                              <a href="#" target="_blank" class="project-link">Check it Out</a>
+                            </div>
+                          </div>
+                        </section><section class="contact" id="contact">
+                          <h2>Get In Touch With Me</h2>
+                          <div class="contact-form-container">
+                            <div class="contact-form">
+                              <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+                                <div class="form-control">
+                                  <label for="name">Name</label>
+                                  <input
+                                    type="text"
+                                    id="name"
+                                    name="sender-name"
+                                    placeholder="Enter Your Name"
+                                    class="input-field"
+                                    required
+                                  />
+                                </div>
+                                <div class="form-control">
+                                  <label for="email">Email</label>
+                                  <input
+                                    type="email"
+                                    id="email"
+                                    name="sender-email"
+                                    placeholder="Enter Your Email"
+                                    class="input-field"
+                                    required
+                                  />
+                                </div>
+                                <div class="form-control">
+                                  <label for="message">Message</label>
+                                  <textarea
+                                    id="message"
+                                    cols="60"
+                                    rows="10"
+                                    placeholder="Enter Your Message"
+                                    name="message"
+                                    class="input-field"
+                                    required
+                                  ></textarea>
+                                </div>
+                                <input
+                                  type="submit"
+                                  value="Submit"
+                                  id="submit-btn"
+                                  class="submit-btn"
+                                /><br>
+                                <span id="success"></span>
+                              </form>
+                            </div>
+                          </div>
+                        </section><br><br><br>
+                        <div class="container">
+                          <div class="all flex-row">
+                            <div class="menu flex-column">
+                              <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+                              <div class="profil-info">
+                                <h2 class="name">Gautam Kumar</h2>
+                                <h3 class="city">Patna,Bihar</h3>
+                              </div></div></div></div></div><br>
+                        <div class="socials">
+                          <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+                            ><img
+                              src="C:\Users\Admin\Pictures\insta.png"
+                              alt="Instagram"
+                              loading="lazy"
+                              class="socicon"
+                          />Instagram</a>
+                          <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+                            ><img
+                              src="C:\Users\Admin\Pictures\facebookk.png"
+                              alt="Facebook"
+                              loading="lazy"
+                              class="socicon"
+                          />Facebook</a>
+                          <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+                            ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+                          />Youtube</a>
+                          <footer>
+                              <p class="copy">&copy; Copyright 2024</p>
+                              <p class="copy">
+                                Built with &#x2661; by CODE WITH GAUTAM</Code>
+                               
+                              </p>
+                        </footer>
+                        <i class="scroll-up" id="scroll-up"
+                        ><img
+                          src="assets/icons/icons8-upward-arrow.gif"
+                          class="socicon up-arrow"
+                          alt="scroll-up"
+                      /></i>
+                     
+        
+                        <script src="portfolio.js">
+                        </script>
+        <script  type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script>
+</body>
+</html>

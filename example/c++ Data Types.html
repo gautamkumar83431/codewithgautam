@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Data Types</title>
+      <!--CSS Styles -->
+      <link rel="stylesheet" href="assets/css/styles.css" />
+
+      <!-- Favicons -->
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/icons/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/icons/favicon-32x32.png"
+      />
+  
+     <!-- Animate CSS CDN -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Datatypes.css">
+    <link rel="stylesheet" href="Java_Tutorial.css">
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li> <a href="file:///D:/example/Home.html">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav><div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+   <a href="file:///D:/example/Input%20Output.html">Input Output  C++</a>
+   <a  href="D:/example/Function%20in%20c++.html">Function C++ </a>
+     <a href="file:///D:/example/Decision%20Making.html">Decision Making C++</a>
+      <a href="file:///D:/example/c++%20string.html">C++ String</a>
+    <a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a>
+     <a href="file:///D:/example/opps.html">OOPS in C++</a>
+      <a href="file:///D:/example/C++%20STL.html">C++ STL.</a>
+    <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a>
+    <a href="file:///D:/example/Array.html">C++ Arrays</a>
+    <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a>
+    <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+  <br><br>&nbsp;&nbsp;
+<div class="container text-justify"> 
+  <div class="row">
+      <div class="col-lg-12">
+    <h1>C++ Data Types</h1><br>
+  <p > <strong> variables use data type during declaration to restrict the type of data to be stored. Therefore, we can say that data types are used to tell the variables the type of data they can store. Whenever a variable is defined in C++, the compiler allocates some memory for that variable based on the data type with which it is declared. Every data type requires a different amount of memory. 
+
+        C++ supports a wide variety of data types and the programmer can select the data type appropriate to the needs of the application. Data types specify the size and types of values to be stored. However, storage representation and machine instructions to manipulate each data type differ from machine to machine, although C++ instructions are identical on all machines.</strong></p><br></div>
+     <h2>  C++ supports the following data types:</h2><br><br>
+     
+       <ol>
+            <li> Primary or Built-in or Fundamental data type</li>
+            <li> Derived data types</li>
+            <li> User-defined data types</li>
+       </ol>
+       <br><br><br>
+   <img src="D:\DatatypesInC (1).png" alt="Lights" style="width:80%">
+        <br>
+        <h1>Data Types in C++ are Mainly Divided into 3 Types: </h1><br>
+        <p><b>1. Primitive Data Types: These data types are built-in or predefined data types and can be used directly by the user to declare variables. example: int, char, float, bool, etc. Primitive data types available in C++ are: </b></p>
+       <br><br>
+        <ol>
+            <li>Integer</li>
+            <li>Character</li>
+            <li>Boolean</li>
+            <li>Floating Point</li>
+            <li>Double Floating Point</li>
+            <li>Valueless or Void</li>
+            <li>Wide Character</li>
+        </ol><br><br>
+        <h1>2. Derived Data Types: Derived data types that are derived from the primitive or built-in datatypes are referred to as Derived Data Types. These can be of four types namely: </h1><br>
+        <ol>
+            <li>Function</li>
+            <li>Array</li>
+            <li>Pointer</li>
+            <li>Reference</li>
+        </ol><br><br>
+        <h1>3. Abstract or User-Defined Data Types: </h1><br><br>
+        <p class="p">Abstract or User-Defined data types are defined by the user itself. Like, defining a class in C++ or a structure. C++ provides the following user-defined datatypes:</p><br>
+        <ol>
+     <li>Class</li>
+     <li>Structure </li>
+     <li>Union</li>
+     <li>Enumeration</li>
+     <li>Typedef defined Datatype</li>
+        </ol><br><br>
+        <h1>Primitive Data Types</h1><br><br>
+      
+        <ol>
+            <li>Integer: The keyword used for integer data types is int. Integers typically require 4 bytes of memory space and range from -2147483648 to 2147483647.  </li><br>
+        
+        <li>Character: Character data type is used for storing characters. The keyword used for the character data type is char. Characters typically require 1 byte of memory space and range from -128 to 127 or 0 to 255. </li><br>
+        <li>Boolean: Boolean data type is used for storing Boolean or logical values. A Boolean variable can store either true or false. The keyword used for the Boolean data type is bool. </li><br>
+        <li>Floating Point: Floating Point data type is used for storing single-precision floating-point values or decimal values. The keyword used for the floating-point data type is float. Float variables typically require 4 bytes of memory space.</li><br>
+        <li>Double Floating Point: Double Floating Point data type is used for storing double-precision floating-point values or decimal values. The keyword used for the double floating-point data type is double. Double variables typically require 8 bytes of memory space. </li><br>
+        <li>void: Void means without any value. void data type represents a valueless entity. A void data type is used for those function which does not return a value. </li><br>
+        <li>Wide Character: Wide character data type is also a character data type but this data type has a size greater than the normal 8-bit data type. Represented by wchar_t. It is generally 2 or 4 bytes long.</li><br>
+        <li>sizeof() operator: sizeof() operator is used to find the number of bytes occupied by a variable/data type in computer memory.</li>
+        </ol><br><br>
+        <p> <strong>Example</strong></p><br><br>
+        <p><b>The size of variables might be different from those shown in the above table, depending on the compiler and the computer you are using.</b></p><br><br>
+        
+            <details>
+              <summary>C++ Operator Overloading</summary>
+              <p><br>
+                // C++ Program to Demonstrate the correct size<br><br>
+                // of various data types on your computer.<br>
+                #include&lt;iostream&gt;<br>
+                using namespace std;<br>
+                 <br>
+                int main()<br>
+                {<br>
+                    cout << "Size of char : " << sizeof(char) << endl;<br>
+                    cout << "Size of int : " << sizeof(int) << endl;<br>
+                 <br>
+                    cout << "Size of long : " << sizeof(long) << endl;<br>
+                    cout << "Size of float : " << sizeof(float) << endl;<br>
+                 <br>
+                    cout << "Size of double : " << sizeof(double) << endl;<br>
+                 
+                    return 0;<br>
+                }<br>
+            </p><br><br>
+            </details><br><br>
+            <p><b>Output</b></p><br>
+            <p><strong>of char : 1<br>
+                Size of int : 4<br>
+                Size of long : 8<br>
+                Size of float : 4<br>
+                Size of double : 8</strong></p><br><br>
+                <p><b>Time Complexity: O(1)</b></p>
+                <p><b>Space Complexity: O(1)</b></p>
+                <p><b>Datatype Modifiers</b></p>
+                <p><b>As the name suggests, datatype modifiers are used with built-in data types to modify the length of data that a particular data type can hold. </b></p><br><br>
+   <img src="D:\ModifiersInC.png" alt="Lights" style="width:80%">
+                <h1>Data type modifiers available in C++ are: </h1><br><br>
+                <ol>
+                    <li>Signed</li>
+                    <li>Unsigned</li>
+                    <li>Short</li>
+                    <li>Long</li>
+                </ol><br><br>
+                <p><b>The below table summarizes the modified size and range of built-in datatypes when combined with the type modifiers:</b></p><br><br>
+                <table>
+                    <thead>
+                      <tr>
+                       <th>Data Type</th>
+                       <th>Size (in bytes)
+
+                    </th>
+                       <th>Range</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                       <td>short int</td>
+                       <td>2</td>
+                       <td>-32,768 to 32,767</td>
+                       
+                       </tr>
+                       <tr>
+                       <td>unsigned short int</td>
+                       <td>2</td>
+                       <td>0 to 65,535</td>
+                      </tr>
+                    <tr>
+                       <td>unsigned int</td>
+                       <td>4</td>
+                       <td>0 to 4,294,967,295</td>
+                    </tr>
+                    <tr>
+                        <td>int</td>
+                        <td>4</td>
+                        <td>-2,147,483,648 to 2,147,483,647</td>
+                    </tr>
+                    <tr>
+                        <td>Long int</td>
+                        <td>4</td>
+                        <td>-2,147,483,648 to 2,147,483,647</td>
+                    </tr>
+                    <tr>
+                        <td>unsigned long int</td>
+                        <td>4</td>
+                        <td>0 to 4,294,967,295</td>
+                    </tr>
+                    <tr>
+                        <td>long long int</td>
+                        <td>8</td>
+                        <td>-(2^63) to (2^63)-1</td>
+                    </tr>
+                    <tr>
+                        <td>unsigned long long int</td>
+                        <td>8</td>
+                        <td>0 to 18,446,744,073,709,551,615</td>
+                    </tr>
+                    <tr>
+                        <td>signed char</td>
+                        <td>1</td>
+                        <td>-128 to 127</td>
+                    </tr>
+                    <tr>
+                        <td>unsigned char</td>
+                        <td>1</td>
+                        <td>0 to 255</td>
+
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>4</td>
+                        <td>-3.4×10^38 to 3.4×10^38</td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>8</td>
+                        <td>-17*10^308 to1.7×10^308</td>
+                    </tr>
+                    <tr>
+                        <td>long double</td>
+                        <td>12</td>
+                        <td>-1.1×10^4932 to1.1×10^4932</td>
+                    </tr>
+                    <tr>
+                        <td>wchar_t</td>
+                        <td>2 or 4</td>
+                        <td>1 wide character</td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+                    <p><b><i>Note: Above values may vary from compiler to compiler. In the above example, we have considered GCC 32 bit.
+                        We can display the size of all the data types by using the sizeof() operator and passing the keyword of the datatype, as an argument to this function as shown below: </i></b></strong></p>
+<p><strong>Now to get the range of data types refer to the following chart</p><br>
+<p><strong> syntax limits.h> header file is defined to find the range of fundamental data-types. Unsigned modifiers have minimum value is zero. So, no macro constants are defined for the unsigned minimum value.</strong></p><br>
+<h1>C++ Program to Find the Range of Data Types using Macro Constants</h1><br>
+<p><b>Example</b></p><br><br>
+
+    <details>
+      <summary >size of data types </summary>
+      <p style="font: size 16px; color: black;"><br>
+        // C++ program to Demonstrate the sizes of data types<br>
+#include &lt;iostream&gt;<br>
+#include &lt;limits.h&gt;<br>
+using namespace std;<br>
+ <br>
+int main()<br>
+{<br>
+    cout << "Size of char : " << sizeof(char) << " byte"<br>
+         << endl;<br>
+ <br>
+    cout << "char minimum value: " << CHAR_MIN << endl;<br>
+ <br>
+    cout << "char maximum value: " << CHAR_MAX << endl;<br>
+ <br>
+    cout << "Size of int : " << sizeof(int) << " bytes"<br>
+         << endl;<br>
+ <br>
+    cout << "Size of short int : " << sizeof(short int)<br>
+         << " bytes" << endl;<br>
+ <br>
+    cout << "Size of long int : " << sizeof(long int)<br>
+         << " bytes" << endl;<br>
+ <br>
+    cout << "Size of signed long int : "<br>
+         << sizeof(signed long int) << " bytes" << endl;<br>
+ <br>
+    cout << "Size of unsigned long int : "<br>
+         << sizeof(unsigned long int) << " bytes" << endl;<br>
+ <br>
+    cout << "Size of float : " << sizeof(float) << " bytes"<br>
+         << endl;<br>
+ <br>
+    cout << "Size of double : " << sizeof(double)<br>
+         << " bytes" << endl;<br>
+ <br>
+    cout << "Size of wchar_t : " << sizeof(wchar_t)<br>
+         << " bytes" << endl;<br>
+ <br>
+    return 0;<br>
+}            <br>
+      </p></details><br><br>
+
+<h1>Output</h1><br>
+<h3>
+    Size of char : 1 byte<br>
+char minimum value: -128<br>
+char maximum value: 127<br>
+Size of int : 4 bytes<br>
+Size of short int : 2 bytes<br>
+Size of long int : 8 bytes<br>
+Size of signed long int : 8 bytes<br>
+Size of unsigned long int : 8 bytes<br>
+Size of float : 4 bytes<br>
+Size of double : 8 bytes<br>
+Size of wchar_t : 4 bytes<br>
+<br></h3>
+<h1>Time Complexity: O(1)</h1>
+<h1>Space Complexity: O(1)</h1><br>
+
+
+    <details>
+      <summary>C++ </summary>
+      <p style="font: size 20px; color: black;"><br>
+        #include &lt;iostream&gt;<br>
+            #include string><br>
+            using namespace std;<br>
+             <br>
+            int main() {<br>
+              // Integer data types<br>
+              int a = 10;<br>
+              short b = 20;<br>
+              long c = 30;<br>
+              long long d = 40;<br>
+              cout << "Integer data types: " << endl;<br>
+              cout << "int: " << a << endl;<br>
+              cout << "short: " << b << endl;<br>
+              cout << "long: " << c << endl;<br>
+              cout << "long long: " << d << endl;<br>
+               <br>
+              // Floating-point data types<br>
+              float e = 3.14f;<br>
+              double f = 3.141592;<br>
+              long double g = 3.14159265358979L;<br>
+              cout << "Floating-point data types: " << endl;<br>
+              cout << "float: " << e << endl;<br>
+              cout << "double: " << f << endl;<br>
+              cout << "long double: " << g << endl;<br>
+               
+              // Character data types<br>
+              char h = 'a';<br>
+              wchar_t i = L'b';<br>
+              char16_t j = u'c';<br>
+              char32_t k = U'd';<br>
+              cout << "Character data types: " << endl;<br>
+              cout << "char: " << h << endl;<br>
+              wcout << "wchar_t: " << i << endl;<br>
+              cout << "char16_t: " << j << endl;<br>
+              cout << "char32_t: " << k << endl;<br>
+               <br>
+              // Boolean data type<br>
+              bool l = true;<br>
+              bool m = false;<br>
+              cout << "Boolean data type: " << endl;<br>
+              cout << "true: " << l << endl;<br>
+              cout << "false: " << m << endl;<br>
+               <br>
+              // String data type<br>
+              string n = "Hello, world!";<br>
+              cout << "String data type: " << endl;<br>
+              cout << n << endl;<br>
+               <br>
+              return 0;<br>
+            }
+      </p></details><br><br>
+<h2>Output</h2><br><br>
+  <h3>
+        Integer data types: <br>
+int: 10<br>
+short: 20<br>
+long: 30<br>
+long long: 40<br>
+Floating-point data types: <br>
+float: 3.14<br>
+double: 3.14159<br>
+long double: 3.14159<br>
+Character data types: <br>
+char: a<br>
+wchar_t: b<br>
+char16_t: 99<br>
+char32_t: 100<br>
+Boolean data type: <br>
+true: 1<br>
+false: 0<br>
+String data type: <br>
+Hello, world!<br>
+  </h3><br><br>
+      <p>
+        This program declares variables of various data types, assigns values to them, and then prints out their values.
+
+The integer data types include int, short, long, and long long. These data types represent whole numbers of varying sizes.
+
+The floating-point data types include float, double, and long double. These data types represent real numbers with varying levels of precision.
+
+The character data types include char, wchar_t, char16_t, and char32_t. These data types represent individual characters of varying sizes.
+
+The boolean data type is a simple data type that can only have one of two values: true or false.
+
+The string data type is a sequence of characters. In this program, we use the string class to declare a string variable and assign it a value.
+      </p><br>
+<h1>Advantages:</h1><br>
+<p>Data types provide a way to categorize and organize data in a program, making it easier to understand and manage.
+    Each data type has a specific range of values it can hold, allowing for more precise control over the type of data being stored.
+    Data types help prevent errors and bugs in a program by enforcing strict rules about how data can be used and manipulated.
+    C++ provides a wide range of data types, allowing developers to choose the best type for a specific task.</p><br><br>
+    <h1>Disadvantages:</h1><br>
+    <p>Using the wrong data type can result in unexpected behavior and errors in a program.
+        Some data types, such as long doubles or char arrays, can take up a large amount of memory and impact performance if used excessively.
+        C++’s complex type system can make it difficult for beginners to learn and use the language effectively.
+        The use of data types can add additional complexity and verbosity to a program, making it harder to read and understand.</p>
+
+    </div></div></div>
+
+    <br> <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> 
+    </div><br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+            My name is Gautam, I’ve been studying computer science for two years. In order to kick-start my career before I graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for four years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+    
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="C:\Users\Admin\Pictures\c++.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="C:\Users\Admin\Pictures\java.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="C:\Users\Admin\Pictures\html.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+    
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="C:\Users\Admin\Pictures\css-3.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="C:\Users\Admin\Pictures\js.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="C:\Users\Admin\Pictures\icons-heroo.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="C:\Users\Admin\Pictures\insta.png"
+            alt="instagram-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Instagram Clone</h3>
+          <p class="project-details">
+            I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="C:\Users\Admin\Pictures\quiz.jpg"
+            alt="quiz-app"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">QUIZ</h3>
+          <p class="project-details">
+            I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="C:\Users\Admin\Pictures\todo.jpg"
+            alt="todo-app"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">TO DO APP</h3>
+          <p class="project-details">
+            I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+          </p>
+          <a href="#" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><div class="container">
+        <div class="all flex-row">
+          <div class="menu flex-column">
+            <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+            <div class="profil-info">
+              <h2 class="name">Gautam Kumar</h2>
+              <h3 class="city">Patna,Bihar</h3>
+            </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

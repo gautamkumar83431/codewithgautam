@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling in C++</title>
+    <head><!--CSS Styles -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    
+        <!-- Favicons -->
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="assets/icons/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="assets/icons/favicon-32x32.png"
+        />
+    
+       <!-- Animate CSS CDN -->
+       <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+     />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming in C++</title>
+    <link rel="stylesheet" href="Datatypes.css">
+    <link rel="stylesheet" href="Java_Tutorial.css">
+</head>
+<body>
+     
+    <nav>
+        <h1>CODE WITH GAUTAM </h1>
+        <ul class="navigation">
+          <a href="file:///D:/example/Home.html">Home</a>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+    <div class="scrollmenu">
+       
+      <a href="file:///D:/example/Home.html">Home</a>
+      <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+      <a href="file:///D:/example/codewithgautam.html">C++</a>
+      <a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#support">Support</a>
+      <a href="#blog">Blog</a>
+     
+      
+    </div>
+    <div class="slidenew active" id="slide-1">
+      <div class="row">
+          <div class="col-md-2 mt-2">
+              <div class="p-3">
+                  <div class="mb-3">
+                      <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                  </div>
+                  <div class="mega-url-list">
+                  </div></div></div>   
+                
+  <div class="col-md-8 mt-2">
+      <div class="p-3">
+          <div class="mb-3">
+              <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+          </div>
+          <div class="mega-url-list">   
+        <h1>
+            C++ Exception Handling
+        </h1><br>
+       
+            <p style="text-align: justify;">
+  <strong>An exception is an unexpected event that occurs during program execution. For example,</strong></p><br>
+<h4><mark>divide_by_zero = 7 / 0;</mark></h4><br>
+<p style="text-align: justify;"><strong>The above code causes an exception as it is not possible to divide a number by 0.</strong></p>
+<p style="text-align: justify;"><strong>The process of handling these types of errors in C++ is known as exception handling.</strong></p>
+<p style="text-align: justify;"><strong>In C++, we handle exceptions with the help of the try and catch blocks, along with the throw keyword.</strong></p>
+<ol>
+    <li><mark>try -</mark> code that may raise an exception</li>
+    <li><mark>throw -</mark> throws an exception when an error is detected</li>
+    <li><mark>catch -</mark>code that handles the exception thrown by the throw keyword</li>
+</ol>
+<p style="text-align: justify;"><strong><mark><b>Note:</b></mark> The throw statement is not compulsory, especially if we use standard C++ exceptions.</strong></p><br><br>
+<h1>Syntax for Exception Handling in C++</h1><br><br>
+<p style="text-align: justify;"><strong>The basic syntax for exception handling in C++ is given below:</strong></p><br>
+<h5 style="background-color: rgb(143, 226, 238);  color: blue; font-size: larger;">try {<br>
+
+    // code that may raise an exception<br>
+    throw argument;<br>
+}<br>
+
+catch (exception) {<br>
+    // code to handle exception<br>
+} </h5><br><br>
+<p style="text-align: justify;"><strong>Here, we have placed the code that might generate an exception inside the try block. Every try block is followed by the catch block.</strong></p>
+<p style="text-align: justify;"><strong>When an exception occurs, the throw statement throws an exception, which is caught by the catch block.
+
+    The catch block cannot be used without the try block.</strong></p><br><br>
+    <h1>Example 1: C++ Exception Handling</h1><br>
+    <details><summary>Example 1: C++ Exception Handling</summary>
+        // program to divide two numbers<br>
+        // throws an exception when the divisor is 0<br>
+        
+        #include iostream><br>
+        using namespace std;<br>
+        
+        int main() {<br>
+        
+            double numerator, denominator, divide;<br>
+        
+            cout << "Enter numerator: ";<br>
+            cin >> numerator;<br>
+        
+            cout << "Enter denominator: ";<br>
+            cin >> denominator;<br>
+        
+            try {<br>
+        
+                // throw an exception if denominator is 0<br>
+                if (denominator == 0)<br>
+                    throw 0;<br>
+        
+                // not executed if denominator is 0<br>
+                divide = numerator / denominator;<br>
+                cout << numerator << " / " << denominator << " = " << divide << endl;<br>
+            } <br>
+        
+            catch (int num_exception) {<br>
+                cout << "Error: Cannot divide by " << num_exception << endl;<br>
+            }<br>
+        
+            return 0;<br>
+        }<br></details><br><br>
+        <mark><b>Output 1</b></mark><br><br>
+        <h5 style="color: blue; font-size: larger;">Enter numerator: 72<br>
+            Enter denominator: 0<br>
+            Error: Cannot divide by 0<br>
+            </h5><br><br>
+            <mark><b>Output 2</b></mark><br><br>
+            <h5 style="color: blue; font-size: larger;">
+                Enter numerator: 72<br>
+                Enter denominator: 3<br>
+                72 / 3 = 24<br>
+                <br></h5><br><br>
+                <p style="text-align: justify;"><strong>The above program divides two numbers and displays the result. But an exception occurs if the denominator is 0.
+
+                </strong></p>
+                <p style="text-align: justify;"><strong>To handle the exception, we have put the code divide = numerator / denominator; inside the try block. Now, when an exception occurs, the rest of the code inside the try block is skipped.
+
+                </strong></p>
+                <p style="text-align: justify;"><strong>The catch block catches the thrown exception and executes the statements inside it.</strong></p>
+                <p style="text-align: justify;"><strong>If none of the statements in the try block generates an exception, the catch block is skipped.
+
+                </strong></p><br>
+                       
+                          <img src="C:\Users\Admin\Pictures\cpp-try-catch (1).png" alt="Lights" style="width:80%">
+                    
+                                <p style="text-align: justify;"><strong>Notice that we have thrown the int literal 0 with the code throw 0;.</strong></p>
+                                <p style="text-align: justify;"><strong>We can throw any literal or variable or class, depending on the situation and depending on what we want to execute inside the catch block.</strong></p>
+                            <p style="text-align: justify;"><strong>The catch parameter int num_exception takes the value passed by the throw statement i.e. the literal 0.</strong></p><br><br>
+                            <h1>Catching All Types of Exceptions</h1><br><br>
+                            <p style="text-align: justify;"><strong>In exception handling, it is important that we know the types of exceptions that can occur due to the code in our try statement.</strong></p>
+                            <p style="text-align: justify;"><strong>This is so that we can use the appropriate catch parameters. Otherwise, the try...catch statements might not work properly.</strong></p>
+                            <p style="text-align: justify;"><strong>If we do not know the types of exceptions that can occur in our try block, then we can use the ellipsis symbol ... as our catch parameter.</strong></p><br><br>
+                            <h5 style="background-color: rgb(86, 233, 213); color: blue; font-size: larger;">
+                                try {<br>
+                                    // code<br>
+                                }<br>
+                                catch (...) {<br>
+                                    // code<br>
+                                } </h5><br><br>
+                                <h1>C++ Multiple catch Statements</h1><br><br>
+                                <p style="text-align: justify;"><strong>In C++, we can use multiple catch statements for different kinds of exceptions that can result from a single block of code.
+
+                                </strong></p>
+                                <h5  style="background-color: rgb(86, 233, 213); color: blue; font-size: larger;">try {<br>
+                                    // code<br>
+                                } <br>
+                                catch (exception1) {<br>
+                                    // code<br>
+                                } <br>
+                                catch (exception2) {<br>
+                                    // code<br>
+                                } <br>
+                                catch (...) {<br>
+                                    // code<br>
+                                }<br></h5><br>
+                                <p style="text-align: justify;"><strong>Here, our program catches exception1 if that exception occurs. If not, it will catch exception2 if it occurs.<br>
+
+                                    If there is an error that is neither exception1 nor exception2, then the code inside of catch (...) {} is executed.</strong></p>  <br><br>
+                                    <h1>Example 2: C++ Multiple catch Statements</h1><br><br>
+                                    <p style="text-align: justify;"><strong>This program divides two numbers and stores the result in an array element. There are two possible exceptions that can occur in this program:</strong></p><br><br>
+                                    <ol>
+                                        <li>If the array is out of bounds i.e. if the index of the array is greater than the size of the array</li><br>
+                                        <li>If a number is divided by 0</li>
+                                    </ol><br>
+                                    <p style="text-align: justify;"><strong>These exceptions are caught in multiple catch statements.
+
+                                    </strong></p><br>
+                                    <br>
+                                    <details><summary>Example of multiple catch statements.</summary>
+                                        #include iostream><br>
+                                            using namespace std;<br>
+                                            
+                                            int main() {<br>
+                                                
+                                                double numerator, denominator, arr[4] = {0.0, 0.0, 0.0, 0.0};<br>
+                                                int index;<br>
+                                                
+                                                cout << "Enter array index: ";<br>
+                                                cin >> index;<br>
+                                                
+                                                try {<br>
+                                                    
+                                                    // throw exception if array out of bounds<br>
+                                                    if (index >= 4)<br>
+                                                        throw "Error: Array out of bounds!";<br>
+                                                        
+                                                    // not executed if array is out of bounds<br>
+                                                    cout << "Enter numerator: ";<br>
+                                                    cin >> numerator;<br>
+                                                <br>
+                                                    cout << "Enter denominator: ";<br>
+                                                    cin >> denominator;<br>
+                                            
+                                                    // throw exception if denominator is 0<br>
+                                                    if (denominator == 0)<br>
+                                                        throw 0;
+                                            
+                                                    // not executed if denominator is 0<br>
+                                                    arr[index] = numerator / denominator;<br>
+                                                    cout << arr[index] << endl;<br>
+                                                }<br>
+                                            
+                                                // catch "Array out of bounds" exception<br>
+                                                catch (const char* msg) {<br>
+                                                    cout << msg << endl;<br>
+                                                }<br>
+                                            
+                                                // catch "Divide by 0" exception<br>
+                                                catch (int num) {<br>
+                                                    cout << "Error: Cannot divide by " << num << endl;<br>
+                                                }<br>
+                                            
+                                                // catch any other exception<br>
+                                                catch (...) {<br>
+                                                    cout << "Unexpected exception!" << endl;<br>
+                                                }<br>
+                                                
+                                                return 0;  <br>  
+                                            }</details><br><br>
+                                            <mark><b>Output 1</b></mark><br>
+                                            <h5 style="background-color: rgb(110, 169, 208); color: blue; font-size: larger;">
+                                                Enter array index: 5<br><br>
+                                                Error: Array out of bounds!</h5><br><br>
+                                                <p style="text-align: justify;"><strong>Here, the array arr only has 4 elements. So, index cannot be greater than 3.</strong></p><br>
+                                                <p style="text-align: justify;"><strong>In this case, index is 5. So we throw a string literal "Error: Array out of bounds!". This exception is caught by the first catch block.</strong></p><br>
+                                                <p style="text-align: justify;"><strong>Notice the catch parameter const char* msg. This indicates that the catch statement takes a string literal as an argument.</strong></p><br>
+                                                <mark><b>Output 2</b></mark><br>
+                                                <h5 style="background-color: rgb(199, 216, 218); color: blue ; font-size: larger;">
+                                                    Enter array index: 2<br><br>
+                                                    Enter numerator: 5<br><br>
+                                                    Enter denominator: 0<br><br>
+                                                    Error: Cannot divide by 0<br><br></h5><br><br>
+                                                    <p style="text-align: justify;"><strong>Here, the denominator is 0. So we throw the int literal 0. This exception is caught by the second catch block.</strong></p><br>
+                                                    <mark><b>Output 3</b></mark><br><br>
+                                                    <h5 style="background-color: rgb(121, 209, 222); color: blue; font-size: larger;">
+                                                        Enter array index: 2<br><br>
+                                                        Enter numerator: 5<br><br>
+                                                        Enter denominator: 2<br><br>
+                                                        2.5<br><br></h5><br><br>
+                                                        <h1>C++ Standard Exception</h1><br><br>
+                                                        <p style="text-align: justify;"><strong>C++ has provided us with a number of standard exceptions that we can use in our exception handling. Some of them are shown in the table below.</strong></p><br><br>
+                                                        <table>
+                                                            <thead>
+                                                              <tr>
+                                                               <th>Exception </th>
+                                                               <th>
+                                                                Description
+                                                            </th>
+                                                            
+                                                              </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                              <tr>
+                                                               <td>std::exception</td>
+                                                               <td>The parent class of all C++ exceptions.</td>
+                                                        
+                                                               </tr>
+                                                               <tr>
+                                                               <td>std::bad_alloc</td>
+                                                               <td>	Thrown when a dynamic memory allocation fails.</td>
+                                                               
+                                                              </tr>
+                                                            <tr>
+                                                               <td>std::bad_cast</td>
+                                                               <td>Thrown by C++ when an attempt is made to perform a dynamic_cast to an invalid type.</td>
+                                                             
+                                                            </tr>
+                                                            <tr>
+                                                                <td>std::bad_exception</td>
+                                                                <td>Typically thrown when an exception is thrown and it cannot be rethrown.
+                                                                </td></tr>
+                                     </tbody>
+                 </table><br><br><br><br>
+                 <mark><b>There are many other standard exceptions in C++.</b></mark><br><br>
+                 <mark><b>These exceptions are defined in the exception header file.</b></mark><br><br>
+                 <mark><b>To learn more, visit our C++ Standard Exceptions tutorial.</b></mark><br><br>
+                            </div></div></div>
+                <br> <div class="container-fluid">
+      
+                  <div class="row">
+                   
+                     <div class="col-sm-4">
+                      <h5>JAVA TUTORIAL</h5>
+                      <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+                 
+                  <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+                  <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+                  <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+                      <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+                       <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+                       <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+                       <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+                       <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+                       <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+                       <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+                       <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+                       <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+                       <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+                       <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+                       <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+                       <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+                       <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+                       <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+                       <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+                       <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+                       <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+                       <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+                       <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+                       <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+                         <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+                         <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+                         <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+                         <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+                       <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+                       <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+                         <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+                           <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+                           <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+                           <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+                           <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+                           <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+                           <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+                           <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+                           <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+                           <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+                          
+                         
+                      <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+                        <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+                      <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+                        <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+                         <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+                        <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+                       <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+                        <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+                       <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+                       <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+                       <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+                       <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+                  </div></div>
+               
+                 
+                </div><br><br><br><br><br><br><br><br><br>
+                <section class="hero" id="about">
+                  <div class="bio animate__animated animate__shakeX">
+                    <h2 class="bio-title">About Me</h2>
+                    <p class="bio-text">
+                        My name is Gautam, I’ve been studying computer science for two years. In order to kick-start my career before I graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for four years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+
+                    </p>
+                  </div>
+              </section><br>
+                <section class="skills" id="skills">
+                  <h2 class="skill-header">My Top Skills</h2>
+              
+                  <div class="skills-wrapper">
+                    <div class="first-set animate__animated animate__pulse">
+                      <img
+                        src="C:\Users\Admin\Pictures\c++.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                      <img
+                        src="C:\Users\Admin\Pictures\java.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                      <img
+                        src="C:\Users\Admin\Pictures\html.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                    </div>
+              
+                    <div class="second-set animate__animated animate__pulse">
+                      <img
+                        src="C:\Users\Admin\Pictures\css-3.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                      <img
+                        src="C:\Users\Admin\Pictures\js.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                      <img
+                        src="C:\Users\Admin\Pictures\icons-heroo.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                    </div>
+                  </div>
+                </section>
+                <section class="projects" id="projects">
+                  <h2 class="projects-title">Some of my Recent Projects</h2>
+                  <div class="projects-container">
+                    <div class="project-container project-card">
+                      <img
+                        src="C:\Users\Admin\Pictures\insta.png"
+                        alt="instagram-clone"
+                        loading="lazy"
+                        class="project-pic"
+                      />
+                      <h3 class="project-title">Instagram Clone</h3>
+                      <p class="project-details">
+                        I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+                      </p>
+                      <a href="#" target="_blank" class="project-link">Check it Out</a>
+                    </div>
+                    <div class="project-container project-card">
+                      <img
+                        src="C:\Users\Admin\Pictures\quiz.jpg"
+                        alt="quiz-app"
+                        loading="lazy"
+                        class="project-pic"
+                      />
+                      <h3 class="project-title">QUIZ</h3>
+                      <p class="project-details">
+                        I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+                      </p>
+                      <a href="#" target="_blank" class="project-link">Check it Out</a>
+                    </div>
+                    <div class="project-container project-card">
+                      <img
+                        src="C:\Users\Admin\Pictures\todo.jpg"
+                        alt="todo-app"
+                        loading="lazy"
+                        class="project-pic"
+                      />
+                      <h3 class="project-title">TO DO APP</h3>
+                      <p class="project-details">
+                        I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+                      </p>
+                      <a href="#" target="_blank" class="project-link">Check it Out</a>
+                    </div>
+                  </div>
+                </section><section class="contact" id="contact">
+                  <h2>Get In Touch With Me</h2>
+                  <div class="contact-form-container">
+                    <div class="contact-form">
+                      <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+                        <div class="form-control">
+                          <label for="name">Name</label>
+                          <input
+                            type="text"
+                            id="name"
+                            name="sender-name"
+                            placeholder="Enter Your Name"
+                            class="input-field"
+                            required
+                          />
+                        </div>
+                        <div class="form-control">
+                          <label for="email">Email</label>
+                          <input
+                            type="email"
+                            id="email"
+                            name="sender-email"
+                            placeholder="Enter Your Email"
+                            class="input-field"
+                            required
+                          />
+                        </div>
+                        <div class="form-control">
+                          <label for="message">Message</label>
+                          <textarea
+                            id="message"
+                            cols="60"
+                            rows="10"
+                            placeholder="Enter Your Message"
+                            name="message"
+                            class="input-field"
+                            required
+                          ></textarea>
+                        </div>
+                        <input
+                          type="submit"
+                          value="Submit"
+                          id="submit-btn"
+                          class="submit-btn"
+                        /><br>
+                        <span id="success"></span>
+                      </form>
+                    </div>
+                  </div>
+                </section><br><br><br>
+                <div class="container">
+                  <div class="all flex-row">
+                    <div class="menu flex-column">
+                      <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+                      <div class="profil-info">
+                        <h2 class="name">Gautam Kumar</h2>
+                        <h3 class="city">Patna,Bihar</h3>
+                      </div></div></div></div></div><br>
+                <div class="socials">
+                  <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+                    ><img
+                      src="C:\Users\Admin\Pictures\insta.png"
+                      alt="Instagram"
+                      loading="lazy"
+                      class="socicon"
+                  />Instagram</a>
+                  <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+                    ><img
+                      src="C:\Users\Admin\Pictures\facebookk.png"
+                      alt="Facebook"
+                      loading="lazy"
+                      class="socicon"
+                  />Facebook</a>
+                  <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+                    ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+                  />Youtube</a>
+                  <footer>
+                      <p class="copy">&copy; Copyright 2024</p>
+                      <p class="copy">
+                        Built with &#x2661; by CODE WITH GAUTAM</Code>
+                       
+                      </p>
+                </footer>
+                <i class="scroll-up" id="scroll-up"
+                ><img
+                  src="assets/icons/icons8-upward-arrow.gif"
+                  class="socicon up-arrow"
+                  alt="scroll-up"
+              /></i>
+             
+
+                <script src="portfolio.js">
+                </script>
+<script  type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script>
+</body>
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>Types of Exception in Java
+      --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li>  <a href="file:///D:/example/Home.html">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav> 
+<div class="scrollmenu">
+   
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+<a href="file:///D:/example/Exception%20Handling.html">Exception handling</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                   </div></div>
+                  
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+                <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+            </div>
+            <div class="mega-url-list">
+                <h1 class="h1">Types of Exception in Java</h1><br>
+                <p>In Java, <strong>exception</strong> is an event that occurs during the execution of a program and disrupts the normal flow of the program's instructions. Bugs or errors that we don't want and restrict our program's normal execution of code are referred to as <strong>exceptions</strong>. In this section, we will focus on the <strong>types of exceptions in Java</strong> and the differences between the two.</p><br>
+                <p>Exceptions can be categorized into two ways:</p>
+                <ol class="points">
+                <li>Built-in Exceptions
+                <ul class="points">
+                <li>Checked Exception</li>
+                <li>Unchecked Exception</li>
+                </ul></li>
+                <li>User-Defined Exceptions</li>
+                </ol><br>
+                <img src="C:\Users\Admin\Pictures/types-of-exception-in-java.png" alt="Types of Exception in Java" id="imgee"><br>
+                <h2 class="h2">Built-in Exception</h2><br>
+                <p><a href="https://www.javatpoint.com/exception-handling-in-java">Exceptions</a> that are already available in <strong>Java libraries</strong> are referred to as <strong>built-in exception</strong>. These exceptions are able to define the error situation so that we can understand the reason of getting this error. It can be categorized into two broad categories, i.e., <strong>checked exceptions</strong> and <strong>unchecked exception</strong>.</p><br>
+                <h3 class="h3">Checked Exception</h3><br>
+                <p><strong>Checked</strong> exceptions are called <strong>compile-time</strong> exceptions because these exceptions are checked at compile-time by the compiler. The compiler ensures whether the programmer handles the exception or not. The programmer should have to handle the exception; otherwise, the system has shown a compilation error.</p><br>
+                <p><strong>CheckedExceptionExample.java</strong></p><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                import java.io.*;
+                class CheckedExceptionExample {
+                    public static void main(String args[]) {
+                        FileInputStream file_data = null;
+                        file_data = new FileInputStream("C:/Users/ajeet/OneDrive/Desktop/Hello.txt");
+                        int m;
+                        while(( m = file_data.read() ) != -1) {
+                            System.out.print((char)m);
+                        }
+                        file_data.close();
+                    }
+                }
+                </textarea></div>
+                <p>In the above code, we are trying to read the <strong>Hello.txt</strong> file and display its data or content on the screen. The program throws the following exceptions:</p>
+                <ol class="points">
+                <li>The <strong>FileInputStream(File filename)</strong> constructor throws the <strong>FileNotFoundException</strong> that is checked exception.</li>
+                <li>The <strong>read()</strong> method of the <strong>FileInputStream</strong> class throws the <strong>IOException</strong>.</li>
+                <li>The <strong>close()</strong> method also throws the IOException.</li>
+                </ol>
+                <p><strong>Output:</strong></p>
+                <img src="C:\Users\Admin\Pictures/types-of-exception-in-java2.png" alt="Types of Exception in Java" id="imgee">
+                <h3 class="h3">How to resolve the error?</h3>
+                <p>There are basically two ways through which we can solve these errors.</p>
+                <p>1) The exceptions occur in the main method. We can get rid from these compilation errors by declaring the exception in the main method using <strong>the throws</strong> We only declare the IOException, not FileNotFoundException, because of the child-parent relationship. The IOException class is the parent class of FileNotFoundException, so this exception will automatically cover by IOException. We will declare the exception in the following way:</p>
+                <div class="codeblock"><textarea name="code" class="java">
+                class Exception{
+                    public static void main(String args[])  throws IOException {
+                        ...
+                        ...
+                }
+                </textarea></div><br>
+                <p>If we compile and run the code, the errors will disappear, and we will see the data of the file.</p>
+                <img src="C:\Users\Admin\Pictures/types-of-exception-in-java3.png" alt="Types of Exception in Java" id="imgee"><br>
+                <p>2) We can also handle these exception using <strong>try-catch</strong> However, the way which we have used above is not correct. We have to a give meaningful message for each exception type. By doing that it would be easy to understand the error. We will use the try-catch block in the following way:</p><br>
+                <p><strong>Exception.java</strong></p><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                import java.io.*;
+                class Exception{
+                    public static void main(String args[]) {
+                        FileInputStream file_data = null;
+                        try{
+                            file_data = new FileInputStream("C:/Users/ajeet/OneDrive/Desktop/programs/Hell.txt");
+                        }catch(FileNotFoundException fnfe){
+                            System.out.println("File Not Found!");
+                        }
+                        int m;
+                        try{
+                            while(( m = file_data.read() ) != -1) {
+                                System.out.print((char)m);
+                            }
+                            file_data.close();	
+                        }catch(IOException ioe){
+                            System.out.println("I/O error occurred: "+ioe);
+                        }
+                    }
+                }
+                </textarea></div><br>
+                <p>We will see a proper error message <strong>"File Not Found!"</strong> on the console because there is no such file in that location.</p><br>
+                <img src="C:\Users\Admin\Pictures/types-of-exception-in-java4.png" alt="Types of Exception in Java" id="imgee"><br>
+                <h3 class="h3">Unchecked Exceptions</h3>
+                <p>The <strong>unchecked</strong> exceptions are just opposite to the <strong>checked</strong> exceptions. The compiler will not check these exceptions at compile time. In simple words, if a program throws an unchecked exception, and even if we didn't handle or declare it, the program would not give a compilation error. Usually, it occurs when the user provides bad data during the interaction with the program.</p><br>
+                <h4 class="n">Note: The RuntimeException class is able to resolve all the unchecked exceptions because of the child-parent relationship.</h4><br>
+                <p><strong>UncheckedExceptionExample1.java</strong></p><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                class UncheckedExceptionExample1 {  
+                   public static void main(String args[])
+                   {
+                    int postive = 35;
+                    int zero = 0;
+                    int result = positive/zero;
+                    //Give Unchecked Exception here. 
+                System.out.println(result);
+                   }
+                }
+                </textarea></div><br>
+                <p>In the above program, we have divided 35 by 0. The code would be compiled successfully, but it will throw an ArithmeticException error at runtime. On dividing a number by 0 throws the divide by zero exception that is a uncheck exception.</p><br>
+                <p><strong>Output:</strong></p><br>
+                <img src="C:\Users\Admin\Pictures/types-of-exception-in-java5.png" alt="Types of Exception in Java" id="imgee"><br>
+                <p><strong>UncheckedException1.java</strong></p><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                class UncheckedException1 {  
+                   public static void main(String args[])
+                   {
+                    int num[] ={10,20,30,40,50,60};
+                    System.out.println(num[7]);
+                   }
+                }
+                </textarea></div><br>
+                <p><strong>Output:</strong></p><br>
+                <img src="C:\Users\Admin\Pictures/types-of-exception-in-java6.png" alt="Types of Exception in Java" id="imgee"><br>
+                <p>In the above code, we are trying to get the element located at position 7, but the length of the array is 6. The code compiles successfully, but throws the ArrayIndexOutOfBoundsException at runtime.</p><br>
+                <h2 class="h2">User-defined Exception</h2><br>
+                <p>In <mark>Java</mark>, we already have some built-in exception classes like <strong><mark>ArrayIndexOutOfBoundsException</mark>, NullPointerException</strong>, and <strong>ArithmeticException</strong>. These exceptions are restricted to trigger on some predefined conditions. In Java, we can write our own exception class by extends the Exception class. We can throw our own exception on a particular condition using the throw keyword. For creating a user-defined exception, we should have basic knowledge of <strong>the <mark>try-catch</mark></strong> block and </throw-keyword"><strong>throw</strong> keyword</a>.</p><br>
+                <p>Let's write a <mark>Java program</mark> and create user-defined exception.</p><br>
+                <p><strong>UserDefinedException.java</strong></p>
+                <div class="codeblock"><textarea name="code" class="java">
+                import java.util.*;
+                class UserDefinedException{
+                    public static void main(String args[]){
+                        try{
+                            throw new NewException(5);
+                        }
+                        catch(NewException ex){
+                            System.out.println(ex) ;
+                        }
+                    }
+                }
+                class NewException extends Exception{
+                    int x;
+                    NewException(int y) {
+                        x=y;
+                    }
+                    public String toString(){
+                        return ("Exception value =  "+x) ;
+                    }
+                }
+                </textarea></div><br>
+                <p><strong>Output:</strong></p><br>
+                <img src="C:\Users\Admin\Pictures/types-of-exception-in-java7.png" alt="Types of Exception in Java" />
+                <p><strong>Description:</strong></p><br>
+                <p>In the above code, we have created two classes, i.e., <strong>UserDefinedException</strong> and <strong>NewException</strong>. The <strong>UserDefinedException</strong> has our main method, and the <strong>NewException</strong> class is our user-defined exception class, which extends <strong>exception</strong>. In the <strong>NewException</strong> class, we create a variable <strong>x</strong> of type integer and assign a value to it in the constructor. After assigning a value to that variable, we return the exception message.</p><br>
+                <p>In the <strong>UserDefinedException</strong> class, we have added a <strong>try-catch</strong> block. In the try section, we throw the exception, i.e., <strong>NewException</strong> and pass an integer to it. The value will be passed to the NewException class and return a message. We catch that message in the catch block and show it on the screen.</p><br>
+                <h2 class="h2">Difference Between Checked and Unchecked Exception</h2><br>
+                <table class="alt">
+                <tr>
+                <th>S.No</th>
+                <th>Checked Exception</th>
+                <th>Unchecked Exception</th>
+                </tr>
+                <tr>
+                <td>1.</td>
+                <td>These exceptions are checked at compile time. These exceptions are handled at compile time too.</td>
+                <td>These exceptions are just opposite to the checked exceptions. These exceptions are not checked and handled at compile time.</td>
+                </tr>
+                <tr>
+                <td>2.</td>
+                <td>These exceptions are direct subclasses of exception but not extended from RuntimeException class.</td>
+                <td>They are the direct subclasses of the RuntimeException class.</td>
+                </tr>
+                <tr>
+                <td>3.</td>
+                <td>The code gives a compilation error in the case when a method throws a checked exception. The compiler is not able to handle the exception on its own.</td>
+                <td>The code compiles without any error because the exceptions escape the notice of the compiler. These exceptions are the results of user-created errors in programming logic.</td>
+                </tr>
+                <tr>
+                <td>4.</td>
+                <td>These exceptions mostly occur when the probability of failure is too high.</td>
+                <td>These exceptions occur mostly due to programming mistakes.</td>
+                </tr>
+                <tr>
+                <td>5.</td>
+                <td>Common checked exceptions include IOException, DataAccessException, InterruptedException, etc.</td>
+                <td>Common unchecked exceptions include ArithmeticException, InvalidClassException, NullPointerException, etc.</td>
+                </tr>
+                <tr>
+                <td>6.</td>
+                <td>These exceptions are propagated using the throws keyword.</td>
+                <td>These are automatically propagated.</td>
+                </tr>
+                <tr>
+                <td>7.</td>
+                <td>It is required to provide the try-catch and try-finally block to handle the checked exception.</td>
+                <td>In the case of unchecked exception it is not mandatory.</td>
+                </tr>
+                </table>
+                <p>Bugs or errors that we don't want and restrict the normal execution of the programs are referred to as <strong>exceptions</strong>.</p>
+                <p><strong>ArithmeticException, ArrayIndexOutOfBoundExceptions, ClassNotFoundExceptions</strong> etc. are come in the category of <strong>Built-in Exception</strong>. Sometimes, the built-in exceptions are not sufficient to explain or describe certain situations. For describing these situations, we have to create our own exceptions by creating an exception class as a subclass of the <strong>Exception</strong> class. These types of exceptions come in the category of <strong>User-Defined Exception</strong>.</p>
+                <hr/>
+                <div><ul class="pager">
+                <li class="previous">
+                   
+                <a href="file:///D:/example/Exception%20Handling.html">&larr; Prev</a>
+                </li>
+                <li class="next">
+                <a href="#">Next &rarr;</a>
+                </li>
+                </ul></div>
+                <hr/>
+
+
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br> <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> 
+    </div><br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

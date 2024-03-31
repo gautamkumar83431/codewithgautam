@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction To JVM</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!--CSS Styles -->
+       <link rel="stylesheet" href="assets/css/styles.css" />
+
+       <!-- Favicons -->
+       <link
+         rel="apple-touch-icon"
+         sizes="180x180"
+         href="assets/icons/apple-touch-icon.png"
+       />
+       <link
+         rel="icon"
+         type="image/png"
+         sizes="32x32"
+         href="assets/icons/favicon-32x32.png"
+       />
+   
+      <!-- Animate CSS CDN -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+   
+       <link rel="stylesheet" href="Java_Tutorial.css">
+  
+</head>
+<body><nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/variables_in_java.html">Variables in java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+
+<a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a>
+<a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a>
+<a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a>
+<a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a>
+<a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a>
+<a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a>
+<a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading in java</a>
+<a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding in java</a>
+<a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism in java </a>
+<a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+<a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection in java</a>
+<a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a>
+<a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a>
+<a href="file:///D:/example/Package%20in%20java.html">Java Package</a>
+<a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a>
+<a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class in java</a>
+<a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a>
+<a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class in java</a>
+<a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+
+<br><br>&nbsp;&nbsp;
+<br><div class="container text-justify"> 
+<div class="row">
+    <div class="col-lg-10">
+        <h1>Java Hello World! Program</h1><br>
+    
+        <p>Creating a Hello World Program in Java is not a single line program. It consists of various other lines of code. Since Java is a Object-oriented language so it require to write a code inside a class. Let us look at a simple java program.</p><br>
+       
+            <textarea><b>class</b> Hello
+        {
+              public static void <b>main</b>(String[] <i>args</i>)
+              {
+                 System.out.println ("<i>Hello World program</i>");
+              }
+        }
+    </textarea><br>
+        <p>Lets understand what above program consists of and its keypoints. </p>
+        <p><b>class</b> : class keyword is used to declare classes in Java</p>
+        <p><b>public</b> : It is an access specifier. Public means this function is visible to all.</p><br>
+        <p><b>static</b> : static is again a keyword used to make a function static. To execute a static function you do not have to create an Object of the class. The <b>main()</b> method here is called by JVM, without creating any object for class.</p><br>
+        <p><b>void</b> : It is the return type, meaning this function will not return anything.</p><br>
+        <p><b>main</b> : main() method is the most important method in a Java program. This is the method which is executed, hence all the logic must be inside the main() method. If a java class is not having a main() method, it causes compilation error.</p><br>
+        <p><b>String[] args</b> : This represents an array whose type is String and name is args. We will discuss more about array in  Java Array section.</p><br>
+        <p><b>System.out.println</b> : This is used to print anything on the console like <i>printf</i> in C language.</p><br>
+        
+        <hr/><br>
+        <h2>Steps to Compile and Run your first Java program</h2>
+        <p><b>Step 1:</b> Open a text editor and write the code as above. </p>
+        <p><b>Step 2:</b> Save the file as Hello.java</p>
+        <p><b>Step 3:</b> Open command prompt and go to the directory where you saved your first java program assuming it is saved in C drive. </p><br>
+        <p><b>Step 4:</b> Type <code>javac Hello.java</code> and press Return<b>(Enter KEY)</b> to compile your code. This command will call the Java Compiler asking it to compile the specified file. If there are no errors in the code the command prompt will take you to the next line.</p><br>
+        <p><b>Step 5:</b> Now type <code>java Hello</code> on command prompt to run your program.</p><br>
+        <p><b>Step 6:</b> You will be able to see <b>Hello world program</b> printed on your command prompt.</p><br>
+        <hr/><br>
+        <h2>Ways to write a Java Program</h2><br>
+        <p>Following are some of the ways in which a Java program can be written:</p><br>
+        <p><b>Changing the sequence of the modifiers and methods is accepted by Java.</b></p><br>
+        <p><b>Syntax: </b> static public void main(String as[])</p><br>
+        <p><b>Example:</b></p><br>
+       
+     <textarea>  class Hello
+        {
+            static public void main(String as[])
+            {
+            System.out.println ("Welcome to Studytonight");
+            }
+        }
+     </textarea> <br>
+        <p class="output">
+            <p class="center"><img class="lazyload" src="C:\Users\Admin\Pictures\output_of_first_program.webp" alt="Output of First Program"/></p><br>
+        </p><br>
+        <hr>
+        <h2>Hello World Program using Eclipse </h2><br>
+        <p>Eclipse is an IDE (Integrated Development Environment) which is used to develop applications. It is design and developed by Eclipse foundation, if you don’t have eclipse download, then download it from its official site by following this download link <a href="https://www.eclipse.org/downloads/">Download Eclipse from here</a><br>
+        Here we will see how to create and run <b>hello world</b> program using eclipse IDE. It require following steps that consists of <b>creating project, class file, writing code, running code etc</b>. 
+        </p><br>
+        <h4>Run Eclipse and Create Project</h4><br>
+        <p>Open eclipse startup and then create new project. To create project click on <b>File</b> menu and select <b>Java project</b> option. It will open a window that ask for project name. Provide the project name and click on the finish button. See the below screenshot.</p><br>
+        <p class="center"><img class="lazyload"src="C:\Users\Admin\Pictures\eclipse-program.webp" alt="eclipse-program"></p><br>
+        <p>After creating project, we can see our new created project in the left side bar that looks like below.</p><br>
+        <p class="center"><img class="lazyload blur-up"src="C:\Users\Admin\Pictures\eclipse-program-1.webp" alt="eclipse-program"></p><br>
+        <h3>Create Java Class</h3><br>
+        <p>Now create Java class file by <b>right click</b> on the <b>project</b> and <b>select class</b> file option. It will open a window to ask for class name, provide the class name and click on finish button.</p><br>
+        <img class="lazyload blur-up"src="C:\Users\Admin\Pictures\eclipse-program-2.webp" alt="eclipse-program">
+        <h3>Write Hello World</h3><br>
+        <p>The above created class file includes some line of codes including main method as well. Now we need to write just print statement to print Hello World message.</p><br>
+        <img class="lazyload blur-up" src="C:\Users\Admin\Pictures\eclipse-program-3.webp" alt="eclipse-program"><br>
+        <h3>Run The Program</h3><br>
+        <p>Now run the program by selecting <b>Run</b> menu from the menu bar or use <b>Ctrl+F11</b> button combination. After running, it will print Hello World to the console which is just bottom to the program window.</p><br>
+        <img class="lazyload blur-up"src="C:\Users\Admin\Pictures\eclipse-program-4.webp" alt="eclipse-program"><br>
+        <p>This is a simple program that we run here while using IDE we can create and build large scale of applications. If you are a beginner and not familiar to the Eclipse then don’t worry it is very easy to operate just follow the above steps to create the program. </p><br>
+        <h2>Now let us see What happens at Runtime</h2><br>
+        <p>After writing your Java program, when you will try to compile it. Compiler will perform some compilation operation on your program.</p><br>
+        <p>Once it is compiled successfully byte code(.class file) is generated by the compiler.</p><br>
+        <p class="center"><img class="lazyload blur-up"src="C:\Users\Admin\Pictures\how-java-program-run.webp" alt="class-file at runtime in Java"/></p><br>
+        <p>After compiling when you will try to run the byte code(.class file), the following steps are performed at runtime:-</p><br>
+        <ol class="content">
+        <li>Class loader loads the java class. It is subsystem of JVM Java Virtual machine.</li>
+        <li>Byte Code verifier checks the code fragments for illegal codes that can violate access right to the object.</li>
+        <li>Interpreter reads the byte code stream and then executes the instructions, step by step.</li>
+        </ol>
+        <hr/>
+        <title>Introduction To JVM</title>
+    </div></div></div>
+    <br> <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> </div>
+<br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    
+    
+    
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    
+</body>
+</html>

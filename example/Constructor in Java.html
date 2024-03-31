@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>Java is strictly pass by value
+      --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a>
+<a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a>
+
+<a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a>
+<a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a>
+<a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a>
+<a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading in java</a>
+<a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding in java</a>
+<a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism in java </a>
+<a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+<a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection in java</a>
+<a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a>
+<a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a>
+<a href="file:///D:/example/Package%20in%20java.html">Java Package</a>
+<a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a>
+<a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class in java</a>
+<a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a>
+<a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class in java</a>
+<a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                   </div></div>
+                  
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+                <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+            </div>
+            <div class="mega-url-list">
+         
+
+                <h1>Constructors in Java</h1>
+                <style>.layout_size{min-height: 28px;overflow: hidden;margin-bottom:10px;} @media (max-width: 550px) { .layout_size {min-height: 320px; min-width: inherit; } }
+                </style>
+                <div class="layout_size">
+                    <div id="ezoic-pub-ad-placeholder-106"></div>
+                </div>
+                <p>A constructor is a special method that is used to initialize an object. Every class has a constructor either implicitly or explicitly.</p>
+                
+                <p>If we don't declare a constructor in the class then JVM builds a default constructor for that class. This is known as <b>default constructor</b>.</p>
+                <p>A constructor has <b>same name as the class name</b> in which it is declared. <b>Constructor must have no explicit return type</b>. Constructor in Java <b>can not</b> be <b>abstract, static, final or synchronized</b>. These modifiers are not allowed for constructor.</p>
+                <p><b>Syntax to declare constructor</b></p>
+                <pre>
+                  <code class="language-java">
+                className (parameter-list){
+                  code-statements
+                }
+                  </code>
+                </pre>
+                <p><b>className</b> is the name of class, as <b>constructor name is same as class name</b>.</p>
+                <p><b>parameter-list</b> is optional, because constructors can be parameterize and non-parameterize as well.</p>
+                <h3>Constructor Example </h3>
+                <p>In Java, constructor structurally looks like given in below program. A Car class has a constructor that provides values to instance variables.</p>
+              <textarea> 
+                   Car
+                {
+                 String name ;
+                 String model;
+                 Car( )    <b>//Constructor</b>
+                 {
+                  name ="";
+                  model="";
+                 }
+                }</textarea>
+                
+                <hr/>
+                <h2>Types of Constructor</h2>
+                <p>Java Supports two types of constructors:</p>
+                <ul class="content">
+                <li>Default Constructor</li>
+                <li>Parameterized constructor</li>
+                </ul>
+                <p>Each time a new object is created at least one constructor will be invoked.</p>
+                <pre class="java"><code class="language-java">Car c = new Car()       <b>//Default constructor invoked</b>
+                Car c = new Car(name); <b>//Parameterized constructor invoked</b></code></pre>
+                <hr/>
+                <h2>Default Constructor</h2>
+                <p>In Java, a constructor is said to be default constructor if it does not have any parameter. Default constructor can be either user defined or provided by JVM.</p>
+                <p>If a class does not contain any constructor then during runtime JVM generates a default constructor which is known as system define default constructor.</p>
+                <p>If a class contain a constructor with no parameter then it is known as default constructor defined by user. In this case JVM does not create default constructor.</p>
+                <p>The <b>purpose of creating constructor is to initialize states of an object</b>.</p>
+                <p>The below image shows how JVM adds a constructor to the class during runtime.</p>
+                <img class="lazyload blur-up" src="C:\Users\Admin\Pictures/default-constructor.webp" alt="default-constructor" id="imgee">
+                <h3>User Define Default Constructor</h3>
+                <p>Constructor which is defined in the class by the programmer is known as user-defined default constructor. </p>
+                <p><b>Example:</b></p>
+                <p>In this example, we are creating a constructor that has same name as the class name.</p>
+          
+                <textarea>  
+                class AddDemo1
+                {  
+                  AddDemo1()
+                  {
+                    int a=10;
+                    int b=5;
+                    int c;
+                    c=a+b;
+                    System.out.println("*****Default Constructor*****");
+                    System.out.println("Total of 10 + 5 = "+c);
+                  }  
+                
+                  public static void main(String args[])
+                  {  
+                    AddDemo1 obj=new AddDemo1();  
+                  }  
+                }  </textarea>
+                
+                <p class="output">
+                  <img class="lazyload blur-up" src="C:\Users\Admin\Pictures/default-constructor1.webp" alt="default-constructor" id="imgee">
+                </p>
+                <h2>Constructor Overloading</h2>
+                <p>Like methods, a constructor can also be overloaded. Overloaded constructors are differentiated on the basis of their type of parameters or number of parameters. Constructor overloading is not much different than method overloading. In case of method overloading you have multiple methods with same name but different signature, whereas in Constructor overloading you have multiple constructor with different signature but only difference is that <b>constructor doesn't have return type</b>.</p>
+                
+                <hr/>
+                <h4>Example of constructor overloading</h4>
+                <p>
+             <textarea> Cricketer
+                {
+                 String name;
+                 String team;
+                 int age;
+                 Cricketer ()   <b>//default constructor</b>.
+                 {
+                  name ="";
+                  team ="";
+                  age = 0;
+                 }
+                 Cricketer(String n, String t, int a)   <b>//constructor overloaded</b>
+                 {
+                  name = n;
+                  team = t;
+                  age = a;
+                 }
+                 Cricketer (Cricketer ckt)     <b>//constructor similar to copy constructor of c++ </b>
+                 {
+                  name = ckt.name;
+                  team = ckt.team;
+                  age = ckt.age;
+                 }
+                 public String toString()
+                 {
+                  return "this is " + name + " of "+team;
+                 }
+                }
+                
+                Class test:
+                {
+                 public static void main (String[] args)
+                 {
+                  Cricketer c1 = new Cricketer();
+                  Cricketer c2 = new Cricketer("sachin", "India", 32);
+                  Cricketer c3 = new Cricketer(c2 );
+                  System.out.println(c2);
+                  System.out.println(c3);
+                  c1.name = "Virat";
+                  c1.team= "India";
+                  c1.age = 32;
+                  System .out. print in (c1);
+                 }
+                }</textarea>
+                </p>
+                <p class="output">
+                this is sachin of india
+                this is sachin of india
+                this is virat of india
+                </p>
+                
+                <hr/>
+                <h3>Constructor Chaining</h3>
+                <p>Constructor chaining is a process of <b>calling one constructor from another constructor </b>in the same class. Since constructor can only be called from another constructor, constructor chaining is used for this purpose. </p>
+                <p>To call constructor from another constructor <b>this keyword</b> is used. This keyword is used to refer current object.</p>
+                <p>Lets see an example to understand constructor chaining.</p>
+              <textarea>
+                class Test
+                {
+                 Test()
+                 {
+                  this(10);
+                 }
+                 Test(int x)
+                 {
+                  System.out.println("x="+x);
+                 }
+                public static void main(String arg[])
+                {
+                Test object = new Test();
+                }
+                }
+              </textarea>
+                <p class="output">
+                x=10
+                </p>
+                <p>Constructor chaining is used when we want to perform multiple tasks by creating a single object of the class.</p>
+                <p>In the below image, we have described the flow of constructor calling in the same class. </p>
+                <img class="lazyload blur-up" src="C:\Users\Admin\Pictures/constructor-chaining.webp" alt="constructor-chaining" id="imgee">
+                <p><b>Example:</b></p>
+                <p>Lets see one more example to understand the constructor chaining. Here we have created three constructors and calling them using by using this keyword. </p>
+               <textarea>
+                class abc
+                {
+                  public abc()
+                  {
+                    this(5);
+                    System.out.println("Default Constructor");
+                  }
+                  public abc(int x)
+                  {
+                    this(5, 6);
+                    System.out.println("Constructor with one Parameter");
+                    System.out.println("Value of x ==> "+x);
+                  }
+                  public abc(int x, int y)
+                  {
+                    System.out.println("Constructor with two Parameter");
+                    System.out.println("Value of x and y ==> "+x+" "+y);
+                  }
+                }
+                class ChainingDemo1
+                {
+                  public static void main(String as[])
+                  {
+                    abcobj = new abc();
+                  }
+                }
+               </textarea>
+                <p class="output">
+                <img class="lazyload blur-up" src="C:\Users\Admin\Pictures/images/output-constructor-chaining.webp" alt="output-constructor-chaining" id="imgee">
+                </p>
+                <hr/>
+                <h3>Private Constructors</h3>
+                <p>In Java, we can create private constructor to <b>prevent class being instantiate</b>. It means by declaring a private constructor, it restricts to create object of that class.</p>
+                <p>Private constructors are used to create <b>singleton class</b>. A class which can have only single object known as singleton class.</p>
+                <p>In private constructor, only one object can be created and the object is created within the class and also all the methods are static. An object can not be created if a private constructor is present inside a class. A class which have a private constructor and all the methods are static then it is called <b>Utility class</b>.</p>
+                <p><b>Example:</b></p>
+              <textarea>
+                final class abc
+                {
+                  private abc()
+                  {}
+                  public static void add(int a, int b)
+                  {
+                    int z = a+b;
+                    System.out.println("Addition: "+z);
+                  }
+                  public static void sub(int x, int y)
+                  {
+                    int z = x-y;
+                    System.out.println("Subtraction: "+z);
+                  }
+                  
+                }
+                class PrivateConDemo
+                {
+                  public static void main(String as[])
+                  {
+                    abc.add(4, 5);
+                    abc.sub(5, 3);
+                  }
+                }
+              </textarea>
+                <p class="output">
+                <img class="lazyload blur-up" src="C:\Users\Admin\Pictures/private-constructor.webp" alt="private-constructor" id="imgee">
+                </p>
+               <hr>
+                <div><ul class="pager">
+                <li class="previous">
+                <a href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">&larr; Prev</a>
+                </li>
+                <li class="next">
+                <a href="#">Next &rarr;</a>
+                </li>
+                </ul></div>
+                <hr/>
+              
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br> <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> 
+    </div><br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

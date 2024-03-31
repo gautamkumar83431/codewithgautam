@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>Inheritance in Java --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a>
+<a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a>
+<a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a>
+<a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a>
+
+<a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a>
+<a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading in java</a>
+<a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding in java</a>
+<a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism in java </a>
+<a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+<a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection in java</a>
+<a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a>
+<a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a>
+<a href="file:///D:/example/Package%20in%20java.html">Java Package</a>
+<a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a>
+<a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class in java</a>
+<a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a>
+<a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class in java</a>
+<a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                    <div class="mega-url-list">
+                        
+                    </div></div></div>
+                  
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+              
+            </div>
+            <div class="mega-url-list">
+         
+                <h1>Java Inheritance</h1><br>
+ 
+<div id="node-1511" class="node node-java-tutorial clearfix" about="/java-programming/inheritance" typeof="sioc:Item foaf:Document">
+
+
+<span property="dc:title" content="Java Inheritance" class="rdf-meta element-hidden"></span>
+
+<div class="content">
+<p id="introduction">Inheritance is one of the key features of OOP that allows us to create a new class from an existing class.</p><br>
+
+<p>The new class that is created is known as <strong>subclass</strong> (child or derived class) and the existing class from where the child class is derived is known as <strong>superclass</strong> (parent or base class).</p><br>
+
+<p>The <code>extends</code> keyword is used to perform inheritance in Java. For example,</p><br>
+
+<pre>
+<code> <textarea> Animal {
+// methods and fields
+}
+
+// use of extends keyword
+// to perform inheritance
+class Dog extends Animal {
+
+// methods and fields of Animal
+// methods and fields of Dog
+}</textarea></code></pre><br>
+
+<p>In the above example, the <var>Dog</var> class is created by inheriting the methods and fields from the <var>Animal</var> class.</p>
+
+<p>Here, <var>Dog</var> is the subclass and <var>Animal</var> is the superclass.</p>
+
+<hr>
+<h3 id="example">Example 1: Java Inheritance</h3>
+
+<pre class="java-exec">
+<code> <textarea>class Animal {
+
+// field and method of the parent class
+String name;
+public void eat() {
+System.out.println("I can eat");
+}
+}
+
+// inherit from Animal
+class Dog extends Animal {
+
+// new method in subclass
+public void display() {
+System.out.println("My name is " + name);
+}
+}
+
+class Main {
+public static void main(String[] args) {
+
+// create an object of the subclass
+Dog labrador = new Dog();
+
+// access field of superclass
+labrador.name = "Rohu";
+labrador.display();
+
+// call method of superclass
+// using object of subclass
+labrador.eat();
+
+}
+} </textarea></code></pre><br>
+
+<p><strong>Output</strong></p><br>
+
+<pre>
+<samp>My name is Rohu
+I can eat</samp></pre><br>
+
+<p>In the above example, we have derived a subclass <var>Dog</var> from superclass <var>Animal</var>. Notice the statements,</p><br>
+
+<pre>
+<code>labrador.name = "Rohu";
+
+labrador.eat();</code></pre><br>
+
+<p>Here, <var>labrador</var> is an object of <var>Dog</var>. However, <var>name</var> and <code>eat()</code> are the members of the <var>Animal</var> class.</p><br>
+
+<p>Since <var>Dog</var> inherits the field and method from <var>Animal</var>, we are able to access the field and method using the object of the <var>Dog</var>.</p><br>
+
+<figure><img class="lazyload blur-up"src="C:\Users\Admin\Pictures/java-inheritance-implementation.webp" alt="new-keyword-example" id="imgee">
+<figcaption>Java Inheritance Implementation</figcaption>
+</figure>
+
+<hr>
+<h2 id="is-a">is-a relationship</h2><br>
+
+<p>In Java, inheritance is an <strong>is-a</strong> relationship. That is, we use inheritance only if there exists an is-a relationship between two classes. For example,</p><br>
+
+
+<li><strong>Car</strong> is a <strong>Vehicle</strong></li>
+<li><strong>Orange</strong> is a <strong>Fruit</strong></li>
+<li><strong>Surgeon</strong> is a <strong>Doctor</strong></li>
+<li><strong>Dog</strong> is an <strong>Animal</strong></li>
+
+<br>
+<p>Here, <strong>Car</strong> can inherit from <strong>Vehicle</strong>, <strong>Orange</strong> can inherit from <strong>Fruit</strong>, and so on.</p><br>
+
+<hr>
+<h2 id="method-overriding">Method Overriding in Java Inheritance</h2><br>
+
+<p>In <strong>Example 1</strong>, we see the object of the subclass can access the method of the superclass.</p><br>
+
+<p></p><div id="block-inject-1" class="block-inject block-inject-1">
+
+
+
+<style>
+#div-gpt-ad-Programizcom37046 {display:none; width: 728px; height: 90px; }
+#div-gpt-ad-Programizcom36796 {display: block;}
+@media(min-width: 992px) { #div-gpt-ad-Programizcom37046 {display: block;} #div-gpt-ad-Programizcom36796 {display: none;}}
+</style>
+
+<div id="div-gpt-ad-Programizcom37046" style="margin: 32px 0;">
+</div>
+
+<div id="div-gpt-ad-Programizcom36796" style="margin: 32px 0; min-height: 250px;">
+</div>
+</div><div class="clearfix"></div><p><strong>However, if the same method is present in both the superclass and subclass, what will happen?</strong></p>
+
+<p>In this case, the method in the subclass overrides the method in the superclass. This concept is known as method overriding in Java.</p><br>
+
+<h3>Example 2: Method overriding in Java Inheritance</h3><br>
+
+<pre class="java-exec">
+<code> <textarea>class Animal {
+
+// method in the superclass
+public void eat() {
+System.out.println("I can eat");
+}
+}
+
+// Dog inherits Animal
+class Dog extends Animal {
+
+// overriding the eat() method
+@Override
+public void eat() {
+System.out.println("I eat dog food");
+}
+
+// new method in subclass
+public void bark() {
+System.out.println("I can bark");
+}
+}
+
+class Main {
+public static void main(String[] args) {
+
+// create an object of the subclass
+Dog labrador = new Dog();
+
+// call the eat() method
+labrador.eat();
+labrador.bark();
+}
+} </textarea></code></pre><br>
+
+<p><strong>Output</strong></p><br>
+
+<pre>
+<samp>I eat dog food
+I can bark</samp></pre>
+
+<p>In the above example, the <code>eat()</code> method is present in both the superclass <var>Animal</var> and the subclass <var>Dog</var>.</p><br>
+
+<p>Here, we have created an object <var>labrador</var> of <var>Dog</var>.</p><br>
+
+<p>Now when we call <code>eat()</code> using the object <var>labrador</var>, the method inside <var>Dog</var> is called. This is because the method inside the derived class overrides the method inside the base class.</p><br>
+
+<p>This is called method overriding. To learn more, visit <mark>Java Method Overriding</mark>.</p><br>
+
+<p class="note-tip"><strong>Note</strong>: We have used the <code>@Override</code> annotation to tell the compiler that we are overriding a method. However, the annotation is not mandatory. To learn more, visit <mark>Java Annotations</mark>.</p><br>
+
+<hr>
+<h2 id="super">super Keyword in Java Inheritance</h2>
+
+<p>Previously we saw that the same method in the subclass overrides the method in superclass.</p><br>
+
+<p>In such a situation, the <code>super</code> keyword is used to call the method of the parent class from the method of the child class.</p><br>
+
+<h3>Example 3: super Keyword in Inheritance</h3><br>
+
+<pre class="java-exec">
+<code> <textarea>class Animal {
+
+// method in the superclass
+public void eat() {
+System.out.println("I can eat");
+}
+}
+
+// Dog inherits Animal
+class Dog extends Animal {
+
+// overriding the eat() method
+@Override
+public void eat() {
+
+// call method of superclass
+super.eat();
+System.out.println("I eat dog food");
+}
+
+// new method in subclass
+public void bark() {
+System.out.println("I can bark");
+}
+}
+
+class Main {
+public static void main(String[] args) {
+
+// create an object of the subclass
+Dog labrador = new Dog();
+
+// call the eat() method
+labrador.eat();
+labrador.bark();
+}
+} </textarea></code></pre>
+
+<p><strong>Output</strong></p>
+
+<pre>
+<samp>I can eat
+I eat dog food
+I can bark </samp></pre>
+
+<p>In the above example, the <code>eat()</code> method is present in both the base class <var>Animal</var> and the derived class <var>Dog</var>. Notice the statement,</p><br>
+
+<pre>
+<code>super.eat();</code></pre>
+
+<p>Here, the <code>super</code> keyword is used to call the <code>eat()</code> method present in the superclass.</p><br>
+
+<p>We can also use the <code>super</code> keyword to call the constructor of the superclass from the constructor of the subclass. To learn more, visit <mark>Java super keyword</mark><strong>.</strong></p><br>
+
+<hr>
+<h2 id="protected-keyword">protected Members in Inheritance</h2><br>
+
+<p>In Java, if a class includes <code>protected</code> fields and methods, then these fields and methods are accessible from the subclass of the class.</p><br>
+
+<h3>Example 4: protected Members in Inheritance</h3><br>
+<pre class="java-exec">
+<code><textarea>class Animal {
+protected String name;
+
+protected void display() {
+System.out.println("I am an animal.");
+}
+}
+
+class Dog extends Animal {
+
+public void getInfo() {
+System.out.println("My name is " + name);
+}
+}
+
+class Main {
+public static void main(String[] args) {
+
+// create an object of the subclass
+Dog labrador = new Dog();
+
+// access protected field and method
+// using the object of subclass
+labrador.name = "Rocky";
+labrador.display();
+
+labrador.getInfo();
+}
+} </textarea></code></pre><br>
+
+<p><strong>Output</strong></p><br>
+
+<pre>
+<samp>I am an animal.
+My name is Rocky</samp></pre>
+
+<p>In the above example, we have created a class named Animal. The class includes a protected field: <var>name</var> and a method: <code>display()</code>.</p>
+
+<p>We have inherited the <var>Dog</var> class inherits <var>Animal</var>. Notice the statement,</p>
+
+<pre>
+<code>labrador.name = "Rocky";
+labrador.display();</code></pre>
+
+<p>Here, we are able to access the protected field and method of the superclass using the <var>labrador</var> object of the subclass.</p>
+
+<hr>
+<h2 id="advantage">Why use inheritance?</h2><br>
+
+<ol>
+<li>The most important use of inheritance in Java is code reusability. The code that is present in the parent class can be directly used by the child class.</li><br>
+<li>Method overriding is also known as runtime polymorphism. Hence, we can achieve Polymorphism in Java with the help of inheritance.</li>
+</ol>
+
+<hr>
+<h2 id="types">Types of inheritance</h2><br>
+
+<p>There are five types of inheritance.</p><br>
+
+<h3>1. Single Inheritance</h3><br>
+
+<p>In single inheritance, a single subclass extends from a single superclass. For example,</p>
+
+<figure><img class="lazyload blur-up"src="C:\Users\Admin\Pictures/java-single-inheritance.webp" alt="new-keyword-example" id="imgee">
+
+<figcaption>Java Single Inheritance</figcaption>
+</figure>
+
+<hr>
+<h3>2. Multilevel Inheritance</h3><br>
+
+<p>In multilevel inheritance, a subclass extends from a superclass and then the same subclass acts as a superclass for another class. For example,</p>
+
+<figure><img class="lazyload blur-up"src="C:\Users\Admin\Pictures/java-multilevel-inheritance.webp" alt="new-keyword-example" id="imgee">
+<figcaption>Java Multilevel Inheritance</figcaption>
+</figure>
+
+<hr>
+<h3>3. Hierarchical Inheritance</h3><br>
+
+<p>In hierarchical inheritance, multiple subclasses extend from a single superclass. For example,</p>
+
+<figure><img class="lazyload blur-up"src="C:\Users\Admin\Pictures/java-hierarchical-inheritance.webp" alt="new-keyword-example" id="imgee">
+<figcaption>Java Hierarchical Inheritance</figcaption>
+</figure>
+
+<hr>
+<h3>4. Multiple Inheritance</h3><br>
+
+<p>In multiple inheritance, a single subclass extends from multiple superclasses. For example,</p>
+
+<figure><img class="lazyload blur-up"src="C:\Users\Admin\Pictures/java-multiple-inheritance.webp" alt="new-keyword-example" id="imgee">
+<figcaption>Java Multiple Inheritance</figcaption>
+</figure>
+
+<p class="note-tip"><strong>Note</strong>: Java doesn't support multiple inheritance. However, we can achieve multiple inheritance using interfaces. To learn more, visit <mark>Java implements multiple inheritance</mark>.</p>
+
+<hr>
+<h3>5. Hybrid Inheritance</h3><br>
+
+<p>Hybrid inheritance is a combination of two or more types of inheritance. For example,</p>
+
+<figure><img class="lazyload blur-up"src="C:\Users\Admin\Pictures/java-hybrid-inheritance.webp" alt="new-keyword-example" id="imgee">
+<figcaption>Java Hybrid Inheritance</figcaption>
+</figure>
+
+<p>Here, we have combined hierarchical and multiple inheritance to form a hybrid inheritance.</p><br>
+</div>
+
+
+
+</div>
+           
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br> <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> 
+    </div><br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

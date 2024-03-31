@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ STL Containers</title>  <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+   <!-- Animate CSS CDN -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ /> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+      <link rel="stylesheet" href="Datatypes.css">
+      <link rel="stylesheet" href="Java_Tutorial.css">  
+</head>
+<body><nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li> <a href="file:///D:/example/Home.html">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+  <div class="scrollmenu">
+    <a href="file:///D:/example/Home.html">Home</a>
+    <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+    <a href="file:///D:/example/codewithgautam.html">C++</a>
+    <a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a>
+     <a href="file:///D:/example/Input%20Output.html">Input Output  C++</a>
+     <a  href="D:/example/Function%20in%20c++.html">Function C++ </a>
+       <a href="file:///D:/example/Decision%20Making.html">Decision Making C++</a>
+        <a href="file:///D:/example/c++%20string.html">C++ String</a>
+      <a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a>
+       <a href="file:///D:/example/opps.html">OOPS in C++</a>
+        <a href="file:///D:/example/C++%20STL.html">C++ STL.</a>
+      <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a>
+      <a href="file:///D:/example/Array.html">C++ Arrays</a>
+      <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a>
+      <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#support">Support</a>
+    <a href="#blog">Blog</a>
+   
+    
+  </div>
+    <br><br>&nbsp;&nbsp;
+   
+            <div class="col-md-8 mt-2">
+              <div class="p-3">
+                  <div class="mb-3">
+                      <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                  </div>
+                  <div class="mega-url-list">
+            <h1>C++ STL (Standard Tag Library)</h1><br>
+            <h2>C++ STL Containers</h2><br>
+            <p><strong>Containers can be described as the objects that hold the data of the same type. Containers are used to implement different data structures for example arrays, list, trees, etc.</strong></p>
+            <p><strong>Following are the containers that give the details of all the containers as well as the header file and the type of iterator associated with them :</strong></p><br><br>
+            <table class="alt">
+                <tr>
+                <th>Container</th>
+                <th>Description</th>
+                <th>Header file</th>
+                <th>iterator</th>
+                </tr>
+                <tr>
+                <td>vector</td>
+                <td>vector is a class that creates a dynamic array allowing insertions and deletions at the back.</td>
+                <td>&lt;vector&gt;</td>
+                <td>Random access</td>
+                </tr>
+                <tr>
+                <td>list</td>
+                <td>list is the sequence containers that allow the insertions and deletions from anywhere.</td>
+                <td>&lt;list&gt;</td>
+                <td>Bidirectional</td>
+                </tr>
+                <tr>
+                <td>deque</td>
+                <td>deque is the double ended queue that allows the insertion and deletion from both the ends.</td>
+                <td>&lt;deque&gt;</td>
+                <td>Random access</td>
+                </tr>
+                <tr>
+                <td>set</td>
+                <td>set is an associate container for storing unique sets.</td>
+                <td>&lt;set&gt;</td>
+                <td>Bidirectional</td>
+                </tr>
+                <tr>
+                <td>multiset</td>
+                <td>Multiset is an associate container for storing non- unique sets.</td>
+                <td>&lt;set&gt;</td>
+                <td>Bidirectional</td>
+                </tr>
+                <tr>
+                <td>map</td>
+                <td>Map is an associate container for storing unique key-value pairs, i.e. each key is associated with only one value(one to one mapping).</td>
+                <td>&lt;map&gt;</td>
+                <td>Bidirectional</td>
+                </tr>
+                <tr>
+                <td>multimap</td>
+                <td>multimap is an associate container for storing key- value pair, and each key can be associated with more than one value.</td>
+                <td>&lt;map&gt;</td>
+                <td>Bidirectional</td>
+                </tr>
+                <tr>
+                <td>stack</td>
+                <td>It follows last in first out(LIFO).</td>
+                <td>&lt;stack&gt;</td>
+                <td>No iterator</td>
+                </tr>
+                <tr>
+                <td>queue</td>
+                <td>It follows first in first out(FIFO).</td>
+                <td>&lt;queue&gt;</td>
+                <td>No iterator</td>
+                </tr>
+                <tr>
+                <td>Priority-queue</td>
+                <td>First element out is always the highest priority element.</td>
+                <td>&lt;queue&gt;</td>
+                <td>No iterator</td>
+                </tr>
+                </table>
+                <p><strong>Classification of containers :</strong></p>
+<ul class="points">
+<li>Sequence containers</li>
+<li>Associative containers</li>
+<li>Derived containers</li>
+</ul>
+<img  src="C:\Users\Admin\Pictures\stl-components.png" alt="STL COMPONENTS" />
+<h4 class="n">Note : Each container class contains a set of functions that can be used to manipulate the contents.</h4>
+<h2 class="h2">ITERATOR</h2>
+<ul class="points">
+<li>Iterators are pointer-like entities used to access the individual elements in a container.</li>
+<li>Iterators are moved sequentially from one element to another element. This process is known as iterating through a container.</li>
+
+<img  src="C:\Users\Admin\Pictures\stl-components2.png" alt="STL COMPONENTS" />
+<br>
+<li>Iterator contains mainly two functions:</li><br>
+
+<p><strong>begin()</strong>: The member function begin() returns an iterator to the first element of the vector.</p><br>
+<p><strong>end()</strong>: The member function end() returns an iterator to the past-the-last element of a container.</p><br>
+<img  src="C:\Users\Admin\Pictures\stl-components3.png" alt="STL COMPONENTS" /><br>
+<h2 class="h2">Iterator Categories</h2><br>
+<p>Iterators are mainly divided into five categories:</p><br>
+<img  src="C:\Users\Admin\Pictures\stl-components4.png" alt="STL COMPONENTS" />
+<br>
+<li><strong>Input iterator:</strong></li>
+<br>
+<ol>
+<li>An Input iterator is an iterator that allows the program to read the values from the container.</li><br>
+<li>Dereferencing the input iterator allows us to read a value from the container, but it does not alter the value.</li><br>
+<li>An Input iterator is a one way iterator.</li><br>
+<li>An Input iterator can be incremented, but it cannot be decremented.</li><br>
+</ol>
+<p><strong>Output iterator:</strong></p><br>
+<ol>
+<li>An output iterator is similar to the input iterator, except that it allows the program to modify a value of the container, but it does not allow to read it.</li><br>
+<li>It is a one-way iterator.</li><br>
+<li>It is a write only iterator.</li><br>
+</ol><br>
+<p><strong>Forward iterator:</strong></p><br>
+<ol>
+<li>Forward iterator uses the ++ operator to navigate through the container.</li><br>
+<li>Forward iterator goes through each element of a container and one element at a time.</li><br>
+
+</ol>
+<p><strong>Bidirectional iterator:</strong></p><br>
+<ol>
+<li>A Bidirectional iterator is similar to the forward iterator, except that it also moves in the backward direction.</li>
+<li>It is a two way iterator.</li><br>
+<li>It can be incremented as well as decremented.</li><br>
+</ol>
+<li><strong>Random Access Iterator:</strong><br><br>
+<ol>
+<li>Random access iterator can be used to access the random element of a container.</li><br>
+<li>Random access iterator has all the features of a bidirectional iterator, and it also has one more additional feature, i.e., pointer addition. By using the pointer addition operation, we can access the random element of a container.</li><br>
+</ol>
+<p><strong>Operations supported by iterators</strong></p><br>
+<table class="alt">
+<tr>
+<th>iterator</th>
+<th>Element access</th>
+<th>Read</th>
+<th>Write</th>
+<th>Increment operation</th>
+<th>Comparison</th>
+</tr>
+<tr>
+<td>input</td>
+<td>-&gt;</td>
+<td>v = *p</td>
+<td></td>
+<td>++</td>
+<td>==,!=</td>
+</tr>
+<tr>
+<td>output</td>
+<td></td>
+<td></td>
+<td>*p = v</td>
+<td>++</td>
+<td></td>
+</tr>
+<tr>
+<td>forward</td>
+<td>-&gt;</td>
+<td>v = *p</td>
+<td>*p = v</td>
+<td>++</td>
+<td>==,!=</td>
+</tr>
+<tr>
+<td>Bidirectional</td>
+<td>-&gt;</td>
+<td>v = *p</td>
+<td>*p = v</td>
+<td>++,--</td>
+<td>==,!=</td>
+</tr>
+<tr>
+<td>Random access</td>
+<td>-&gt;,[ ]</td>
+<td>v = *p</td>
+<td>*p = v</td>
+<td>++,--,+,-,+=,--=</td>
+<td>==,!=,&lt;,&gt;,&lt;=,&gt;=</td>
+</tr>
+</table><br>
+<h2 class="h3">Algorithms</h2><br>
+<p>Algorithms are the functions used across a variety of containers for processing its contents.</p><br>
+<p><strong>Points to Remember:</strong></p><br>
+<ol>
+<li>Algorithms provide approx 60 algorithm functions to perform the complex operations.</li><br>
+<li>Standard algorithms allow us to work with two different types of the container at the same time.</li><br>
+<li>Algorithms are not the member functions of a container, but they are the standalone template functions.</li><br>
+<li>Algorithms save a lot of time and effort.</li>
+<li>If we want to access the STL algorithms, we must include the &lt;algorithm&gt; header file in our program.</li><br>
+</ol>
+<br>
+<p><strong>STL algorithms can be categorized as:</strong></p>
+<img  src="C:\Users\Admin\Pictures\stl-components5.png" alt="STL COMPONENTS" /><br>
+<br>
+<ol>
+<li><strong>Nonmutating algorithms</strong>: Nonmutating algorithms are the algorithms that do not alter any value of a container object nor do they change the order of the elements in which they appear. These algorithms can be used for all the container objects, and they make use of the forward iterators.</li><br>
+<li><strong>Mutating algorithms</strong>: Mutating algorithms are the algorithms that can be used to alter the value of a container. They can also be used to change the order of the elements in which they appear.</li><br>
+<li><strong>Sorting algorithms</strong>: Sorting algorithms are the modifying algorithms used to sort the elements in a container.</li><br>
+<li><strong>Set algorithms</strong>: Set algorithms are also known as sorted range algorithm. This algorithm is used to perform some function on a container that greatly improves the efficiency of a program.</li><br>
+<li><strong>Relational algorithms</strong>: Relational algorithms are the algorithms used to work on the numerical data. They are mainly designed to perform the mathematical operations to all the elements in a container.</li><br>
+</ol>
+<br>
+<h2 class="h2">FUNCTION OBJECTS</h2><br>
+<p>A Function object is a function wrapped in a class so that it looks like an object. A function object extends the characteristics of a regular function by using the feature of aN object oriented such as generic programming. Therefore, we can say that the function object is a smart pointer that has many advantages over the normal function.</p><br>
+<p><strong>Following are the advantages of function objects over a regular function:</strong></p><br>
+<ol class="points">
+<li>Function objects can have member functions as well as member attributes.</li><br>
+<li>Function objects can be initialized before their usage.</li><br>
+<li>Regular functions can have different types only when the signature differs. Function objects can have different types even when the signature is the same.</li><br>
+<li>Function objects are faster than the regular function.</li><br>
+</ol>
+<p>A function object is also known as a '<strong>functor</strong>'. A function object is an object that contains atleast one definition of <strong>operator()</strong> function. It means that if we declare the object 'd' of a class in which <strong>operator()</strong> function is defined, we can use the object 'd' as a regular function.</p><br>
+<p><strong>Suppose 'd' is an object of a class, operator() function can be called as:</strong></p><br>
+<br>
+<h5 style="background-color: rgb(71, 167, 223); font-size: larger; text-align: center;">
+d();<br><br>
+
+which is same as:<br><br>
+
+d.operator() ( );
+</h5><br>
+<p><strong>Let's see a simple example:</strong></p><br>
+<div class="codeblock"><textarea name="code" class="cpp">
+      #include &lt;iostream&gt;
+      using namespace std;
+     class function_object
+     {
+         public:
+        int operator()(int a, int b)            
+       {
+           return a+b;
+       }
+    };
+
+     int main()
+    {
+       function_object f;               
+       int result = f(5,5);
+      cout&lt;&lt;"Addition of a and b is : "&lt;&lt;result;
+
+    return 0;
+}
+</textarea></div><br>
+<p><strong>Output:</strong></p><br>
+<div class="codeblock3"><pre>
+Addition of a and b is : 10
+</pre></div>
+<p>In the above example, 'f' is an object of a function_object class which contains the definition of operator() function. Therefore, 'f' can be used as an ordinary function to call the operator() function.</p>
+<br>
+</div>
+<br/><br/>
+</td></tr>
+</table>
+</div>
+          </div></div></div>
+    <br> <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL%20Containers.html">C++ STL Containers</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> 
+    </div><br><br><br><br><br><br><br><br><br>
+          <section class="hero" id="about">
+            <div class="bio animate__animated animate__shakeX">
+              <h2 class="bio-title">About Me</h2>
+              <p class="bio-text">
+                My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+              </p>
+            </div>
+        </section><br>
+        <section class="skills" id="skills">
+          <h2 class="skill-header">My Top Skills</h2>
+        
+          <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+              <img
+                src="C:\Users\Admin\Pictures\c++.png"
+                alt=""
+                loading="lazy"
+                class="icon icon-card"
+              />
+              <img
+                src="C:\Users\Admin\Pictures\java.png"
+                alt=""
+                loading="lazy"
+                class="icon icon-card"
+              />
+              <img
+                src="C:\Users\Admin\Pictures\html.png"
+                alt=""
+                loading="lazy"
+                class="icon icon-card"
+              />
+            </div>
+        
+            <div class="second-set animate__animated animate__pulse">
+              <img
+                src="C:\Users\Admin\Pictures\css-3.png"
+                alt=""
+                loading="lazy"
+                class="icon icon-card"
+              />
+              <img
+                src="C:\Users\Admin\Pictures\js.png"
+                alt=""
+                loading="lazy"
+                class="icon icon-card"
+              />
+              <img
+                src="C:\Users\Admin\Pictures\icons-heroo.png"
+                alt=""
+                loading="lazy"
+                class="icon icon-card"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="projects" id="projects">
+          <h2 class="projects-title">Some of my Recent Projects</h2>
+          <div class="projects-container">
+            <div class="project-container project-card">
+              <img
+                src="C:\Users\Admin\Pictures\insta.png"
+                alt="instagram-clone"
+                loading="lazy"
+                class="project-pic"
+              />
+              <h3 class="project-title">Instagram Clone</h3>
+              <p class="project-details">
+                I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+              </p>
+              <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+              <img
+                src="C:\Users\Admin\Pictures\quiz.jpg"
+                alt="quiz-app"
+                loading="lazy"
+                class="project-pic"
+              />
+              <h3 class="project-title">QUIZ</h3>
+              <p class="project-details">
+                I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+              </p>
+              <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+              <img
+                src="C:\Users\Admin\Pictures\todo.jpg"
+                alt="todo-app"
+                loading="lazy"
+                class="project-pic"
+              />
+              <h3 class="project-title">TO DO APP</h3>
+              <p class="project-details">
+                I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+              </p>
+              <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+          </div>
+        </section><section class="contact" id="contact">
+            <h2>Get In Touch With Me</h2>
+            <div class="contact-form-container">
+              <div class="contact-form">
+                <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+                  <div class="form-control">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="sender-name"
+                      placeholder="Enter Your Name"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="sender-email"
+                      placeholder="Enter Your Email"
+                      class="input-field"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea
+                      id="message"
+                      cols="60"
+                      rows="10"
+                      placeholder="Enter Your Message"
+                      name="message"
+                      class="input-field"
+                      required
+                    ></textarea>
+                  </div>
+                  <input
+                    type="submit"
+                    value="Submit"
+                    id="submit-btn"
+                    class="submit-btn"
+                  /><br>
+                  <span id="success"></span>
+                </form>
+              </div>
+            </div>
+          </section><br><br><br>
+          <div class="container">
+            <div class="all flex-row">
+              <div class="menu flex-column">
+                <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+                <div class="profil-info">
+                  <h2 class="name">Gautam Kumar</h2>
+                  <h3 class="city">Patna,Bihar</h3>
+                </div></div></div></div></div>
+          <div class="socials">
+            <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+              ><img
+                src="C:\Users\Admin\Pictures\insta.png"
+                alt="Instagram"
+                loading="lazy"
+                class="socicon"
+            />Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100076244656060&mibextid=vk8aRt" target="_blank"
+              ><img
+                src="C:\Users\Admin\Pictures\facebookk.png"
+                alt="Facebook"
+                loading="lazy"
+                class="socicon"
+            />Facebook</a>
+            <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+              ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+            />Youtube</a>
+            <footer>
+                <p class="copy">&copy; Copyright 2024</p>
+                <p class="copy">
+                  Built with &#x2661; by CODE WITH GAUTAM</Code>
+                 
+                </p>
+          </footer>
+          <i class="scroll-up" id="scroll-up"
+          ><img
+            src="assets/icons/icons8-upward-arrow.gif"
+            class="socicon up-arrow"
+            alt="scroll-up"
+        /></i>
+          <script src="portfolio.js">
+        </script>
+        <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+    
+        
+</body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>Static Block in Java
+      --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav> 
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a>
+<a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a>
+<a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a>
+<a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a>
+<a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a>
+<a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a>
+<a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading in java</a>
+<a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding in java</a>
+<a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism in java </a>
+<a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+<a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection in java</a>
+
+<a href="file:///D:/example/FinalModifier%20in%20Java.html">Java Final Modifiers</a>
+<a href="file:///D:/example/Package%20in%20java.html">Java Package</a>
+<a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a>
+<a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class in java</a>
+<a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a>
+<a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class in java</a>
+<a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                    </div></div>
+                  
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+                <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+            </div>
+            <div class="mega-url-list">
+              
+<h1>Static Block in Java</h1>
+<style>.layout_size{min-height: 28px;overflow: hidden;margin-bottom:10px;} @media (max-width: 550px) { .layout_size {min-height: 320px; min-width: inherit; } }
+</style>
+<div class="layout_size">
+	<div id="ezoic-pub-ad-placeholder-106"></div>
+</div><p>Static is a keyword in Java which is used to declare static stuffs. It can be used to create variable, method block or a class. </p>
+<p>Static variable or method can be accessed without instance of a class because it belongs to class. Static members are common for all the instances of the class but non-static members are different for each instance of the class.  Lets study how it works with variables and methods.</p>
+<h3>Static Variables</h3>
+<p>Static variables defined as a class member can be <b>accessed without object</b> of that class. Static variable is <b>initialized once</b> and <b>shared among different objects</b> of the class. All the object of the class having static variable will have the same instance of static variable.</p>
+<p><b>Note:</b> Static variable is used to represent common property of a class. It saves memory.</p>
+<h4>Example:</h4>
+<p>Suppose there are 100 employee in a company. All employee have its unique name and employee id but company name will be same all 100 employee. Here company name is the common property. So if you create a class to store employee detail, then declare company_name field as static</p>
+<p>Below we have a simple class with one static variable, see the example.</p>
+<pre>
+	<code class="language-java"><textarea>
+class Employee
+{
+    int eid;
+    String name;
+    static String company = "Studytonight";
+
+    public void show()
+    {
+        System.out.println(eid + "-" + name + "-" + company);
+    }
+
+    public static void main( String[] args )
+    {
+        Employee se1 = new Employee();
+        se1.eid = 104;
+        se1.name = "Abhijit";
+        se1.show();
+
+        Employee se2 = new Employee();
+        se2.eid = 108;
+        se2.name = "ankit";
+        se2.show();
+    }
+
+}</textarea>
+	</code>
+</pre>
+<p class="output">
+    <p><b>Output</b></p>
+104-Abhijit-Studytonight 
+108-ankit-Studytonight 
+</p>
+<p>We can understand it using the below image that shows different memory areas used by the program and how static variable is shared among the objects of the class.</p>
+<p class="center"><img class="lazyload blur-up" src="C:\Users\Admin\Pictures/static-block-flow.webp" alt="static-block-flow" id="imgee"></p>
+<p>When we have a class variable like this, defined using the <b>static</b> keyword, then the variable is defined only once and is used by all the instances of the class. Hence if any of the class instance modifies it then it is changed for all the other instances of the class.</p>
+<h3>Static variable vs Instance variable</h3>
+<p>Here are some differences between static variable and instance variables. Instance variables are non-static variables that store into heap and accessed through object only.</p>
+<table class="table table-bordered">
+	<tr>
+	<th>Static variable</th>
+	<th>Instance Variable</th>
+</tr>
+<tr>
+	<td>Represent common property</td>
+	<td>Represent unique property</td>
+</tr>
+<tr>
+	<td>Accessed using class name (can be accessed using object name as well)</td>
+	<td>Accessed using object</td>
+</tr>
+<tr>
+	<td>Allocated memory only once</td>
+	<td>Allocated new memory each time a new object is created</td>
+</tr>
+</table>
+<h4>Example: static vs instance variables</h4>
+<p>Let's take an example and understand the difference.</p>
+<pre>
+	<code class="language-java"><textarea>
+public class Test
+{
+    static int x = 100;
+    int y = 100;
+    public void increment()
+    {
+        x++; y++;
+    }
+    public static void main( String[] args )
+    {
+        Test t1 = new Test();
+        Test t2 = new Test();
+        t1.increment();
+        t2.increment();
+        System.out.println(t2.y);
+        System.out.println(Test.x);  //accessed without any instance of class.
+    }</textarea>
+}
+	</code>
+</pre>
+<p class="output"><p><b>Output</b></p>
+101
+102
+</p>
+<p>See the difference in value of two variable. Static variable x shows the changes made to it by <b>increment()</b> method on the different object. While instance variable y show only the change made to it by <b>increment()</b> method on that particular instance.</p>
+<h3>Static Method in Java</h3>
+<p>A method can also be declared as static. Static methods do not need instance of its class for being accessed. main() method is the most common example of static method. <code>main()</code> method is declared as static because it is called before any object of the class is created.</p>
+<p>Let's take an Example</p>
+<pre>
+	<code class="language-java"><textarea>
+class Test
+{
+
+  public static void square(int x)
+  {  
+    System.out.println(x*x);
+  }
+
+  public static void main (String[] arg)
+  {
+    square(8)   //static method square () is called without any instance of class.
+  }
+}</textarea>
+	</code>
+</pre>
+<p class="output">
+64
+</p>
+<h3>Static block in Java</h3>
+<p>Static block is used to initialize static data members. Static block executes even before main() method. </p>
+<p>It executes when the class is loaded in the memory. A class can have multiple Static blocks, which will execute in the same sequence in which they are programmed.</p>
+<h4>Example</h4>
+<p>Lets see an example in which we declared a static block to initialize the static variable. </p>
+<pre>
+	<code class="language-java"><textarea>
+class ST_Employee
+{
+    int eid;
+    String name;
+    static String company_name;
+
+    static {
+      company_name ="StudyTonight";   //static block invoked before main() method
+    }
+
+    public void show()
+    {
+        System.out.println(eid+" "+name+" "+company_name);
+    }
+    public static void main( String[] args )
+    {
+      ST_Employee se1 = new ST_Employee();
+      se1.eid = 104;
+      se1.name = "Abhijit";
+      se1.show();
+    }
+
+}</textarea>
+	</code>
+</pre>
+<p class="output">
+    <p><b>Output</b></p>
+104 Abhijit StudyTonight 
+</p>
+<h4><b>Non-static (instance) variable cannot be referenced from a static context.</b></h4>
+<p>When we try to access a non-static variable from a static context like main method, java compiler throws an error message a <b> non-static variable cannot be referenced from a static context</b>. This is because non-static variables are related with instance of class(object) and they get created when instance of a class is created by using new operator. So if we try to access a non-static variable without any instance, compiler will complain because those variables are not yet created and they don't have any existence until an instance is created and associated with it.</p>
+<h4>Example</h4>
+<p>Let's take an example of accessing non-static variable from a static context.</p>
+<pre>
+	<code class="language-java"><textarea>
+class Test
+{
+  int x;
+  public static void main(String[] args)
+  {
+    x = 10;
+  }
+}</textarea>
+	</code>
+</pre>
+<p class="output">
+    <p><b>Output</b></p>
+compiler error: non-static variable count cannot be referenced from a static context 
+</p>
+<h3>Why main() method is static in java?</h3>
+<p>Because static methods can be called without any instance of a class and <code>main()</code> is called before any instance of a class is created.</p>
+
+                <div><ul class="pager">
+                <li class="previous">
+                   
+                <a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">&larr; Prev</a>
+                </li>
+                <li class="next">
+                <a href="#">Next &rarr;</a>
+                </li>
+                </ul></div>
+                <hr/>
+
+
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br> <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> 
+    </div><br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

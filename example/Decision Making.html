@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Making</title><!--CSS Styles -->
+  
+    <link rel="stylesheet" href="Java_Tutorial.css" />
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+   <!-- Animate CSS CDN -->
+   <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Decision Making.css">
+</head>
+<body> 
+  <nav style="background-color: red; ">
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li>  <a href="file:///D:/example/Home.html">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+  <a href="file:///D:/example/variables_in_java.html">Variables in java</a>
+
+   <a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a>
+        <a href="file:///D:/example/History_of_Java.html">HISTOR<a href="file:///D:/example/feature_of_java.html">FEATUR<a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a>
+<a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a>
+<a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a>
+<a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a>
+<a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a>
+<a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a>
+<a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading in java</a>
+<a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding in java</a>
+<a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism in java </a>
+<a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+<a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection in java</a>
+<a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a>
+<a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a>
+<a href="file:///D:/example/Package%20in%20java.html">Java Package</a>
+<a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a>
+<a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class in java</a>
+<a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a>
+<a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class in java</a>
+<a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+<div class="container text-justify"> 
+    <div class="row">
+        <div class="col-lg-10">
+    <h1>
+        Decision Making in C / C++ (if , if..else, Nested if, if-else-if )
+    </h1>
+   
+        <p style="text-align: justify;"><strong>"The conditional statements (also known as decision control structures) such as if, if else, switch, etc. are used for decision-making purposes in C/C++ programs."
+
+            "They are also known as Decision-Making Statements and are used to evaluate one or more conditions" and make the decision whether to execute a set of statements or not." These decision-making statements in programming languages decide the direction of the flow of program execution."
+      <b>Need of Conditional Statements</b> "There come situations in real life when we need to make some decisions and" based on these decisions, we decide what should we do next. Similar situations "arise in programming also where we need to make some decisions and based on these decisions we will execute the next block of code." For example, in C if x occurs then execute y else execute z." There can also be multiple conditions like in C if x occurs then execute p," else if condition y occurs execute q, else execute r. This condition of C else-if "is one of the many ways of importing multiple conditions. "</strong></p>
+            <p style="text-align: justify;"><strong>Types of Conditional Statements in C/C++</strong></p>
+    
+                  <img src="C:\Users\Admin\Pictures\CondiSt.webp" alt="Lights" style="width:80%">
+
+    <p style="text-align: justify;"><strong>Following are the decision-making statements available in C </strong></p><br>
+
+    <p style="text-align: justify;"><strong>or C++:</strong></p>
+    <br>
+       
+        <ul>
+            <li> if Statement</li>
+            <li>if-else Statement</li>
+            <li>Nested if Statement</li>
+            <li>if-else-if Ladder</li>
+            <li>switch Statement</li>
+            <li>Conditional Operator</li>
+            <li>Jump Statements:</li>
+        </ul>
+        <ul>
+            <li>break</li>
+            <li>continue</li>
+            <li>goto</li>
+            <li>return</li>
+        </ul><br><br>
+    
+    
+    <p style="text-align: justify;"><strong>Let’s discuss each of them one by one.</strong></p>
+    <p style="text-align: justify;"><strong>1. if in C/C++</strong></p>
+    <p style="text-align: justify;"><strong>"The if statement is the most simple decision-making statement. "It is used to decide whether a certain statement or block of statements" will be executed or not i.e if a certain condition is true then a block of "statements is executed otherwise not. "</strong></p>
+    <p style="text-align:justify ;"><strong>Syntax of if Statement</strong></p>
+   <p style="background-color: rgb(241, 242, 140);">
+        if(condition) <br>
+{<br>
+
+   // Statements to execute if<br>
+   // condition is true<br>
+}<br>
+   </p>
+<br><br>
+<p style="text-align: justify;"><strong>"Here, the condition after evaluation will be either true or false." C if statement accepts boolean values – if the value is"true then it will execute the block of statements below it otherwise not. If we do not provide the curly braces ‘{‘ and ‘}’ after" if(condition) then by default if statement will consider the first "immediately below statement to be inside its block."</strong></p><br><br>
+<p style="text-align: justify;"><strong>Flowchart of if Statement</strong></p>
+                         
+                                      <img src="C:\Users\Admin\Pictures\flowchart.png" alt="Lights" style="width:80%;">
+<p style="text-align: justify;"><strong>Example of if in C/C++</strong></p><br>
+<p style="background-color: rgb(237, 244, 163);"><strong>
+    // C program to illustrate If statement <br>
+    #include stdio.h> <br>
+      <br>
+    int main() <br>
+    { <br>
+        int i = 10; <br>
+      <br>
+        if (i > 15) { <br>
+            printf("10 is greater than 15"); <br>
+        } <br>
+      
+        printf("I am Not in if"); <br>
+    }</strong></p><br><br>
+    <p style="text-align: justify;"><strong>Output</strong></p><br><br><br> 
+    <p><b>I am Not in if</b></p><br><br>
+    <p style="text-align: justify;"><b>As the condition present in the if statement is false. So, the block below the if statement is not executed.</b></p><br>
+<h1>2. if-else in C/C++</h1><br><br>
+<p style="text-align: justify;"><b>The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else when the condition is false? Here comes the C else statement. We can use the else statement with the if statement to execute a block of code when the condition is false. The if-else statement consists of two blocks, one for false expression and one for true expression.</b></p><br>
+<p style="text-align: justify;"><strong>Syntax of if else in C/C++</strong></p><br>
+<p style="background-color: rgb(178, 241, 240);">if (condition)<br>
+    {<br>
+        // Executes this block if<br>
+        // condition is true<br>
+    }<br>
+    else<br>
+    {<br>
+        // Executes this block if<br>
+        // condition is false<br>
+    }</p>
+    <p style="text-align: justify;"><strong>Flowchart of if-else Statement </strong></p><br>
+<img src="C:\Users\Admin\Pictures\flowcharte.png" alt="Lights"style=" width: 80%;"><br>
+<p style="text-align: justify;"><strong> Example of if-else</strong></p><br>
+<details class="deta" open><summary>// C program to illustrate If statement</summary> <br>
+    #include stdio.h> <br>
+      <br>
+    int main() <br>
+    { <br>
+        int i = 20; <br>
+      <br>
+        if (i < 15) { <br>
+      <br>
+            printf("i is smaller than 15"); <br>
+        } <br>
+        else { <br>
+      
+            printf("i is greater than 15"); <br>
+        } <br>
+        return 0; <br>
+    }</details>
+    <p style="text-align: justify;"><strong>Output</strong></p><br>
+    <p>i is greater than 15</p><br><br>
+    <p><b>The block of code following the else statement is executed as the condition present in the if statement is false.</b></p>
+<h1>3. Nested if-else in C/C++</h1><br><br>
+<p style="text-align: justify;"><strong>A nested if in C is an if statement that is the target of another if statement. Nested if statements mean an if statement inside another if statement. Yes, both C and C++ allow us to nested if statements within if statements, i.e, we can place an if statement inside another if statement.</strong></p><br>
+<p><b>Syntax of Nested if-els</b></p><br>
+<details class="conate" open><summary>Example  of Nested if-els</summary><br>
+    if (condition1) <br>
+{<br>
+   // Executes when condition1 is true<br>
+   if (condition2) <br>
+   {<br>
+      // Executes when condition2 is true<br>
+   }<br>
+   else<br>
+   {<br>
+         // Executes when condition2 is false<br>
+}<br>
+</i>
+
+</details><br><br><br>
+<p><b><i>Flowchart of Nested if-else</i></b></p><br><br>
+                                      
+<img src="C:\Users\Admin\Pictures\nested.webp" alt="lights" style="width: 80%;">
+<br>
+<p style="text-align: justify;"><strong>Example of Nested if-else
+</strong></p>
+<details class="Nested" open>
+    <summary>// C program to illustrate nested-if statement </summary><br>
+        #include stdio.h> <br>
+          <br>
+        int main() <br>
+        { <br>
+            int i = 10; <br>
+          <br>
+            if (i == 10) { <br>
+                // First if statement <br>
+                if (i < 15) <br>
+                    printf("i is smaller than 15\n"); <br>
+          <br>
+                // Nested - if statement <br>
+                // Will only be executed if statement above <br>
+                // is true <br>
+                if (i < 12) <br>
+                    printf("i is smaller than 12 too\n"); <br>
+                else<br>
+                    printf("i is greater than 15"); <br>
+            } <br>
+          <br>
+            return 0; <br>
+        }</b>
+      </details><br><br>
+        <p style="text-align: justify;"><strong>Output</strong></p><br><br>
+        <p><i>i is smaller than 15<br>
+            i is smaller than 12 too</i></p><br><br>
+        <h1>4. if-else-if Ladder in C/C++</h1><br><br>
+        <p style="text-align: justify;"><strong> if else if statements are used when the user has to decide among multiple options. The C if statements are executed from the top down. As soon as one of the conditions controlling the if is true, the statement associated with that if is executed, and the rest of the C else-if ladder is bypassed. If none of the conditions is true, then the final else statement will be executed. if-else-if ladder is similar to the switch statement.</strong></p><br><br>
+<p style="text-align: justify;"><i><strong>Syntax of if-else-if Ladder</strong></i></p><br><br>
+ <p class="if-else"><b>
+    if (condition)<br>
+    statement;
+else if (condition)
+    statement;<br>
+.<br>
+.<br>
+
+else<br>
+    statement;<br>
+</b><br>
+ </p><br><br>
+ <h1>Flowchart of if-else-if Ladder</h1>
+                                      <img src="C:\Users\Admin\Pictures\flowchart-of.png" alt="Lights" style="width:80%">
+                                   
+ <h1>Example of if-else-if Ladder</h1><br>
+ <p class="if-else-0f"><b>// C++ program to illustrate if-else-if ladder <br>
+    #include iostream> <br>
+    using namespace std; <br>
+      <br>
+    int main() <br>
+    { <br>
+        int i = 20; <br>
+      <br>
+        if (i == 10) <br>
+            cout << "i is 10"; <br>
+        else if (i == 15) <br>
+            cout << "i is 15"; <br>
+        else if (i == 20) <br>
+            cout << "i is 20"; <br>
+        else<br>
+            cout << "i is not present"; <br>
+    }</b></p><br>
+    <strong>Output</strong><br>
+    <p><b>i = 20</b></p><br>
+    <h1>5. switch Statement in C/C++</h1><br>
+    <p style="text-align: justify;"><strong>The switch case statement is an alternative to the if else if ladder that can be used to execute the conditional code based on the value of the variable specified in the switch statement. The switch block consists of cases to be</strong></p>
+    <p style="text-align: justify;"><strong>executed based on the value of the switch variable.</strong></p><br>
+    <p><b>Syntax of switch</b></p><br>
+    <details class="if-switch-0f"><summary>switch (expression) { </summary><br>
+        case value1:<br>
+            statements;<br>
+        case value2:<br>
+            statements;<br>
+        ....<br>
+        ....<br>
+        ....<br>
+        default:<br>
+            statements;<br>
+    }</details><br>
+    <h1>Flowchart of switch</h1><br>
+              <img src="C:\Users\Admin\Pictures\flow-diagram.png" alt="Lights" style="width:80%">
+
+    <h1>Example of switch Statement</h1><br>
+    <p class="if-switchs-0f"><b><i>// C Program to illustrate the use of switch statement <br>
+        #include <iostream> <br>
+        using namespace std; <br>
+          <br>
+        // driver code <br>
+        int main() <br>
+        { <br>
+            // variable to be used in switch statement <br>
+            int var = 2; <br>
+          <br>
+            // declaring switch cases <br>
+            switch (var) { <br>
+            case 1: <br>
+                cout << "Case 1 is executed"; <br>
+                break; <br>
+            case 2: <br>
+                cout << "Case 2 is executed"; <br>
+                break; <br>
+            default: <br>
+                cout << "Default Case is executed"; <br>
+                break; <br>
+            } <br>
+          <br>
+            return 0; <br>
+        }</i></b></p><br>
+        <strong>Output</strong><br>
+        <p><b>case 2 is executed</b></p><br>
+        <h1>6. Conditional Operator in C/C++</h1><br>
+        <p style="text-align: justify;"><strong> conditional operator is used to add conditional code in our program. It is similar to the if-else statement. It is also known as the ternary operator as it works on three operands.</strong></p><br>
+        <h1>Syntax of Conditional Operator</h1><br>
+        <p><b><i>(condition) ? [true_statements] :<br> [flase_statements];</i></b></p><br>
+        <h1>Flowchart of Conditional Operator</h1><br>
+        
+                  <img src="C:\Users\Admin\Pictures\flowchart-off.png" alt="Lights" style="width:80%">
+            >
+        <h1>Example of Conditional Operator</h1><br>
+        <details class="using"><summary>Example ofconditional operator</summary>// C++ Program to illustrate the use of conditional operator <br>
+            #include iostream> <br>
+            using namespace std; <br>
+              
+            // driver code <br>
+            int main() <br>
+            { <br>
+              
+                int var; <br>
+                int flag = 0; <br>
+            
+                // using conditional operator to assign the value to var <br>
+                // according to the value of flag <br>
+                var = flag == 0 ? 25 : -25; <br>
+                cout << "Value of var when flag is 0: " << var << endl; <br>
+              
+                // changing the value of flag <br>
+                flag = 1; <br>
+                // again assigning the value to var using same statement <br>
+                var = flag == 0 ? 25 : -25; <br>
+                cout << "Value of var when flag is NOT 0: " << var; <br>
+              
+                return 0; <br>
+            }</details><br>
+            <strong>Output</strong><br>
+            <p><b><i>Value of var when flag is 0: 25<br>
+                Value of var when flag is NOT 0: -25</i></b></p><br>
+                <h1>7. Jump Statements in C/C++</h1><br>
+                <p style="text-align: justify;"><b>hese statements are used in C or C++ for the unconditional flow of control throughout the functions in a program. They support four types of jump statements:</b></p><br>
+                <strong>A) break</strong><br>
+                <p style="text-align: justify;"><b>This loop control statement is used to terminate the loop. As soon as the break statement is encountered from within</b></p>
+                    <p style="text-align: justify;"><b>a loop, the loop iterations stop there, and control returns from the loop immediately to the first statement after the loop.</b></p><br>
+                    <h1>Syntax of break</h1><br>
+                    <p><i>break;</i></p><br>
+                    <p style="text-align: justify;"><strong>Basically, break statements are used in situations when we are not sure about the actual number of iterations for the loop or we want to terminate the loop based on some condition. </strong></p><br>
+                  
+                              <img src="C:\Users\Admin\Pictures\flowchart-of-br.png" alt="Lights" style="width:80%">
+
+
+                    <p><b>Example of break</b></p><br>
+                    <p class="usingg">// C++ program to illustrate <br>
+                        // to show usage of break <br>
+                        // statement <br>
+                        #include iostream> <br>
+                        using namespace std; <br>
+                          <br>
+                        void findElement(int arr[], int size, int key) <br>
+                        { <br>
+                            // loop to traverse array and search for key <br>
+                            for (int i = 0; i < size; i++) { <br>
+                                if (arr[i] == key) { <br>
+                                    cout << "Element found at position: "<br>
+                                         << (i + 1); <br>
+                                    break; <br>
+                                } <br>
+                            } <br>
+                        } <br>
+                          <br>
+                        // Driver program to test above function <br>
+                        int main() <br>
+                        { <br>
+                            int arr[] = { 1, 2, 3, 4, 5, 6 }; <br>
+                            int n = 6; // no of elements <br>
+                            int key = 3; // key to be searched <br>
+                          <br>
+                            // Calling function to find the key <br>
+                            findElement(arr, n, key); <br>
+                          <br>
+                            return 0; <br>
+                        }</i></p><br>
+                        <h1>Output</h1><br>
+                        <p><strong>Element found at position: 3</strong></p><br>
+                        <h1>B) continue</h1><br>
+                        <p style="text-align: justify;">This loop control statement is just like the break statement. The continue statement is opposite to that of the break statement, instead of terminating the</p>
+                            <p style="text-align: justify;">loop, it forces to execute the next iteration of the loop. 
+                                As the name suggests the continue statement forces the loop to continue or execute the next iteration. When the continue statement is executed in the</p>
+                                <p style="text-align: justify;">loop, the code inside the loop following the continue statement will be skipped and the next iteration of the loop will begin.</p><br>
+                                <h1>Syntax of continue</h1><br>
+                                <strong><i>continue;</i></strong><br>
+                                <h1>Flowchart of Continue
+                                </h1><br>
+                          
+                                          <img src="C:\Users\Admin\Pictures\continue-in-c.webp" alt="Lights" style="width:80%">
+                                        <br>
+                                    <br><br><br>
+                                    <div id="bottomnextup">
+                                   
+                                        </div>
+                                    </div></div></div>
+                                <br> <div class="container-fluid">
+      
+                                  <div class="row">
+                                   
+                                     <div class="col-sm-4">
+                                      <h5>JAVA TUTORIAL</h5>
+                                      <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+                                 
+                                  <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+                                  <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+                                  <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+                                      <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+                                       <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+                                       <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+                                       <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+                                       <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+                                       <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+                                       <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+                                       <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+                                       <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+                                       <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+                                       <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+                                       <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+                                       <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+                                       <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+                                       <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+                                       <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+                                       <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+                                       <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+                                       <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+                                       <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+                                       <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+                                         <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+                                         <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+                                         <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+                                         <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+                                       <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+                                       <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+                                         <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+                                           <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+                                           <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+                                           <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+                                           <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+                                           <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+                                           <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+                                           <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+                                           <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+                                           <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+                                          
+                                         
+                                      <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+                                        <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+                                      <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+                                        <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+                                         <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+                                        <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+                                       <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+                                        <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+                                       <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+                                       <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+                                       <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+                                       <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+                                  
+                                 </div> 
+                                </div><br><br><br><br><br><br><br><br><br>
+                                <section class="hero" id="about">
+                                  <div class="bio animate__animated animate__shakeX">
+                                    <h2 class="bio-title">About Me</h2>
+                                    <p class="bio-text">
+                                        My name is Gautam, I’ve been studying computer science for two years. In order to kick-start my career before I graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for four years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+                                    </p>
+                                  </div>
+                              </section><br>
+                                <section class="skills" id="skills">
+                                  <h2 class="skill-header">My Top Skills</h2>
+                              
+                                  <div class="skills-wrapper">
+                                    <div class="first-set animate__animated animate__pulse">
+                                      <img
+                                        src="C:\Users\Admin\Pictures\c++.png"
+                                        alt=""
+                                        loading="lazy"
+                                        class="icon icon-card"
+                                      />
+                                      <img
+                                        src="C:\Users\Admin\Pictures\java.png"
+                                        alt=""
+                                        loading="lazy"
+                                        class="icon icon-card"
+                                      />
+                                      <img
+                                        src="C:\Users\Admin\Pictures\html.png"
+                                        alt=""
+                                        loading="lazy"
+                                        class="icon icon-card"
+                                      />
+                                    </div>
+                              
+                                    <div class="second-set animate__animated animate__pulse">
+                                      <img
+                                        src="C:\Users\Admin\Pictures\css-3.png"
+                                        alt=""
+                                        loading="lazy"
+                                        class="icon icon-card"
+                                      />
+                                      <img
+                                        src="C:\Users\Admin\Pictures\js.png"
+                                        alt=""
+                                        loading="lazy"
+                                        class="icon icon-card"
+                                      />
+                                      <img
+                                        src="C:\Users\Admin\Pictures\icons-heroo.png"
+                                        alt=""
+                                        loading="lazy"
+                                        class="icon icon-card"
+                                      />
+                                    </div>
+                                  </div>
+                                </section>
+                                <section class="projects" id="projects">
+                                  <h2 class="projects-title">Some of my Recent Projects</h2>
+                                  <div class="projects-container">
+                                    <div class="project-container project-card">
+                                      <img
+                                        src="C:\Users\Admin\Pictures\insta.png"
+                                        alt="instagram-clone"
+                                        loading="lazy"
+                                        class="project-pic"
+                                      />
+                                      <h3 class="project-title">Instagram Clone</h3>
+                                      <p class="project-details">
+                                        I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+                                      </p>
+                                      <a href="#" target="_blank" class="project-link">Check it Out</a>
+                                    </div>
+                                    <div class="project-container project-card">
+                                      <img
+                                        src="C:\Users\Admin\Pictures\quiz.jpg"
+                                        alt="quiz-app"
+                                        loading="lazy"
+                                        class="project-pic"
+                                      />
+                                      <h3 class="project-title">QUIZ</h3>
+                                      <p class="project-details">
+                                        I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+                                      </p>
+                                      <a href="#" target="_blank" class="project-link">Check it Out</a>
+                                    </div>
+                                    <div class="project-container project-card">
+                                      <img
+                                        src="C:\Users\Admin\Pictures\todo.jpg"
+                                        alt="todo-app"
+                                        loading="lazy"
+                                        class="project-pic"
+                                      />
+                                      <h3 class="project-title">TO DO APP</h3>
+                                      <p class="project-details">
+                                        I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+                                      </p>
+                                      <a href="#" target="_blank" class="project-link">Check it Out</a>
+                                    </div>
+                                  </div>
+                                </section><section class="contact" id="contact">
+                                  <h2>Get In Touch With Me</h2>
+                                  <div class="contact-form-container">
+                                    <div class="contact-form">
+                                      <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+                                        <div class="form-control">
+                                          <label for="name">Name</label>
+                                          <input
+                                            type="text"
+                                            id="name"
+                                            name="sender-name"
+                                            placeholder="Enter Your Name"
+                                            class="input-field"
+                                            required
+                                          />
+                                        </div>
+                                        <div class="form-control">
+                                          <label for="email">Email</label>
+                                          <input
+                                            type="email"
+                                            id="email"
+                                            name="sender-email"
+                                            placeholder="Enter Your Email"
+                                            class="input-field"
+                                            required
+                                          />
+                                        </div>
+                                        <div class="form-control">
+                                          <label for="message">Message</label>
+                                          <textarea
+                                            id="message"
+                                            cols="60"
+                                            rows="10"
+                                            placeholder="Enter Your Message"
+                                            name="message"
+                                            class="input-field"
+                                            required
+                                          ></textarea>
+                                        </div>
+                                        <input
+                                          type="submit"
+                                          value="Submit"
+                                          id="submit-btn"
+                                          class="submit-btn"
+                                        /><br>
+                                        <span id="success"></span>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </section><br><br><br>
+                                <div class="container">
+                                  <div class="all flex-row">
+                                    <div class="menu flex-column">
+                                      <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+                                      <div class="profil-info">
+                                        <h2 class="name">Gautam Kumar</h2>
+                                        <h3 class="city">Patna,Bihar</h3>
+                                      </div></div></div></div></div><br>
+                                <div class="socials">
+                                  <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+                                    ><img
+                                      src="C:\Users\Admin\Pictures\insta.png"
+                                      alt="Instagram"
+                                      loading="lazy"
+                                      class="socicon"
+                                  />Instagram</a>
+                                  <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+                                    ><img
+                                      src="C:\Users\Admin\Pictures\facebookk.png"
+                                      alt="Facebook"
+                                      loading="lazy"
+                                      class="socicon"
+                                  />Facebook</a>
+                                  <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+                                    ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+                                  />Youtube</a>
+                                  <footer>
+                                      <p class="copy">&copy; Copyright 2024</p>
+                                      <p class="copy">
+                                        Built with &#x2661; by CODE WITH GAUTAM</Code>
+                                       
+                                      </p>
+                                </footer>
+                                <i class="scroll-up" id="scroll-up"
+                                ><img
+                                  src="assets/icons/icons8-upward-arrow.gif"
+                                  class="socicon up-arrow"
+                                  alt="scroll-up"
+                              /></i>
+                             
+    
+                                <script src="portfolio.js">
+                                </script>
+        <script  type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script>
+
+</body>
+</html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>Java Inetrfaces
+      --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav> 
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a>
+<a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a>
+<a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a>
+<a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a>
+<a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a>
+<a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a>
+<a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading in java</a>
+<a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding in java</a>
+<a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism in java </a>
+<a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+<a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection in java</a>
+<a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a>
+<a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a>
+<a href="file:///D:/example/Package%20in%20java.html">Java Package</a>
+<a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a>
+<a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class in java</a>
+
+<a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class in java</a>
+<a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                  </div></div>
+                  
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+                <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+            </div>
+            <div class="mega-url-list">
+              
+
+                <h1>Java Interfaces</h1><br>
+                <style>.layout_size{min-height: 28px;overflow: hidden;margin-bottom:10px;} @media (max-width: 550px) { .layout_size {min-height: 320px; min-width: inherit; } }
+                </style>
+                <div class="layout_size">
+                    <div id="ezoic-pub-ad-placeholder-106"></div>
+                </div><p><br>
+                Interface is a concept which is used to achieve abstraction in Java. This is the only way by which we can achieve full abstraction. Interfaces are syntactically similar to classes, but you cannot create instance of an <b>Interface</b> and their methods are declared without any body. It can have  When you create an interface it defines what a class can do without saying anything about how the class will do it.
+                </p><br>
+                <p>It can have only abstract methods and static fields. However, from <b>Java 8</b>, interface can have <b>default</b> and <b>static methods</b> and from <b>Java 9</b>, it can have <b>private methods</b> as well.</p><br>
+                <p>When an interface inherits another interface <b>extends</b> keyword is used whereas class use <b>implements</b> keyword to inherit an interface.</p><br>
+                <h3>Advantages of Interface</h3><br>
+               
+                    <li>It Support multiple inheritance </li><br>
+                    <li>It helps to achieve abstraction </li><br>
+                    <li>It can be used to achieve loose coupling.</li><br>
+                <br>
+                <p><b>Syntax:</b></p><br>
+                <pre class="java"><code class="language-java">
+                    <textarea> interface_name {  
+                // fields
+                // abstract/private/default methods
+                }</textarea>
+                </code></pre><br>
+                <h3>Interface Key Points</h3><br>
+                
+                    <li>Methods inside interface must not be static, final, native or strictfp.</li><br>
+                    <li>All variables declared inside interface are implicitly public, static and final.</li><br>
+                    <li>All methods declared inside interfaces are implicitly public and abstract, even if you don't use public or abstract keyword.</li><br>
+                    <li>Interface can extend one or more other interface.</li><br>
+                    <li>Interface cannot implement a class.</li><br>
+                    <li>Interface can be nested inside another interface.</li><br>
+                <br>
+                <h2>Time for an Example!</h2><br>
+                <p>Let's take a simple code example and understand what interfaces are:</p>
+                <p><pre class="java"><code class="language-java">
+                    <textarea> Moveable
+                {
+                     int AVERAGE-SPEED = 40;
+                     void move();
+                }</textarea></code></pre></p><br>
+                <p class="center"><img class="lazyload blur-up" src="C:\Users\Admin\Pictures/interface-in-java.webp" alt="Interface in Java" id="imgee"></p><br>
+                <p><b>NOTE: </b>Compiler automatically converts methods of Interface as public and abstract, and the data members as public, static and final by default.</p><br>
+                
+                <h3>Example of Interface implementation</h3><br>
+                <p>In this example, we created an interface and implemented using a class. lets see how to implement the interface.</p>
+                <p><pre class="java"><code class="language-java">
+                    <textarea> Moveable
+                {
+                     int AVG-SPEED = 40;
+                     void move();
+                }
+                
+                class Vehicle implements Moveable
+                {
+                     public void move()
+                     {
+                          System .out. print in ("Average speed is"+AVG-SPEED");
+                     }
+                     public static void main (String[] arg)
+                     {
+                          Vehicle vc = new Vehicle();
+                          vc.move();
+                     }
+                }</textarea></code></pre></p><br>
+                <p class="output">
+                    <p><b>Output</b></p>
+                Average speed is 40.
+                </p>
+                
+                <hr/><br>
+                <h3>Interfaces supports Multiple Inheritance</h3><br>
+                <p>Though classes in Java doesn't support multiple inheritance, but a class can implement more than one interfaces.</p><br>
+                <p>In this example, two interfaces are implemented by a class that show implementation of multiple inheritance.</p><br>
+                
+                <pre class="java"><code class="language-java">
+                    <textarea> Moveable
+                {
+                     boolean isMoveable();
+                }
+                
+                interface Rollable
+                {
+                     boolean isRollable
+                }
+                
+                class Tyre implements Moveable, Rollable
+                {
+                     int width;
+                
+                     boolean isMoveable()
+                     {
+                          return true;
+                     }
+                
+                     boolean isRollable()
+                     {
+                          return true;
+                     }
+                     
+                     public static void main(String args[])
+                     {
+                          Tyre tr = new Tyre();
+                          System.out.println(tr.isMoveable());
+                          System.out.println(tr.isRollable());
+                     }
+                }</textarea></code></pre><br>
+                
+                <p class="output">
+                    <p><b>Output</b></p>
+                true
+                true
+                </p><br>
+                
+                
+                <hr/>
+                <h3>Interface extends other Interface</h3><br>
+                <p>Interface can inherit to another interface by using extends keyword. But in this case, interface just inherit, does not provide implementation. Implementation can be provided by a class only.</p><br>
+                <pre class="java"><code class="language-java">
+                    <textarea> NewsPaper
+                {
+                     news();
+                }
+                
+                interface Magazine extends NewsPaper
+                {
+                     colorful();
+                }</textarea></code></pre>
+                <h3>Difference between an interface and an abstract class?</h3>
+                <p>Interface and abstract class both are used to implement abstraction but have some differences as well. Some of differences are listed below.</p>
+                <table class="table table-bordered table-striped">
+                <thead>
+                <tr><th class="center">Abstract class</th><th class="center">Interface</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>Abstract class is a class which contain one or more abstract methods, which has to be implemented by its sub classes.</td> <td>Interface is a Java Object containing method declaration but no implementation. The classes which implement the Interfaces must provide the method definition for all the methods.</td></tr> <tr><td>Abstract class is a Class prefix with an abstract keyword followed by Class definition.</td><td>Interface is a pure abstract class which starts with interface keyword.</td></tr>
+                <tr><td>Abstract class can also contain concrete methods.</td><td>Whereas, Interface contains all abstract methods and final variable declarations.</td></tr>
+                <tr><td>Abstract classes are useful in a situation that Some general methods should be implemented and specialization behavior should be implemented by child classes.</td><td>Interfaces are useful in a situation that all properties should be implemented.</td></tr>
+                </tbody>
+                </table><br>
+                <h3>Default Methods in Interface – Java 8</h3>
+                <p>In Java 8 version a new feature is added to the interface, which was default method. Default method is a method that can have its body. It means default method is not abstract method, it is used to set some default functionality to the interface. </p><br>
+                <p>Java provides default keyword to create default method. Let's see an example:</p><br>
+                <pre><code class="language-java">
+                    <textarea> Abc{  
+                    // Default method   
+                    default void msg(){  
+                        System.out.println("This is default method");  
+                    }  
+                    // Abstract method  
+                    void greet(String msg);  
+                }  
+                public class Demo implements Abc{  
+                    public void greet(String msg){        // implementing abstract method   
+                        System.out.println(msg);  
+                    }  
+                    public static void main(String[] args) {  
+                        Demo d = new Demo();  
+                        d.msg();   // calling default method  
+                        d.greet("Say Hi");  // calling abstract method  
+                  
+                    }  
+                } </textarea>
+                </code></pre><br>
+                <p class="output">
+                    <p><b>Output</b></p>
+                This is default method
+                Say Hi
+                </p>
+                <h3>Static methods in Interface – Java 8</h3><br>
+                <p>From Java 8, Java allows to declare static methods into interface. The purpose of static method is to add utility methods into the interface. In the below example, we have created an interface Abc that contains a static method and an abstract method as well. See the below example.</p><br>
+                <pre><code class="language-java">
+                    <textarea> Abc{  
+                    // static method   
+                    static void msg(){  
+                        System.out.println("This is static method");  
+                    }  
+                    // Abstract method  
+                    void greet(String msg);
+                    
+                    
+                }  
+                public class Demo implements Abc{  
+                    public void greet(String msg){        // implementing abstract method   
+                        System.out.println(msg);  
+                    }  
+                    public static void main(String[] args) {  
+                        Demo d = new Demo();  
+                        Abc.msg();   // calling static method  
+                        d.greet("Say Hi");  // calling abstract method  
+                  
+                    }  
+                } </textarea>
+                </code></pre><br>
+                <p class="output"><p><b>Output</b></p>
+                This is static method
+                Say Hi
+                </p><br>
+                <h3>Private methods – Java 9</h3><br>
+                <p>
+                In Java 9 version, a new feature is added that allows us to declare private methods inside the interface. The purpose of private method is just to share some task between the non-abstract methods of the interface.
+                </p><br>
+                <p>In this example, we created an interface Abc that has a default method and a private method as well. Since private methods are not accessible outside to interface. So, we called it from the default method. See the below example.</p>
+                <pre><code class="language-java">
+                    <textarea> Abc{  
+                    // Default method   
+                    default void msg(){  
+                         greet();
+                    }  
+                    // Private method  
+                    private void greet() {
+                        System.out.println("This is private method"); 
+                    }
+                    
+                    
+                }  
+                public class Demo implements Abc{    
+                    public static void main(String[] args) {  
+                        Demo d = new Demo();  
+                        d.msg();   // calling default method  
+                  
+                    }  
+                }  </textarea>
+                </code></pre><br>
+                <p class="output">
+                    <p><b>Output</b></p>
+                This is private method
+                </p>
+                
+<br>
+                <div><ul class="pager">
+                <li class="previous">
+                   
+                <a href="file:///D:/example/Abstract%20Class%20in%20java.html">&larr; Prev</a>
+                </li>
+                <li class="next">
+                <a href="#">Next &rarr;</a>
+                </li>
+                </ul></div>
+                <hr/>
+
+
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br> <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> 
+    </div><br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

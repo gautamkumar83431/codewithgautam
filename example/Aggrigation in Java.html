@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>Aggregation in Java
+      --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a>
+<a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a>
+<a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a>
+<a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a>
+<a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a>
+
+<a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading in java</a>
+<a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding in java</a>
+<a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism in java </a>
+<a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+<a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection in java</a>
+<a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a>
+<a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a>
+<a href="file:///D:/example/Package%20in%20java.html">Java Package</a>
+<a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a>
+<a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class in java</a>
+<a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a>
+<a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class in java</a>
+<a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                  </div></div>
+                  
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+                <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+            </div>
+            <div class="mega-url-list">
+      
+<h1>Aggregation (HAS-A relationship) in Java</h1><br>
+<style>.layout_size{min-height: 28px;overflow: hidden;margin-bottom:10px;} @media (max-width: 550px) { .layout_size {min-height: 320px; min-width: inherit; } }
+</style>
+<div class="layout_size">
+	<div id="ezoic-pub-ad-placeholder-106"></div>
+</div><p>Aggregation is a term which is used to refer <b>one way relationship</b> between two objects. For example, <b>Student</b> class can have <b>reference</b> of <b>Address</b> class but vice versa does not make sense. </p><br>
+<p>In Java, aggregation represents <b>HAS-A relationship</b>, which means when a class contains reference of another class known to have aggregation.</p><br>
+<p>The HAS-A relationship is based on usage, rather than inheritance. In other words, class A has-a relationship with class B, if class A has a reference to an instance of class B.</p><br>
+<p>Lets understand it by an example and consider two classes Student and Address. Each student has own address that makes has-a relationship but address has student not makes any sense. We can understand it more clearly using Java code.</p><br>
+<pre class="java"><code class="language-java">
+    <textarea> Address{
+int street_no;
+String city;
+String state;
+int pin;
+Address(int street_no, String city, String state, int pin ){
+this.street_no = street_no;
+this.city = city;
+this.state = state;
+this.pin = pin;
+}
+}
+
+class Student
+{
+  String name;
+  Address ad;
+}</textarea>
+</code></pre>
+<br/>
+<p>Here in the above code, we can see <b>Student</b> class has-a relationship with <b>Address</b> class. We have draw an image too to demonstrate relation between these two classes..</p><br>
+<p class="center"><img class="lazyload blur-up" src="C:\Users\Admin\Pictures/has-a-relationship.webp" alt="Aggregation in Java" id="imgee"></p><br>
+<p>The <code>Student</code> class has an instance variable of type <code>Address</code>. As we have a variable of type <code>Address</code> in the <code>Student</code> class, it can use Address reference which is <code>ad</code> in this case, to invoke methods of the <code>Address</code> class.</p><br>
+<h3>Advantage of Aggregation</h3><br>
+<p>The main advantage of using aggregation is to maintain <b>code re-usability</b>. If an entity has a relation with some other entity than it can reuse code just by referring that.</p><br>
+
+<hr/>
+<h2>Aggregation Example</h2><br>
+<p>Now lets understand it by using an example, here we created two classes Author and Book and Book class has a relation with Author class by having its reference. Now we are able to get all the properties of both class.</p><br>
+<pre class="java"><code class="language-java"><textarea> Author
+{
+  String authorName;
+  int age;
+  String place;
+
+  // Author class constructor
+  Author(String name, int age, String place)
+  {
+    this.authorName = name;
+    this.age = age;
+    this.place = place;
+  }
+}
+
+class  Book
+{
+  String name;
+  int price;
+  // author details
+  Author auther;
+  Book(String n, int p, Author auther)
+  {
+    this.name = n;
+    this.price = p;
+    this.auther = auther;
+  }
+  public static void main(String[] args) {
+    Author auther = new Author("John", 42, "USA");
+    Book b = new Book("Java for Begginer", 800, auther);
+    System.out.println("Book Name: "+b.name);
+    System.out.println("Book Price: "+b.price);
+    System.out.println("------------Auther Details----------");
+    System.out.println("Auther Name: "+b.auther.authorName);
+    System.out.println("Auther Age: "+b.auther.age);
+    System.out.println("Auther place: "+b.auther.place);
+  }
+  
+}</textarea>
+</code></pre>
+<p class="output">
+    <p><b>Output</b></p>
+Book Name: Java for Begginer<br>
+Book Price: 800<br>
+------------Author Details----------<br>
+Auther Name: John<br>
+Auther Age: 42<br>
+Auther place: USA<br>
+</p><br>
+<p>Lets take one more example to understand aggregation. Suppose we have one more class Publisher then the Book class can reuse Publisher class details by just using its reference as Author class. Lets understand it by Java code.</p>
+<pre>
+  <code class="language-java"><textarea>
+class Publisher{
+  
+  String name;
+  String publisherID;
+  String city;
+  
+  Publisher(String name, String publisherID, String city) {
+    this.name = name;
+    this.publisherID = publisherID;
+    this.city = city;
+  }
+}
+
+
+class Author
+{
+  String authorName;
+  int age;
+  String place;
+
+  // Author class constructor
+  Author(String name, int age, String place)
+  {
+    this.authorName = name;
+    this.age = age;
+    this.place = place;
+  }
+}
+
+class Book
+{
+  String name;
+  int price;
+  // author details
+  Author auther;
+  Publisher publisher;
+  Book(String n, int p, Author auther, Publisher publisher )
+  {
+    this.name = n;
+    this.price = p;
+    this.auther = auther;
+    this.publisher = publisher;
+  }
+  public static void main(String[] args) {
+    Author auther = new Author("John", 42, "USA");
+    Publisher publisher = new Publisher("Sun Publication","JDSR-III4", "LA");
+    Book b = new Book("Java for Begginer", 800, auther, publisher);
+    System.out.println("Book Name: "+b.name);
+    System.out.println("Book Price: "+b.price);
+    System.out.println("------------Author Details----------");
+    System.out.println("Auther Name: "+b.auther.authorName);
+    System.out.println("Auther Age: "+b.auther.age);
+    System.out.println("Auther place: "+b.auther.place);
+    System.out.println("------------Publisher Details-------");
+    System.out.println("Publisher Name: "+b.publisher.name);
+    System.out.println("Publisher ID: "+b.publisher.publisherID);
+    System.out.println("Publisher City: "+b.publisher.city);
+  }
+  
+}</textarea>
+  </code>
+</pre>
+<p class="output">
+    <p><b>Output</b></p>
+Book Name: Java for Begginer<br>
+Book Price: 800<br>
+------------Author Details----------<br>
+Auther Name: John<br>
+Auther Age: 42<br>
+Auther place: USA<br>
+------------Publisher Details-------<br>
+Publisher Name: Sun Publication<br>
+Publisher ID: JDSR-III4<br>
+Publisher City: LA<br>
+</p>
+<h2>Composition in Java</h2><br>
+<p>Composition is a more restricted form of Aggregation. Composition can be described as when one class which includes another class, is dependent on it in such a way that it cannot functionally exist without the class which is included. For example a class <code>Car</code> cannot exist without <code>Engine</code>, as it won't be functional anymore.</p><br>
+<p>Hence the word <b>Composition</b> which means the items something is made of and if we change the composition of things they change, similarly in Java classes, one class including another class is called a composition if the class included provides core functional meaning to the outer class.</p><br>
+<pre class="java"><code class="language-java">
+    <textarea> Car
+{
+  private Engine engine;
+  Car(Engine en)
+  {
+    engine = en;
+  }
+}</textarea></code></pre>
+<p>Here by examining code, we can understand that if Car class does not have relationship with Engine class then Car does not have existence.</p>
+<p>Composition is a <b>design technique</b>, not a feature of Java but we can achieve it using Java code.</p>
+<hr/>
+<h3>Q. When to use Inheritance and Aggregation?</h3>
+<p>When you want to use some property or behaviour of any class without the requirement of modifying it or adding more functionality to it, in such case <b>Aggregation</b> is a better option because in case of Aggregation we are just using any external class inside our class as a variable.</p> 
+<p>Whereas when you want to use and modify some property or behaviour of any external class or may be want to add more function on top of it, its best to use <b>Inheritance</b>.</p>
+<p>To understand more on inheritance, you can visit our detailed tutorial here. <a href="file:///D:/example/Inheritance%20in%20Java.html" target="_blank">Click Here to see Inheritance in Java</a></p>
+<hr/>
+                <div><ul class="pager">
+                <li class="previous">
+                   
+                <a href="file:///D:/example/Inheritance%20in%20Java.html">&larr; Prev</a>
+                </li>
+                <li class="next">
+                <a href="#">Next &rarr;</a>
+                </li>
+                </ul></div>
+                <hr/>
+
+
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;
+ 
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

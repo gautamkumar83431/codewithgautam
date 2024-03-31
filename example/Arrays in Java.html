@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>Arrays  in java --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/variables_in_java.html">Variables in java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+
+<a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a>
+<a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a>
+<a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a>
+<a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a>
+<a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a>
+<a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a>
+<a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading in java</a>
+<a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding in java</a>
+<a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism in java </a>
+<a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+<a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection in java</a>
+<a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a>
+<a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a>
+<a href="file:///D:/example/Package%20in%20java.html">Java Package</a>
+<a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a>
+<a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class in java</a>
+<a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a>
+<a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class in java</a>
+<a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                    <div class="mega-url-list">
+                        
+                    </div></div></div>
+                  
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+        
+            </div>
+            <div class="mega-url-list">
+             
+<h1 class="h1">Java Arrays</h1>
+<p>Normally, an array is a collection of similar type of elements which has contiguous memory location.</p>
+<p><strong>Java array</strong> is an object which contains elements of a similar data type. Additionally, The elements of an array are stored in a contiguous memory location. It is a data structure where we store similar elements. We can store only a fixed set of elements in a Java array.</p>
+<p>Array in Java is index-based, the first element of the array is stored at the 0th index, 2nd element is stored on 1st index and so on. </p>
+<p>Unlike C/C++, we can get the length of the array using the length member. In C/C++, we need to use the sizeof operator. </p>
+<p>In Java, array is an object of a dynamically generated class. Java array inherits the Object class, and implements the Serializable as well as Cloneable interfaces. We can store primitive values or objects in an array in Java. Like C/C++, we can also create single dimentional or multidimentional arrays in Java.</p>
+<p>Moreover, Java provides the feature of anonymous arrays which is not available in C/C++.</p>
+<img src="C:\Users\Admin\Pictures/array.gif" alt="Java array" id="imgee"/>
+<h3 class="h3">Advantages</h3>
+<ul class="points">
+<li><strong>Code Optimization:</strong> It makes the code optimized, we can retrieve or sort the data efficiently.</li>
+<li><strong>Random access:</strong> We can get any data located at an index position.</li>
+</ul>
+<h3 class="h3">Disadvantages</h3>
+<ul class="points">
+<li><strong>Size Limit:</strong> We can store only the fixed size of elements in the array. It doesn't grow its size at runtime. To solve this problem, collection framework is used in Java which grows automatically.</li>
+</ul>
+<hr/>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle cm_jtp_wtc_responsive" style="display:inline-block" data-ad-client="ca-pub-4699858549023382" data-ad-slot="6746133113"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h3 class="h2">Types of Array in java</h3><br>
+<p>There are two types of array.</p><br>
+
+<li>Single Dimensional Array</li>
+<li>Multidimensional Array</li>
+
+
+<h2 class="h2">Single Dimensional Array in Java</h2><br>
+<p><strong>Syntax to Declare an Array in Java</strong></p><br>
+<div class="codeblock"><textarea name="code" class="java"><br>
+dataType[] arr; (or)
+dataType []arr; (or)
+dataType arr[];
+</textarea></div>
+<p><strong>Instantiation of an Array in Java</strong></p><br>
+<div class="codeblock"><textarea name="code" class="java">
+arrayRefVar=new datatype[size];
+</textarea></div>
+<h3 class="h3ex">Example of Java Array</h3><br>
+<p>Let's see the simple example of java array, where we are going to declare, instantiate, initialize and traverse an array.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to illustrate how to declare, instantiate, initialize
+//and traverse the Java array.
+class Testarray{
+public static void main(String args[]){
+int a[]=new int[5];//declaration and instantiation
+a[0]=10;//initialization
+a[1]=20;
+a[2]=70;
+a[3]=40;
+a[4]=50;
+//traversing array
+for(int i=0;i&lt;a.length;i++)//length is the property of array
+System.out.println(a[i]);
+}}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+10
+20
+70
+40
+50
+</pre></div>
+<hr/>
+<h2 class="h2">Declaration, Instantiation and Initialization of Java Array</h2>
+<p>We can declare, instantiate and initialize the java array together by:</p>
+<div class="codeblock"><textarea name="code" class="java">
+int a[]={33,3,4,5};//declaration, instantiation and initialization
+</textarea></div>
+<p>Let's see the simple example to print this array.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to illustrate the use of declaration, instantiation 
+//and initialization of Java array in a single line
+class Testarray1{
+public static void main(String args[]){
+int a[]={33,3,4,5};//declaration, instantiation and initialization
+//printing array
+for(int i=0;i&lt;a.length;i++)//length is the property of array
+System.out.println(a[i]);
+}}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+33
+3
+4
+5
+</pre></div>
+<h2 class="h2">For-each Loop for Java Array</h2>
+<p>We can also print the Java array using <strong>for-each loop</strong>. The Java for-each loop prints the array elements one by one. It holds an array element in a variable, then executes the body of the loop.</p>
+<p>The syntax of the for-each loop is given below:</p>
+<div class="codeblock"><textarea name="code" class="java">
+for(data_type variable:array){
+//body of the loop
+}
+</textarea></div>
+<p>Let us see the example of print the elements of Java array using the for-each loop.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to print the array elements using for-each loop
+class Testarray1{
+public static void main(String args[]){
+int arr[]={33,3,4,5};
+//printing array using for-each loop
+for(int i:arr)
+System.out.println(i);
+}}
+</textarea></div>
+<p>Output:</p>
+<div class="codeblock3"><pre>
+33
+3
+4
+5
+</pre></div>
+<hr/>
+<h2 class="h2">Passing Array to a Method in Java</h2>
+<p>We can pass the java array to method so that we can reuse the same logic on any array.</p>
+<p>Let's see the simple example to get the minimum number of an array using a method.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to demonstrate the way of passing an array
+//to method.
+class Testarray2{
+//creating a method which receives an array as a parameter
+static void min(int arr[]){
+int min=arr[0];
+for(int i=1;i&lt;arr.length;i++)
+ if(min&gt;arr[i])
+  min=arr[i];
+
+System.out.println(min);
+}
+
+public static void main(String args[]){
+int a[]={33,3,4,5};//declaring and initializing an array
+min(a);//passing array to method
+}}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+3
+</pre></div>
+<h2 class="h2">Anonymous Array in Java</h2>
+<p>Java supports the feature of an anonymous array, so you don't need to declare the array while passing an array to the method.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to demonstrate the way of passing an anonymous array
+//to method.
+public class TestAnonymousArray{
+//creating a method which receives an array as a parameter
+static void printArray(int arr[]){
+for(int i=0;i&lt;arr.length;i++)
+System.out.println(arr[i]);
+}
+
+public static void main(String args[]){
+printArray(new int[]{10,22,44,66});//passing anonymous array to method
+}}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+10
+22
+44
+66
+</pre></div>
+<h2 class="h2">Returning Array from the Method</h2>
+<p>We can also return an array from the method in Java.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to return an array from the method
+class TestReturnArray{
+//creating method which returns an array
+static int[] get(){
+return new int[]{10,30,50,90,60};
+}
+
+public static void main(String args[]){
+//calling method which returns an array
+int arr[]=get();
+//printing the values of an array
+for(int i=0;i<arr.length;i++)
+System.out.println(arr[i]);
+}}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+10
+30
+50
+90
+60
+</pre></div>
+<h2 class="h2">ArrayIndexOutOfBoundsException</h2>
+<p>The Java Virtual Machine (JVM) throws an ArrayIndexOutOfBoundsException if length of the array in negative, equal to the array size or greater than the array size while traversing the array.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to demonstrate the case of 
+//ArrayIndexOutOfBoundsException in a Java Array.
+public class TestArrayException{
+public static void main(String args[]){
+int arr[]={50,60,70,80};
+for(int i=0;i&lt;=arr.length;i++){
+System.out.println(arr[i]);
+}
+}}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at TestArrayException.main(TestArrayException.java:5)
+50
+60
+70
+80
+</pre></div>
+<hr/>
+<h2 class="h2">Multidimensional Array in Java</h2>
+<p>In such case, data is stored in row and column based index (also known as matrix form).</p>
+<p><strong>Syntax to Declare Multidimensional Array in Java</strong></p>
+<div class="codeblock"><textarea name="code" class="java">
+dataType[][] arrayRefVar; (or)
+dataType [][]arrayRefVar; (or)
+dataType arrayRefVar[][]; (or)
+dataType []arrayRefVar[]; 
+</textarea></div>
+<p><strong>Example to instantiate Multidimensional Array in Java</strong></p>
+<div class="codeblock"><textarea name="code" class="java">
+int[][] arr=new int[3][3];//3 row and 3 column
+</textarea></div>
+<p><strong>Example to initialize Multidimensional Array in Java</strong></p>
+<div class="codeblock"><textarea name="code" class="java">
+arr[0][0]=1;
+arr[0][1]=2;
+arr[0][2]=3;
+arr[1][0]=4;
+arr[1][1]=5;
+arr[1][2]=6;
+arr[2][0]=7;
+arr[2][1]=8;
+arr[2][2]=9;
+</textarea></div>
+<h3 class="h3ex">Example of Multidimensional Java Array</h3>
+<p>Let's see the simple example to declare, instantiate, initialize and print the 2Dimensional array.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to illustrate the use of multidimensional array
+class Testarray3{
+public static void main(String args[]){
+//declaring and initializing 2D array
+int arr[][]={{1,2,3},{2,4,5},{4,4,5}};
+//printing 2D array
+for(int i=0;i<3;i++){
+ for(int j=0;j<3;j++){
+   System.out.print(arr[i][j]+" ");
+ }
+ System.out.println();
+}
+}}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+1 2 3
+2 4 5
+4 4 5
+</pre></div>
+<h2 class="h2">Jagged Array in Java</h2>
+<p>If we are creating odd number of columns in a 2D array, it is known as a jagged array. In other words, it is an array of arrays with different number of columns.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to illustrate the jagged array
+class TestJaggedArray{
+    public static void main(String[] args){
+        //declaring a 2D array with odd columns
+        int arr[][] = new int[3][];
+        arr[0] = new int[3];
+        arr[1] = new int[4];
+        arr[2] = new int[2];
+        //initializing a jagged array
+        int count = 0;
+        for (int i=0; i<arr.length; i++)
+            for(int j=0; j<arr[i].length; j++)
+                arr[i][j] = count++;
+ 
+        //printing the data of a jagged array 
+        for (int i=0; i<arr.length; i++){
+            for (int j=0; j<arr[i].length; j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();//new line
+        }
+    }
+}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+0 1 2 
+3 4 5 6 
+7 8 
+</pre></div>
+<hr/>
+<h2 class="h2">What is the class name of Java array?</h2>
+<p>In Java, an array is an object. For array object, a proxy class is created whose name can be obtained by getClass().getName() method on the object.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to get the class name of array in Java
+class Testarray4{
+public static void main(String args[]){
+//declaration and initialization of array
+int arr[]={4,4,5};
+//getting the class name of Java array
+Class c=arr.getClass();
+String name=c.getName();
+//printing the class name of Java array 
+System.out.println(name);
+
+}}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+I
+</pre></div>
+<hr/>
+<h2 class="h2">Copying a Java Array</h2>
+<p>We can copy an array to another by the arraycopy() method of System class.</p>
+<p><strong>Syntax of arraycopy method</strong></p>
+<div class="codeblock"><textarea name="code" class="java">
+public static void arraycopy(
+Object src, int srcPos,Object dest, int destPos, int length
+)
+</textarea></div>
+<h3 class="h3">Example of Copying an Array in Java</h3>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to copy a source array into a destination array in Java
+class TestArrayCopyDemo {
+    public static void main(String[] args) {
+        //declaring a source array
+        char[] copyFrom = { 'd', 'e', 'c', 'a', 'f', 'f', 'e',
+			    'i', 'n', 'a', 't', 'e', 'd' };
+        //declaring a destination array
+        char[] copyTo = new char[7];
+        //copying array using System.arraycopy() method
+        System.arraycopy(copyFrom, 2, copyTo, 0, 7);
+        //printing the destination array
+        System.out.println(String.valueOf(copyTo));
+    }
+}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+caffein
+</pre></div>
+<hr/>
+<h2 class="h2">Cloning an Array in Java</h2>
+<p>Since, Java array implements the Cloneable interface, we can create the clone of the Java array. If we create the clone of a single-dimensional array, it creates the deep copy of the Java array. It means, it will copy the actual value. But, if we create the clone of a multidimensional array, it creates the shallow copy of the Java array which means it copies the references.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to clone the array
+class Testarray1{
+public static void main(String args[]){
+int arr[]={33,3,4,5};
+System.out.println("Printing original array:");
+for(int i:arr)
+System.out.println(i);
+
+System.out.println("Printing clone of the array:");
+int carr[]=arr.clone();
+for(int i:carr)
+System.out.println(i);
+
+System.out.println("Are both equal?");
+System.out.println(arr==carr);
+
+}}
+</textarea></div>
+<p>Output:</p>
+<div class="codeblock3"><pre>
+Printing original array:
+33
+3
+4
+5
+Printing clone of the array:
+33
+3
+4
+5
+Are both equal?
+false
+</pre></div>
+<h2 class="h2">Addition of 2 Matrices in Java</h2>
+<p>Let's see a simple example that adds two matrices.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to demonstrate the addition of two matrices in Java
+class Testarray5{
+public static void main(String args[]){
+//creating two matrices
+int a[][]={{1,3,4},{3,4,5}};
+int b[][]={{1,3,4},{3,4,5}};
+
+//creating another matrix to store the sum of two matrices
+int c[][]=new int[2][3];
+
+//adding and printing addition of 2 matrices
+for(int i=0;i<2;i++){
+for(int j=0;j<3;j++){
+c[i][j]=a[i][j]+b[i][j];
+System.out.print(c[i][j]+" ");
+}
+System.out.println();//new line
+}
+
+}}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+2 6 8
+6 8 10
+</pre></div>
+<h2 class="h2">Multiplication of 2 Matrices in Java</h2>
+<p>In the case of matrix multiplication, a one-row element of the first matrix is multiplied by all the columns of the second matrix which can be understood by the image given below.</p>
+<img src="C:\Users\Admin\Pictures/matrix-multiplication-in-cpp1.png" alt="Matrix Multiplication in Java" id="imgee"/>
+<p>Let's see a simple example to multiply two matrices of 3 rows and 3 columns.</p>
+<div class="codeblock"><textarea name="code" class="java">
+//Java Program to multiply two matrices
+public class MatrixMultiplicationExample{
+public static void main(String args[]){
+//creating two matrices  
+int a[][]={{1,1,1},{2,2,2},{3,3,3}};  
+int b[][]={{1,1,1},{2,2,2},{3,3,3}};  
+  
+//creating another matrix to store the multiplication of two matrices  
+int c[][]=new int[3][3];  //3 rows and 3 columns
+  
+//multiplying and printing multiplication of 2 matrices  
+for(int i=0;i<3;i++){  
+for(int j=0;j<3;j++){  
+c[i][j]=0;    
+for(int k=0;k<3;k++)    
+{    
+c[i][j]+=a[i][k]*b[k][j];    
+}//end of k loop
+System.out.print(c[i][j]+" ");  //printing matrix element
+}//end of j loop
+System.out.println();//new line  
+}  
+}}
+</textarea></div>
+
+<p>Output:</p>
+<div class="codeblock3"><pre>
+6 6 6 
+12 12 12 
+18 18 18 
+</pre></div>
+
+           
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;<br><br>&nbsp;&nbsp;
+ 
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

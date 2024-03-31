@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style> 
+#container {
+ 
+  align-items: center;
+}
+
+</style>
+ <!--CSS Styles -->
+ <link rel="stylesheet" href="assets/css/styles.css" />
+    
+ <!-- Favicons -->
+ <link
+   rel="apple-touch-icon"
+   sizes="180x180"
+   href="assets/icons/apple-touch-icon.png"
+ />
+ <link
+   rel="icon"
+   type="image/png"
+   sizes="32x32"
+   href="assets/icons/favicon-32x32.png"
+ />
+
+<!-- Animate CSS CDN -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C++ Templets</title>
+<link rel="stylesheet" href="Datatypes.css">
+<link rel="stylesheet" href="Java_Tutorial.css">
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li> <a href="file:///D:/example/Home.html">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+   <a href="file:///D:/example/Input%20Output.html">Input Output  C++</a>
+   <a  href="D:/example/Function%20in%20c++.html">Function C++ </a>
+     <a href="file:///D:/example/Decision%20Making.html">Decision Making C++</a>
+      <a href="file:///D:/example/c++%20string.html">C++ String</a>
+    <a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a>
+     <a href="file:///D:/example/opps.html">OOPS in C++</a>
+      <a href="file:///D:/example/C++%20STL.html">C++ STL.</a>
+    <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a>
+    
+    <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a>
+    <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+<br><br>&nbsp;&nbsp;
+<div class="container text-justify"> 
+  <div class="row">
+      <div class="col-lg-12">
+
+
+<div id="container">
+  <h1>C++ Arrays</h1><br>
+  <p style="text-align: justify;"><strong>In C++, an array is a data structure that is used to store multiple values of similar data types in a contiguous memory location.</strong></p>
+  <p style="text-align: justify;"><strong>For example, if we have to store the marks of 4 or 5 students then we can easily store them by creating 5 different variables but what if we want to store marks of 100 students or say 500 students then it becomes</strong></p>
+  <p style="text-align: justify;"><strong>very challenging to create that numbers of variable and manage them. Now, arrays come into the picture that can do it easily by just creating an array of the required size.</strong></p>
+           
+              <img src="C:\Users\Admin\Pictures\Arrays-in-C-660.png" alt="Lights" style="width:80%">
+  <h1>Properties of Arrays in C++</h1><br>
+  <li>An Array is a collection of data of the same data type, stored at a contiguous memory location.</li><br>
+  <li>Indexing of an array starts from 0. It means the first element is stored at the 0th index, the second at 1st, and so on.</li><br>
+  <li>Elements of an array can be accessed using their indices.</li><br>
+  <li>Once an array is declared its size remains constant throughout the program.</li><br>
+  <li>An array can have multiple dimensions.</li><br>
+  <li>The number of elements in an array can be determined using the sizeof operator.</li><br>
+  <li>We can find the size of the type of elements stored in an array by subtracting adjacent addresses.</li><br>              
+<br>
+<h1>Array Declaration in C++</h1><br>
+<p style="text-align: justify;"><strong>In C++, we can declare an array by simply specifying the data type first and then the name of an array with its size.</strong></p><br>
+<mark><b>data_type array_name[Size_of_array];</b></mark><br><br>
+<h3>Example</h3><br>
+<mark>int arr[5];</mark><br><br>
+<h1>Here,</h1><br>
+<li>int: It is the type of data to be stored in the array. We can also use other data types such as char, float, and double.</li><br>
+<li>arr: It is the name of the array.</li><br>
+<li>5: It is the size of the array which means only 5 elements can be stored in the array.
+</li><br>
+          <img src="C:\Users\Admin\Pictures\c-array-declaration.png" alt="Lights" style="width:80%">
+<h1>Initialization of Array in C++</h1><br><br>
+
+<p dir="ltr"><span>In C++, we can initialize an array in many ways but we will discuss some most common ways to initialize an array. We can initialize an array at the time of declaration or after declaration.</span></p><br>
+<h3><span>1. Initialize Array with Values in C++</span></h3><br>
+<p dir="ltr"><span>We have initialized the array with values. The values enclosed in curly braces &#8216;{}&#8217; are assigned to the array. Here, 1 is stored in arr[0], 2 in arr[1], and so on. Here the size of the array is 5.</span></p><br>
+<h4>int arr[5] = {1, 2, 3, 4, 5};</h4><br>
+<h3><span>2. Initialize Array with Values and without Size in C++</span></h3><br><br>
+<p dir="ltr"><span>We have initialized the array with values but we have not declared the length of the array, therefore, the length of an array is equal to the number of elements inside curly braces.</span></p><br>
+<mark><b>int arr[] = {1, 2, 3, 4, 5};</b></mark><br><br>
+<h3><span>3. Initialize Array after Declaration (Using Loops)</span></h3><br>
+<p dir="ltr"><span>We have initialized the array using a loop after declaring the array. This method is generally used when we want to take input from the user or we cant to assign elements one by one to each index of the array. We can modify the loop conditions or change the initialization values according to requirements.</span></p><br>
+<h4 style="background-color: rgb(156, 184, 237);">for (int i = 0; i &lt; N; i++) {<br>    arr[i] = value;<br>}</h4>
+<h3><span>4. Initialize an array partially in C++</span></h3><br>
+<p dir="ltr"><span>Here, we have declared an array &#8216;partialArray&#8217; with size &#8216;5&#8217; and with values &#8216;1&#8217; and &#8216;2&#8217; only. So, these values are stored at the first two indices, and at the rest of the indices &#8216;0&#8217; is stored.</span></p>
+<pre><span>int partialArray[5] = {1, 2};</span></pre><br>
+<h3><span>5. Initialize the array with zero in C++</span></h3><br>
+<p dir="ltr"><span>We can initialize the array with all elements as &#8216;0&#8217; by specifying &#8216;0&#8217; inside the curly braces. This will happen in case of zero only if we try to initialize the array with a different value say &#8216;2&#8217; using this method then &#8216;2&#8217; is stored at the 0th index only.</span></p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div><br>
+<pre><span>int zero_array[5] = {0};</span></pre><br>
+<h2><span>Accessing an Element of an Array in C++</span></h2><br>
+<p dir="ltr"><span>Elements of an array can be accessed by specifying the name of the array, then the index of the element enclosed in the array subscript operator []. For example, arr[i].</span></p><br>
+<h3><span>Example 1: The C++ Program to Illustrate How to Access Array Elements</span></h3>
+<div class="responsive-tabs">
+<h2 class="tabtitle">C++</h2><br>
+<textarea>
+    //  C++ Program to Illustrate How to Access Array Elements
+#include  &lt;iostream&gt;
+using namespace std;
+  
+int main()
+{
+  
+    int arr[3];
+  
+    // Inserting elements in an array
+    arr[0] = 10;
+    arr[1] = 20;
+    arr[2] = 30;
+  
+    // Accessing and printing elements of the array
+    cout << "arr[0]: " << arr[0] << endl;
+    cout << "arr[1]: " << arr[1] << endl;
+    cout << "arr[2]: " << arr[2] << endl;
+  
+    return 0;
+
+</textarea><br>
+
+<div class="code-output"><strong>Output</strong></p>
+<pre>arr[0]: 10
+arr[1]: 20
+arr[2]: 30
+
+</pre>
+</div>
+<h2><span>Update Array Element</span></h2><br>
+<p dir="ltr"><span>To update an element in an array, we can use the index which we want to update enclosed within the array subscript operator and assign the new value.</span></p><br>
+<pre><span>arr[i] = new_value;</span></pre><br>
+<h2><span>Traverse an Array in C++</span></h2><br>
+<p dir="ltr"><b><strong>We can traverse over the array with the help of a loop</strong></b><span> using indexing in C++. First, we have initialized an array &#8216;table_of_two&#8217; with a multiple of 2. After that, we run a for loop from 0 to 9 because in an array indexing starts from zero. Therefore, using the indices we print all values stored in an array.</span></p><br>
+<h3><span>Example 2: The C++ Program to Illustrate How to Traverse an Array</span></h3><br>
+<div class="responsive-tabs"><br>
+<h2 class="tabtitle">C++</h2><br>
+<textarea><summary>How to Traverse an Array</summary>
+    // C++ Program to Illustrate How to Traverse an Array
+    #include &lt;iostream&gt;
+    using namespace std;
+      
+    int main()
+    {
+      
+        // Initialize the array
+        int table_of_two[10]
+            = { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
+      
+        // Traverse the array using for loop
+        for (int i = 0; i < 10; i++) {
+            // Print the array elements using indexing
+            cout << table_of_two[i] << " ";
+        }
+      
+        return 0;
+    </textarea><br>
+
+<div class="code-output"><strong>Output</strong></p>
+<pre>2 4 6 8 10 12 14 16 18 20 
+
+</pre>
+</div>
+<h2><span>Size of an Array in C++</span></h2><br><br>
+<p dir="ltr"><span>In C++, we do not have the length function as in Java to find array size but</span><b><strong> we can calculate the size of an array using sizeof() operator </strong></b><span>trick. First, we find the size occupied by the whole array in the memory and then divide it by the size of the type of element stored in the array. This will give us the number of elements stored in the array.</span></p>
+<pre><span>data_type size = sizeof(Array_name) / sizeof(Array_name[index]);</span></pre>
+<h3><span>Example 3: The C++ Program to Illustrate How to Find the Size of an Array</span></h3><br>
+<h1>C++</h1><br>
+<textarea><summary>How to Find the Size of an Array</summary>// C++ Program to Illustrate How to Find the Size of an
+    // Array
+    #include &lt;iostream&gt;
+    using namespace std;
+      
+    int main()
+    {
+        int arr[] = { 1, 2, 3, 4, 5 };
+      
+        // Size of one element of an array
+        cout << "Size of arr[0]: " << sizeof(arr[0]) << endl;
+      
+        // Size of array 'arr'
+        cout << "Size of arr: " << sizeof(arr) << endl;
+      
+        // Length of an array
+        int n = sizeof(arr) / sizeof(arr[0]);
+      
+        cout << "Length of an array: " << n << endl;
+      
+        return 0;</textarea><br><br>
+
+<div class="code-output"><strong>Output</strong></p>
+<pre>Size of arr[0]: 4
+Size of arr: 20
+Length of an array: 5
+
+</pre>
+</div><br>
+<h2><span>Relation between Arrays and Pointers in C++</span></h2><br>
+<p dir="ltr"><span>In C++, arrays and pointers are closely related to each other. The array name is treated as a pointer that stored the memory address of the first element of the array. As we have discussed earlier, In array elements are stored at contiguous memory locations that&#8217;s why we can access all the elements of an array using the array name.</span></p><br>
+<h3><span>Example 4: Illustrating the Relationship between Array and Pointers</span></h3><br>
+<div class="responsive-tabs">
+<h2 class="tabtitle">C++</h2><br><br>
+<textarea><summary>Example of Array and Pointers
+    C++</summary>// C++ Program to Illustrate that Array Name is a Pointer
+    // that Points to First Element of the Array
+    #include &lt;iostream&gt;
+    using namespace std;
+      
+    int main()
+    {
+        // Defining an array
+        int arr[] = { 1, 2, 3, 4 };
+      
+        // Define a pointer
+        int* ptr = arr;
+      
+        // Printing address of the arrary using array name
+        cout << "Memory address of arr: " << &arr << endl;
+      
+        // Printing address of the array using ptr
+        cout << "Memory address of arr: " << ptr << endl;
+      
+        return 0;</textarea><br>
+
+<div class="code-output"><strong>Output</strong></p>
+<pre>Memory address of arr: 0x7fff2f2cabb0
+Memory address of arr: 0x7fff2f2cabb0
+
+</pre>
+</div>
+<p dir="ltr"><b><strong>Explanation:</strong></b></p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+<p dir="ltr"><span>In the above code, we first define an array &#8220;</span><b><strong>arr</strong></b><span>&#8221; and then declare a pointer &#8220;</span><b><strong>ptr</strong></b><span>&#8221; and assign the array &#8220;arr&#8221; to it. We are able to assign arr to ptr because arr is also a pointer. After that, we print the memory address of</span><b><strong> arr</strong></b><span> using reference operator (</span><b><strong>&amp;</strong></b><span>) and also print the address stored in pointer </span><b><strong>ptr</strong></b><span> and we can see arr and ptr, both stores the same memory address.</span></p>
+<h3><b><strong>Example 5: Printing Array Elements without Indexing in C++</strong></b></h3><br>
+<p dir="ltr"><span>We generally access and print the array elements using indexing. For example to access the first element we use </span><b><strong>array_name[0].</strong></b><span> We have discussed above that the array name is a pointer that stored the address of the first element and array elements are stored at contiguous locations. Now, we are going to access the elements of an array using the array name only.</span></p>
+<div class="responsive-tabs">
+<h2 class="tabtitle">C++</h2><br>
+<textarea><summary>Example 5: Printing Array Elements without Indexing in C++</summary>
+    // C++ Program to Print Array Elements without Indexing
+    #include &lt;iostream&gt;
+    using namespace std;
+      
+    int main()
+    {
+      
+        // Define an array
+        int arr[] = { 11, 22, 33, 44 };
+      
+        // Print elements of an array
+        cout << "first element: " << *arr << endl;
+        cout << "Second element: " << *(arr + 1) << endl;
+        cout << "Third element: " << *(arr + 2) << endl;
+        cout << "fourth element: " << *(arr + 3) << endl;
+      
+        return 0;</textarea><br>
+<div class="code-output"><strong>Output</strong></p>
+<pre>first element: 11
+Second element: 22
+Third element: 33
+fourth element: 44
+
+</pre>
+</div><br>
+<p dir="ltr"><b><strong>Explanation</strong></b></p><br>
+<p dir="ltr"><span>In the above code, we first declared an array &#8220;</span><b><strong>arr</strong></b><span>&#8221; with four elements. After that, we are printing the array elements. Let&#8217;s discuss how we do it. We discussed that the array name is a pointer that stores the address of the first element of an array so, to print the first element we have dereferenced that pointer </span><b><strong>(*arr)</strong></b><span> using dereferencing operator</span><b><strong> (*)</strong></b><span> which prints the data stored at that address.</span></p>
+<p dir="ltr"><span>To print the second element of an array we first add </span><b><strong>1 </strong></b><span>to </span><b><strong>arr </strong></b><span>which is equivalent to (address of arr + size_of_one_element *1) that takes the pointer to the address just after the first one and after that, we dereference that pointer to print the second element. Similarly, we print rest of the elements of an array without using indexing.</span></p>
+<h2><span>Passing Array to Function in C++</span></h2>
+<p dir="ltr"><span>To use arrays efficiently we should know how to pass arrays to function. We can pass arrays to functions as an argument same as we pass variables to functions but we know that the array name is treated as a pointer using this concept we can pass the array to functions as an argument and then access all elements of that array using pointer.</span></p>
+<p dir="ltr"><span>So ultimately,</span><b><strong> arrays are always passed as pointers to the function. </strong></b><span>Let&#8217;s see 3 ways to pass an array to a function that are majorly used.</span></p>
+<h3><span>1. Passing Array as a Pointer</span></h3>
+<p dir="ltr"><span>In this method, we simply pass the array name in function call which means we pass the address to the first element of the array. In this method, we can modify the array elements within the function.</span></p>
+<p dir="ltr"><b><strong>Syntax</strong></b></p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div>
+<pre><span>return_type</span><i><em class="GFGEditorTheme__textItalic"> function_name</em></i><span> ( </span><b><strong>data_type *array_name </strong></b><span>) {</span><br><span>       </span><i><em class="GFGEditorTheme__textItalic"> // set of statements</em></i><br><span>}</span></pre>
+<h3><span>2. Passing Array as an Unsized Array</span></h3>
+<p dir="ltr"><span>In this method, the function accepts the array using a simple array declaration with no size as an argument.</span></p>
+<p dir="ltr"><b><strong>Syntax</strong></b></p>
+<pre><span>return_type</span><i><em class="GFGEditorTheme__textItalic"> function_name </em></i><b><strong>( data_type array_name[] </strong></b><span>) {</span><br><span>        </span><i><em class="GFGEditorTheme__textItalic">// set of statements</em></i><br><span>}</span></pre>
+<h3><span>3. Passing Array as a Sized Array</span></h3>
+<p dir="ltr"><span>In this method, the function accepts the array using a simple array declaration with size as an argument. We use this method by sizing an array just to indicate the size of an array.</span></p>
+<p dir="ltr"><b><strong>Syntax</strong></b></p>
+<pre><span>return_type function_name(data_type array_name[size_of_array]){</span><br><span>        // set of statements</span><br><span>}</span></pre>
+<blockquote>
+<p dir="ltr"><b><strong>Note:</strong></b><span> Array will be treated as a pointer in the passed function no matter what method we use. As the array are passed as pointers, they will loose the information about its size leading to a phenomenon named as </span><a href="https://www.geeksforgeeks.org/what-is-array-decay-in-c-how-can-it-be-prevented/"><span>Array Decay.</span></a></p>
+</blockquote>
+<h3><span>Example: Illustrating Different Ways to Pass Arrays to a Function</span></h3>
+<div class="responsive-tabs">
+<h2 class="tabtitle">C++</h2>
+<textarea><summary>Example: Illustrating Different Ways to Pass Arrays to a Function</summary>#include &lt;iostream&gt;
+    using namespace std;
+      
+    // passing array as a sized array argument
+    void printArraySized(int arr[3], int n)
+    {
+        cout << "Array as Sized Array Argument: ";
+        for (int i = 0; i < n; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+      
+    // passing array as an unsized array argument
+    void printArrayUnsized(int arr[], int n)
+    {
+        cout << "Array as Unsized Array Argument: ";
+        for (int i = 0; i < n; i++) {
+            cout << *(arr + i) << " ";
+        }
+        cout << endl;
+    }
+      
+    // Passing array as a pointer argument
+    void printArrayPointer(int* ptr, int n)
+    {
+        // Print array elements using pointer ptr
+        // that store the address of array passed
+        cout << "Array as Pointer Argument: ";
+        for (int i = 0; i < n; i++) {
+            cout << ptr[i] << " ";
+        }
+    }
+      
+    // driver code
+    int main()
+    {
+      
+        int arr[] = { 10, 20, 30 };
+      
+        // Call function printArray and pass
+        // array and its size to it.
+        printArraySized(arr, 3);
+        printArrayUnsized(arr, 3);
+        printArrayPointer(arr, 3);
+      
+        return 0;</textarea><br>
+
+<div class="code-output"><strong>Output</strong></p>
+<pre>Array as Sized Array Argument: 10 20 30 
+Array as Unsized Array Argument: 10 20 30 
+Array as Pointer Argument: 10 20 30 
+</pre>
+</div><br>
+<h2><span>Multidimensional Arrays in C++</span></h2><br>
+<p dir="ltr"><span>Arrays declared with more than one dimension are called multidimensional arrays. The most widely used multidimensional arrays are 2D arrays and 3D arrays. These arrays are generally represented in the form of rows and columns.</span></p><br>
+<h3><span>Multidimensional Array Declaration</span></h3><br>
+<pre><span>Data_Type Array_Name[Size1][Size2]...[SizeN];</span></pre>
+<p dir="ltr"><span>where,</span></p>
+<ul>
+<li value="1"><b><strong>Data_Type:</strong></b><span>&nbsp;Type of data to be stored in the array.</span></li><br>
+<li value="2"><b><strong>Array_Name:</strong></b><span>&nbsp;Name of the array.</span></li><br>
+<li value="3"><b><strong>Size1, Size2,…, SizeN:</strong></b><span>&nbsp;Size of each dimension.</span></li><br>
+</ul>
+<h2><span>Two Dimensional Array in C++</span></h2>
+<p dir="ltr"><span>In C++, a two-dimensional array is a grouping of elements arranged in rows and columns. Each element is accessed using two indices: one for the row and one for the column, which makes it easy to visualize as a table or grid.</span></p><br>
+<p dir="ltr"><b><strong>Syntax of 2D array</strong></b></p><div style="text-align:center;margin:20px 0;max-height: 280px;" id="GFG_AD_gfg_outstream_incontent"></div><br>
+<pre><span>data_Type array_name[n][m];</span></pre>
+<p dir="ltr"><span>Where,</span></p><br>
+
+<li value="1"><b><strong>n:</strong></b><span> Number of rows.</span></li>
+<li value="2"><b><strong>m: </strong></b><span>Number of columns.</span></li>
+              <img src="C:\Users\Admin\Pictures\two-d.png" alt="Lights" style="width:80%">
+    
+<h3><span>Example: The C++ Program to Illustrate the Two-Dimensional Array</span></h3>
+<div class="responsive-tabs">
+<h2 class="tabtitle">C++</h2>
+<textarea><summary>Example: The C++ Program to Illustrate the Two-Dimensional Array</summary>// c++ program to illustrate the two dimensional array
+    #include &lt;iostream&gt;
+    using namespace std;
+      
+    int main()
+    {
+        // Declaring 2D array
+        int arr[4][4];
+      
+        // Initialize 2D array using loop
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                arr[i][j] = i + j;
+            }
+        }
+      
+        // Printing the element of 2D array
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                cout << arr[i][j] << " ";
+            }
+            cout << endl;
+        }
+      
+        return 0;
+    </textarea><br>
+
+<div class="code-output"><strong>Output</strong></p>
+<pre>0 1 2 3 
+1 2 3 4 
+2 3 4 5 
+3 4 5 6 
+
+</pre>
+</div>
+<p dir="ltr"><b><strong>Explanation</strong></b></p>
+<p dir="ltr"><span>In the above code we have declared a 2D array with 4 rows and 4 columns after that we initialized the array with the value of (i+j) in every iteration of the loop. Then we are printing the 2D array using a nested loop and we can see in the below output that there are 4 rows and 4 columns.</span></p>
+<h2><span>Three-Dimensional Array in C++</span></h2>
+<p dir="ltr"><span>The 3D array uses three dimensions. A collection of various two-dimensional arrays piled on top of one another can be used to represent it. Three indices—the row index, column index, and depth index are used to uniquely identify each element in a 3D array.</span></p>
+<p dir="ltr"><b><strong>Declaration of Three-Dimensional Array in C++</strong></b></p>
+<p dir="ltr"><span>To declare a 3D array in C++, we need to specify its third dimension along with 2D dimensions.</span></p>
+<pre><span>Data_Type Array_Name[D][R][C];</span></pre>
+<p dir="ltr"><span>Where,</span></p>
+<ul>
+<li value="1"><b><strong>Data_Type:</strong></b><span>&nbsp;Type of data to be stored in each element.</span></li>
+<li value="2"><b><strong>Array_Name:</strong></b><span>&nbsp;Name of the array</span></li>
+<li value="3"><b><strong>D:</strong></b><span>&nbsp;Number of 2D arrays or Depth of array.</span></li>
+<li value="4"><b><strong>R:</strong></b><span>&nbsp;Number of rows in each 2D array.</span></li>
+<li value="5"><b><strong>C:&nbsp;</strong></b><span>Number of columns in each 2D array.</span></li>
+</ul>
+<p dir="ltr"><b><strong>Example</strong></b></p>
+<pre><span>int array[3][3][3];</span></pre>
+
+          <img src="C:\Users\Admin\Pictures\3D-array.jpg" alt="Lights" style="width:80%">
+<h3><span>Example: The C++ Program to Illustrate the 3d Array</span></h3>
+<div class="responsive-tabs">
+<h2 class="tabtitle">C++</h2>
+<textarea><summary>Example: The C++ Program to Illustrate the 3d Array
+    C++</summary>// C++ program to illustrate the 3d array
+    #include &lt;iostream&gt;
+    using namespace std;
+      
+    int main()
+    {
+      
+        // declaring 3d array
+        int arr[3][3][3];
+        // initializing the array
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 3; k++) {
+                    arr[i][j][k] = i + j + k;
+                }
+            }
+        }
+      
+        // printing the array
+        for (int i = 0; i < 3; i++) {
+            cout << i << "st layer:" << endl;
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 3; k++) {
+                    cout << arr[i][j][k] << " ";
+                }
+                cout << endl;
+            }
+            cout << endl;
+        }
+      
+        return 0;</textarea><br>
+
+<div class="code-output"><strong>Output</strong></p>
+<pre>0st layer:
+0 1 2 
+1 2 3 
+2 3 4 
+
+1st layer:
+1 2 3 
+2 3 4 
+3 4 5 
+
+2st layer:
+2 3 4 
+3 4 5 
+4 5 6 
+
+</pre>
+</div>
+
+<div id="bottomnextup">
+    <a class="prev" href="cpp-tutorial">&larr; prev</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="next" href="cpp-tutorial">next &rarr;</a>
+   
+    
+    </div></div></div></div>
+<br> <div class="container-fluid">
+      
+  <div class="row">
+   
+     <div class="col-sm-4">
+      <h5>JAVA TUTORIAL</h5>
+      <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+ 
+  <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+  <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+  <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+      <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+       <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+       <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+       <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+       <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+       <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+       <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+       <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+       <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+       <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+       <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+       <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+       <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+       <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+       <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+       <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+       <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+       <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+       <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+       <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+       <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+         <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+         <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+         <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+         <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+       <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+       <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+         <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+           <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+           <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+           <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+           <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+           <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+           <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+           <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+           <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+           <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+          
+         
+      <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+        <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+      <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+        <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+         <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+        <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+       <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+        <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+       <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+       <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+       <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+       <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+  
+ </div> 
+</div><br><br><br><br><br><br><br><br><br>
+<section class="hero" id="about">
+  <div class="bio animate__animated animate__shakeX">
+    <h2 class="bio-title">About Me</h2>
+    <p class="bio-text">
+        My name is Gautam, I’ve been studying computer science for two years. In order to kick-start my career before I graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for four years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+
+    </p>
+  </div>
+</section><br>
+<section class="skills" id="skills">
+  <h2 class="skill-header">My Top Skills</h2>
+
+  <div class="skills-wrapper">
+    <div class="first-set animate__animated animate__pulse">
+      <img
+        src="C:\Users\Admin\Pictures\c++.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="C:\Users\Admin\Pictures\java.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="C:\Users\Admin\Pictures\html.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+
+    <div class="second-set animate__animated animate__pulse">
+      <img
+        src="C:\Users\Admin\Pictures\css-3.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="C:\Users\Admin\Pictures\js.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="C:\Users\Admin\Pictures\icons-heroo.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+  </div>
+</section>
+<section class="projects" id="projects">
+  <h2 class="projects-title">Some of my Recent Projects</h2>
+  <div class="projects-container">
+    <div class="project-container project-card">
+      <img
+        src="C:\Users\Admin\Pictures\insta.png"
+        alt="instagram-clone"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">Instagram Clone</h3>
+      <p class="project-details">
+        I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+      </p>
+      <a href="#" target="_blank" class="project-link">Check it Out</a>
+    </div>
+    <div class="project-container project-card">
+      <img
+        src="C:\Users\Admin\Pictures\quiz.jpg"
+        alt="quiz-app"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">QUIZ</h3>
+      <p class="project-details">
+        I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+      </p>
+      <a href="#" target="_blank" class="project-link">Check it Out</a>
+    </div>
+    <div class="project-container project-card">
+      <img
+        src="C:\Users\Admin\Pictures\todo.jpg"
+        alt="todo-app"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">TO DO APP</h3>
+      <p class="project-details">
+        I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+      </p>
+      <a href="#" target="_blank" class="project-link">Check it Out</a>
+    </div>
+  </div>
+</section><section class="contact" id="contact">
+  <h2>Get In Touch With Me</h2>
+  <div class="contact-form-container">
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="sender-name"
+            placeholder="Enter Your Name"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="sender-email"
+            placeholder="Enter Your Email"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            cols="60"
+            rows="10"
+            placeholder="Enter Your Message"
+            name="message"
+            class="input-field"
+            required
+          ></textarea>
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          id="submit-btn"
+          class="submit-btn"
+        /><br>
+        <span id="success"></span>
+      </form>
+    </div>
+  </div>
+</section><br><br><br>
+<div class="container">
+  <div class="all flex-row">
+    <div class="menu flex-column">
+      <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+      <div class="profil-info">
+        <h2 class="name">Gautam Kumar</h2>
+        <h3 class="city">Patna,Bihar</h3>
+      </div></div></div></div></div><br>
+<div class="socials">
+  <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+    ><img
+      src="C:\Users\Admin\Pictures\insta.png"
+      alt="Instagram"
+      loading="lazy"
+      class="socicon"
+  />Instagram</a>
+  <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+    ><img
+      src="C:\Users\Admin\Pictures\facebookk.png"
+      alt="Facebook"
+      loading="lazy"
+      class="socicon"
+  />Facebook</a>
+  <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+    ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+  />Youtube</a>
+  <footer>
+      <p class="copy">&copy; Copyright 2024</p>
+      <p class="copy">
+        Built with &#x2661; by CODE WITH GAUTAM</Code>
+       
+      </p>
+</footer>
+<i class="scroll-up" id="scroll-up"
+><img
+  src="assets/icons/icons8-upward-arrow.gif"
+  class="socicon up-arrow"
+  alt="scroll-up"
+/></i>
+
+
+<script src="portfolio.js">
+</script>
+<script  type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script>
+
+</body>
+</html>

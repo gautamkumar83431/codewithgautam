@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>Methods in Java
+      --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a>
+
+<a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a>
+<a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a>
+<a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a>
+<a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a>
+<a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a>
+<a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading in java</a>
+<a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding in java</a>
+<a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism in java </a>
+<a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+<a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection in java</a>
+<a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a>
+<a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a>
+<a href="file:///D:/example/Package%20in%20java.html">Java Package</a>
+<a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a>
+<a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class in java</a>
+<a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a>
+<a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class in java</a>
+<a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                   </div></div>
+                  
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+                <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+            </div>
+            <div class="mega-url-list">
+                <h1>Methods in Java</h1>
+                <style>.layout_size{min-height: 28px;overflow: hidden;margin-bottom:10px;} @media (max-width: 550px) { .layout_size {min-height: 320px; min-width: inherit; } }
+                </style>
+                <div class="layout_size">
+                    <div id="ezoic-pub-ad-placeholder-106"></div>
+                </div><p>Method in Java is similar to a function defined in other programming languages. Method describes <b>behavior of an object</b>. A method is a collection of statements that are grouped together to perform an operation.</p>
+                <p>For example, if we have a class Human, then this class should have methods like eating(), walking(), talking() etc, which describes the behavior of the object.</p>
+                <p>Declaring method is similar to function. See the syntax to declare the method in Java.</p>
+                <hr/>
+                <pre class="java"><code class="language-java">return-type methodName(parameter-list)
+                {
+                 //body of method
+                }</code></pre></p>
+                <p><b>return-type</b> refers to the type of value returned by the method.</p>
+                <p><b>methodName</b> is a valid meaningful name that represent name of a method. </p>
+                <p><b>parameter-list</b> represents list of parameters accepted by this method.</p>
+                <p>Method may have an optional return statement that is used to return value to the caller function.</p>
+                <hr/>
+                <h4>Example of a Method:</h4>
+                <p>Lets understand the method by simple example that takes a parameter and returns a string value.</p>
+                <textarea><p><pre class="java"><code class="language-java">public String getName(String st)
+                {
+                 String name="StudyTonight";
+                 name=name+st;
+                 return name;
+                }</code></pre></p></textarea><br>
+                <p class="center"><img class="lazyload blur-up" src="C:\Users\Admin\Pictures/method-defination.webp" alt="method definition in java" id="imgee"></p><br>
+                <p><b>Modifier :</b> Modifier are access type of method. We will discuss it in detail later.</p><br>
+                <p><b>Return Type :</b> A method may return value. Data type of value return by a method is declare in method heading.</p><br>
+                <p><b>Method name :</b> Actual name of the method.</p>
+                <p><b>Parameter :</b> Value passed to a method.</p>
+                <p><b>Method body :</b> collection of statement that defines what method does.</p><br>
+                
+                <hr/>
+                <h3>Calling a Method</h3><br>
+                <p>Methods are called to perform the functionality implemented in it. We can call method by its name and store the returned value into a variable.</p><br>
+                <pre><code class="language-java">String val = GetName(".com")</code></pre>
+                <p>It will return a value <b>studytonight.com</b> after appending the argument passed during method call.</p><br>
+              <h3>Default Methods</h3><br>
+                <p>In Java, Before Java 8 Version an Interface can have only abstract methods and the implementation of these methods has to be done in a separate class. To overcome this problem, Java 8 introduces a new concept of default methods. Default Methods allow an interface to have a method and also its implementation. It does not affect the classes which implement the interface.</p><br>
+                <p><b>Example:</b></p><br>
+                <textarea><pre> 
+                  <code class="language-java">
+                interface Demo
+                { 
+                    public void add(int p, int q); 
+                    default void print() 
+                    { 
+                System.out.println("Execution of Default Method"); 
+                    } 
+                }  
+                class DefaultDemo1 implements Demo
+                { 
+                    public void add(int p, int q) 
+                    { 
+                int r = p + q;
+                  System.out.println("Total = "+r); 
+                    } 
+                
+                    public static void main(String args[]) 
+                    { 
+                        DefaultDemo1 obj = new DefaultDemo1(); 
+                obj.add(10,20);  
+                obj.print(); 
+                    } 
+                }
+                  </code>
+                </pre></textarea><br>
+                <p class="output">
+                    <p><b>Output</b></p>
+                  <img class="lazyload blur-up" ds-src="C:\Users\Admin\Pictures/return-multiple-values (1).webp" alt="default-method" id="imgee">
+                </p>
+                <h4><b>Below is an Example of Default Method and Multiple Inheritance</b></h4><br>
+                <p><b>Example:</b></p><br>
+                <textarea><pre>
+                  <code class="language-java">
+                interface Demo_A
+                { 
+                    default void print_X() 
+                    { 
+                System.out.println("This is Demo_A Default Method"); 
+                    } 
+                } 
+                interface Demo_B
+                { 
+                    default void print_X() 
+                    { 
+                System.out.println("This is Demo_B Default Method"); 
+                    } 
+                }  
+                class DefaultDemo2 implements Demo_A, Demo_B
+                { 
+                    public void print_X() 
+                    {
+                Demo_A.super.print_X(); 
+                Demo_B.super.print_X(); 
+                    } 
+                
+                    public static void main(String args[]) 
+                    { 
+                        DefaultDemo2 obj = new DefaultDemo2(); 
+                obj.print_X(); 
+                    } 
+                }
+                  </code>
+                </pre></textarea><br>
+                <p class="output">
+                    <p><b>Output</b></p><br>
+                  <img class="lazyload blur-up" ds-src="C:\Users\Admin\Pictures/default-method-2.webp" alt="default-method" id="imgee">
+                </p>
+                <hr/> 
+                <hr><br>
+                <h3>Returning Multiple values</h3><br>
+                <p>In Java, we can return multiple values from a method by using array. We store all the values into an array that want to return and then return back it to the caller method. We <b>must specify return-type as an array</b> while creating an array. Lets  see an example.</p>
+                <p><b>Example:</b></p><br>
+                <p>Below is an example in which we return an array that holds multiple values.</p>
+                <textarea><pre>
+                  <code class="language-java">
+                class MethodDemo2{ 
+                    static int[] total(int a, int b) 
+                    { 
+                int[] s = new int[2]; 
+                s[0] = a + b; 
+                s[1] = a - b; 
+                        return s; 
+                    } 
+                
+                    public static void main(String[] args) 
+                    { 
+                int[] s = total(200, 70); 
+                System.out.println("Addition = " + s[0]); 
+                System.out.println("Subtraction = " + s[1]); 
+                    } 
+                }
+                  </code>
+                </pre></textarea><br>
+                <p class="output">
+                    <p><b>Output</b></p>
+                  <img class="lazyload blur-up"src="C:\Users\Admin\Pictures/return-multiple-values.webp" alt="return-multiple-values" id="imgee">
+                </p>
+                <hr>
+                <h3>Return Object from Method</h3><br>
+                <p>In some scenario there can be need to return object of a class to the caller function. In this case, we <b>must specify class name</b> in the method definition.</p><br>
+                <p>Below is an example in which we are getting an object from the method call. It can also be used to return collection of data.</p><br>
+                <p><b>Example:</b></p><br>
+                <p>In this example, we created a method <b>get()</b> that returns object of <b>Demo</b> class. </p><br>
+                <textarea><pre>
+                  <code class="language-java">
+                class Demo{
+                int a; 
+                    double b; 
+                int c; 
+                Demo(int m, double d, int a) 
+                    { 
+                        a = m; 
+                        b = d; 
+                        c = a; 
+                    } 
+                } 
+                class MethodDemo4{ 
+                    static Demo get(int x, int y) 
+                    { 
+                        return new Demo(x * y, (double)x / y, (x + y)); 
+                    } 
+                    public static void main(String[] args) 
+                    { 
+                        Demo ans = get(25, 5); 
+                System.out.println("Multiplication = " + ans.a); 
+                System.out.println("Division = " + ans.b); 
+                System.out.println("Addition = " + ans.c); 
+                    } 
+                }
+                  </code>
+                </pre></textarea><br>
+                <p class="output">
+                    <p><b>Output</b></p>
+                  <img class="lazyload blur-up" src="C:\Users\Admin\Pictures/return-multiple-values-3.webp" alt="return-multiple-values" id="imgee">
+                </p>
+                <hr>
+                <h2>Parameter Vs. Argument in a Method</h2><br>
+                <p>
+                While talking about method, it is important to know the difference between two terms <b>parameter</b> and <b>argument</b>.
+                </p><br>
+                <p>
+                <b>Parameter</b> is variable defined by a method that receives value when the method is called. Parameter are always local to the method they dont have scope outside the method. While <b>argument</b> is a value that is passed to a method when it is called.
+                </p>
+                <p>You can understand it by the below image that explain parameter and argument using a program example. </p><br>
+                <p class="center"><img class="lazyload blur-up" src="C:\Users\Admin\Pictures/parameter-vs-argument.webp" alt="parameter and argument" id="imgee"></p><br>
+                <hr/>
+                <h4><code>call-by-value</code> and <code>call-by-reference</code></h4><br>
+                <p>
+                There are two ways to pass an argument to a method
+                </p><br>
+                <ol class="content">
+                <li><b>call-by-value :</b> In this approach copy of an argument value is pass to a method. Changes made to the argument value inside the method will have no effect on the arguments.</li>
+                <li><b>call-by-reference :</b> In this reference of an argument is pass to a method. Any changes made inside the method will affect the agrument value.</li>
+                </ol>
+                <p>
+                <b>NOTE :</b>However there is no concept of call-by-reference in Java. Java supports only call by value.
+                </p>
+                <hr/>
+                <h3>Example of <code>call-by-value</code></h3><br>
+                <p>Lets see an example in which we are passing argument to a method and modifying its value.</p><br>
+                <textarea><pre class="java"><code class="language-java">public class Test
+                {
+                    public void callByValue(int x)
+                    {
+                        x=100;
+                    }
+                    public static void main(String[] args)
+                    {
+                       int x=50;
+                        Test t = new Test();
+                        t.callByValue(x);	<font color="green">//function call</font>
+                        System.out.println(x);
+                    }
+                
+                }</code></pre></textarea><br>
+                <p class="output">
+                50
+                </p>
+                <p>See, in the above example, <b>value passed to the method does not change</b> even after modified in the method. It shows that <b> changes made to the value was local</b> and argument was passed as call-by-value.</p><br>
+                <hr>
+                <div><ul class="pager">
+                <li class="previous">
+                   
+                <a href="file:///D:/example/Object%20And%20Class.html">&larr; Prev</a>
+                </li>
+                <li class="next">
+                <a href="#">Next &rarr;</a>
+                </li>
+                </ul></div>
+                <hr/>
+
+
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br> <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> 
+    </div><br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2023</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

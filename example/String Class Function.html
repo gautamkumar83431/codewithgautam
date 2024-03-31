@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>String Class Function in java
+      --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+        <li> <a href="file:///D:/example/Home.html">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav> <div class="scrollmenu">
+   
+    <a href="file:///D:/example/Home.html">Home</a>
+    <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+    <a href="file:///D:/example/codewithgautam.html">C++</a>
+    <a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a>
+  <a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a>
+  <a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a>
+  <a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#support">Support</a>
+    <a href="#blog">Blog</a>
+   
+    
+  </div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                  </div></div>
+                  
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+                <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+            </div>
+            <div class="mega-url-list">
+              
+<h1>Java String class functions</h1><br>
+<style>.layout_size{min-height: 18px;overflow: hidden;margin-bottom:10px;} @media (max-width: 550px) { .layout_size {min-height: 320px; min-width: inherit; } }
+</style>
+<div class="layout_size">
+	<div id="ezoic-pub-ad-placeholder-106"></div>
+</div><p>
+The methods specified below are some of the most commonly used methods of the <code>String</code> class in Java. We will learn about each method with help of small code examples for better understanding.</p>
+<h3><code>charAt()</code> method</h3><br>
+<p>String <code>charAt()</code> function returns the character located at the specified index.</p>
+
+<pre class="java"><code class="language-java">
+    <textarea> class Demo {
+    public static void main(String[] args) {   
+        String str = "studytonight";
+        System.out.println(str.charAt(2));
+    }
+}</textarea>
+</code></pre><br>
+<p><b>Output:</b> u</p><br>
+<p><b>NOTE: </b>Index of a String starts from 0, hence <code>str.charAt(2)</code> means third character of the String str.</p>
+
+<h3><code>equalsIgnoreCase()</code> method</h3><br>
+<p>String <code>equalsIgnoreCase()</code> determines the equality of two Strings, ignoring their case (upper or lower case doesn't matter with this method).</p>
+<pre class="java"><code class="language-java">
+    <textarea> class Demo {
+    public static void main(String[] args) {   
+        String str = "java";
+        System.out.println(str.equalsIgnoreCase("JAVA"));
+    }
+}</textarea>
+</code></pre><br>
+
+<p class="output"><p><b>Output</b></p>
+true
+</p>
+
+
+<h3><code>indexOf()</code> method</h3><br>
+<p>String <code>indexOf()</code> method returns the index of first occurrence of a substring or a character. indexOf() method has four override methods:</p>
+<br>
+    <li><code>int indexOf(String str)</code>: It returns the index within this string of the first occurrence of the specified substring.</li>
+    <li><code>int indexOf(int ch, int fromIndex)</code>: It returns the index within this string of the first occurrence of the specified character, starting the search at the specified index.</li>
+    <li><code>int indexOf(int ch)</code>: It returns the index within this string of the first occurrence of the specified character.</li>
+    <li><code>int indexOf(String str, int fromIndex)</code>: It returns the index within this string of the first occurrence of the specified substring, starting at the specified index.</li>
+
+<p><b>Example:</b></p><br>
+<pre class="java"><code class="language-java">
+    <textarea> class StudyTonight {
+    public static void main(String[] args) {
+        String str="StudyTonight";
+        System.out.println(str.indexOf('u'));   //3rd form
+        System.out.println(str.indexOf('t', 3));    //2nd form
+        String subString="Ton";
+        System.out.println(str.indexOf(subString)); //1st form
+        System.out.println(str.indexOf(subString,7));   //4th form
+    }
+}</textarea></code></pre>
+
+<p class="output"><p><b>Output</b></p>
+2
+11
+5
+-1
+</p><br>
+
+<p><b>NOTE:</b> -1 indicates that the substring/Character is not found in the given String.</p><br>
+
+
+
+<h3><code>length()</code> method</h3><br>
+<p>String <code>length()</code> function returns the number of characters in a String.</p>
+<pre class="java"><code class="language-java">
+    <textarea> class Demo {
+    public static void main(String[] args) {   
+        String str = "Count me";
+        System.out.println(str.length());
+    }
+}</textarea>
+</code></pre>
+
+<p class="output"><p><b>Ouutput</b></p>
+8
+</p>
+
+<h3><code>replace()</code> method</h3><br>
+<p>String <code>replace()</code> method replaces occurances of character with a specified new character.</p>
+<pre class="java"><code class="language-java">
+    <textarea> class Demo {
+    public static void main(String[] args) {   
+        String str = "Change me";
+        System.out.println(str.replace('m','M'));
+    }
+}
+;</textarea></code></pre>
+
+<p class="output"><p><b>Output</b></p>
+Change Me
+</p>
+<br>
+<h3><code>substring()</code> method</h3><br>
+<p>String <code>substring()</code> method returns a part of the string. <code>substring()</code> method has two override methods.</p><br>
+<p>1. public String substring(int begin);</p><br>
+<p>2. public String substring(int begin, int end);</p><br>
+<p>The first argument represents the starting point of the subtring. If the <code>substring()</code> method is called with only one argument, the subtring returns characters from specified starting point to the end of original string.</p><br>
+<p>If method is called with two arguments, the second argument specify the end point of substring.</p><br>
+
+<pre class="java"><code class="language-java">
+    <textarea> class Demo {
+    public static void main(String[] args) {
+        String str = "0123456789";
+        System.out.println(str.substring(4));
+        System.out.println(str.substring(4,7));        
+    }
+}</textarea>
+</code></pre>
+<br>
+<p class="output"><p><b>Output</b></p>
+456789
+456
+</p><br>
+<h3><code>toLowerCase()</code> method</h3><br>
+<p>String <code>toLowerCase()</code> method returns string with all uppercase characters converted to lowercase.</p>
+<pre class="java"><code class="language-java">
+    <textarea> class Demo {
+    public static void main(String[] args) {
+        String str = "ABCDEF";
+        System.out.println(str.toLowerCase());   
+    }
+}</textarea>
+</code></pre><br>
+<p class="output"><p><b>Output</b></p>
+abcdef
+</p>
+<br>
+
+<h3><code>toUpperCase()</code> method</h3><br>
+<p>This method returns string with all lowercase character changed to uppercase.</p><br>
+<pre class="java"><code class="language-java">
+    <textarea> class Demo {
+    public static void main(String[] args) {
+        String str = "abcdef";
+        System.out.println(str.toUpperCase());   
+    }
+}</textarea>
+</code></pre><br>
+<p class="output">
+    <p><b>Output</b></p>
+ABCDEF
+</p><br>
+
+<h3><code>valueOf()</code> method</h3><br>
+<p>String class uses overloaded version of <code>valueOf()</code> method for all primitive data types and for type Object.</p><br>
+<p><b>NOTE:</b> <code>valueOf()</code> function is used to convert <b>primitive data types</b> into Strings.</p><br>
+<pre class="java"><code class="language-java">
+    <textarea> class Demo {
+    public static void main(String[] args) {
+         int num = 35;
+         String s1 = String.valueOf(num);    //converting int to String
+         System.out.println(s1);
+         System.out.println("type of num is: "+s1.getClass().getName());   
+    }
+}</textarea>
+</code></pre><br>
+<p class="output"><p><b>Output</b></p>
+35
+type of num is: java.lang.String
+</p><br>
+<h3><code>toString()</code> method</h3><br>
+<p>String <code>toString()</code> method returns the string representation of an object. It is declared in the Object class, hence can be overridden by any java class. (Object class is super class of all java classes).</p><br>
+<pre class="java"><code class="language-java">
+    <textarea> class Car {
+    public static void main(String args[])
+    {
+        Car c = new Car();
+        System.out.println(c);
+    }
+    public String toString()
+    {
+        return "This is my car object";
+    }
+}</textarea>
+</code></pre><br>
+<p class="output"><p><b>Output</b></p>
+This is my car object
+</p>
+<br>
+<p>Whenever we will try to print any object of class Car, its <code>toString()</code> function will be called.</p><br>
+<p><b>NOTE:</b> If we don't override the <code>toString()</code> method and directly print the object, then it would print the object id that contains some hashcode.</p><br>
+<h3><code>trim()</code> method</h3><br>
+<p>This method returns a string from which any leading and trailing whitespaces has been removed.</p><br>
+<pre class="java"><code class="language-java">
+    <textarea> class Demo {
+    public static void main(String[] args) {
+        String str = "   hello  ";
+        System.out.println(str.trim());   
+    }
+}</textarea>
+</code></pre><br>
+
+<p class="output"><p><b>Output</b></p>
+hello
+</p><br>
+<h3><code>contains()</code>Method</h3><br>
+<p>String <code>contains()</code> method is used to check the sequence of characters in the given string. It returns true if a sequence of string is found else it returns false.</p><br>
+<pre>
+    <code class="language-java">
+        <textarea>
+public class Demo {
+    public static void main(String[] args) {
+         String a = "Hello welcome to studytonight.com";  
+         boolean b = a.contains("studytonight.com");  
+         System.out.println(b);    
+         System.out.println(a.contains("javatpoint"));     
+    }
+}</textarea>
+</code>
+</pre><br>
+<p class="output"><p><b>Output</b></p>
+true
+false
+</p><br>
+<h3><code>endsWith()</code> Method</h3><br>
+<p>String <code>endsWith()</code> method is used to check whether the string ends with the given suffix or not. It returns true when suffix matches the string else it returns false.</p><br>
+<pre>
+    <code class="language-java"><textarea>
+public class Demo {
+    public static void main(String[] args) {
+        String a="Hello welcome to studytonight.com";  
+        System.out.println(a.endsWith("m"));  
+        System.out.println(a.endsWith("com"));       
+    }</textarea>
+}
+    </code>
+</pre><br>
+<p class="output"><p><b>Output</b></p>
+true
+true
+</p>
+<h3><code>format()</code> Method</h3><br>
+<p>String <code>format()</code> is a string method. It is used to the format of the given string.</p>
+<p>Following are the format specifier and their datatype:</p>
+<table class="table table-bordered">
+    <tr>
+        <th>Format Specifier</th>
+        <th>Data Type</th>
+    </tr>
+    <tr>
+        <td>%a</td>
+        <td>floating point</td>
+    </tr>
+    <tr>
+        <td>%b</td>
+        <td>Any type</td>
+    </tr>
+    <tr>
+        <td>%c</td>
+        <td>character</td>
+    </tr>
+    <tr>
+        <td>%d</td>
+        <td>integer</td>
+    </tr>
+    <tr>
+        <td>%e</td>
+        <td>floating point</td>
+    </tr>
+    <tr>
+        <td>%f</td>
+        <td>floating point</td>
+    </tr>
+    <tr>
+        <td>%g</td>
+        <td>floating point</td>
+    </tr>
+    <tr>
+        <td>%h</td>
+        <td>any type</td>
+    </tr>
+    <tr>
+        <td>%n</td>
+        <td>none</td>
+    </tr>
+    <tr>
+        <td>%o</td>
+        <td>integer</td>
+    </tr>
+    <tr>
+        <td>%s</td>
+        <td>any type</td>
+    </tr>
+    <tr>
+        <td>%t</td>
+        <td>Date/Time</td>
+    </tr>
+    <tr>
+        <td>%x</td>
+        <td>integer</td>
+    </tr>
+</table><br>
+<pre>
+    <code class="language-java"><textarea>
+public class Demo {
+    public static void main(String[] args) {
+        String a1 = String.format("%d", 125);            
+        String a2 = String.format("%s", "studytonight");  
+        String a3 = String.format("%f", 125.00);        
+        String a4 = String.format("%x", 125);            
+        String a5 = String.format("%c", 'a');  
+        System.out.println("Integer Value: "+a1);  
+        System.out.println("String Value: "+a2);  
+        System.out.println("Float Value: "+a3);  
+        System.out.println("Hexadecimal Value: "+a4);  
+        System.out.println("Char Value: "+a5);  
+    }
+}
+</textarea>
+    </code>
+</pre><br>
+<p class="output"><p><b>Output</b></p>
+Integer Value: 125
+String Value: studytonight
+Float Value: 125.000000
+Hexadecimal Value: 7d
+Char Value: a
+</p><br>
+<h3><code>getBytes()</code> Method</h3><br>
+<p>String <code>getBytes()</code> method is used to get byte array of the specified string. </p>
+<pre>
+    <code class="language-java"><textarea>
+public class Demo {
+    public static void main(String[] args) {
+        String a="studytonight";  
+        byte[] b=a.getBytes();  
+        for(int i=0;i&lt;b.length;i++)
+        {  
+            System.out.println(b[i]);  
+        }
+    }
+}</textarea>
+    </code>
+</pre>
+<p class="output">
+    <img class="lazyload blur-up" data-src="https://static.studytonight.com/java/images/getbyte-example.JPG" alt="getbyte-example "><br>
+</p>
+<h3><code>getChars()</code> Method</h3><br>
+<p>String <code>getChars()</code> method is used to copy the content of the string into a char array.</p><br>
+<pre>
+    <code class="language-java"><textarea>
+public class Demo {
+    public static void main(String[] args) {
+        String a= new String("Hello Welcome to studytonight.com");  
+        char[] ch = new char[16];  
+        try
+        {  
+            a.getChars(6, 12, ch, 0);  
+            System.out.println(ch);  
+        }
+        catch(Exception ex)
+        {
+            System.out.println(ex);
+        } 
+    }
+}</textarea>
+    </code>
+</pre><br>
+<p class="output"><p><b>Output</b></p>
+Welcom
+</p><br>
+<h3><code>isEmpty()</code> Method</h3><br>
+<p>String <code>isEmpty()</code> method is used to check whether the string is empty or not. It returns true when length string is zero else it returns false.</p><br>
+<pre>
+    <code class="language-java"><textarea>
+public class IsEmptyDemo1
+{  
+    public static void main(String args[])
+    {  
+        String a="";  
+        String b="studytonight";  
+        System.out.println(a.isEmpty());  
+        System.out.println(b.isEmpty());  
+    }</textarea>
+}   
+    </code>
+</pre><br>
+<p class="output"><p><b>Output</b></p>
+true
+false
+</p>
+<h3><code>join()</code> Method</h3><br>
+<p>String <code>join()</code> method is used to join strings with the given delimiter. The given delimiter is copied with each element</p><br>
+<pre>
+    <code class="language-java"><textarea>
+public class JoinDemo1
+{  
+    public static void main(String[] args) 
+    { 
+    String s = String.join("*","Welcome to studytonight.com");
+    System.out.println(s);           
+        String date1 = String.join("/","23","01","2020");    
+System.out.println("Date: "+date1);    
+        String time1 = String.join(":", "2","39","10");  
+System.out.println("Time: "+time1);  
+    }  
+}  </textarea>
+    </code>
+</pre><br>
+<p class="output"><p><b>Output</b></p>
+Welcome to studytonight.com
+Date: 23/01/2020
+Time: 2:39:10
+</p><br>
+<h3><code>startsWith()</code> Method</h3><br>
+<p>String <code>startsWith()</code> is a string method in java. It is used to check whether the given string starts with given prefix or not. It returns true when prefix matches the string else it returns false.</p>
+<pre>
+    <code class="language-java">
+        <textarea>
+public class Demo {
+    public static void main(String[] args) {
+          String str = "studytonight";  
+          System.out.println(str.startsWith("s"));   
+          System.out.println(str.startsWith("t"));   
+          System.out.println(str.startsWith("study",1));   
+    }
+}</textarea>
+    </code>
+</pre><br>
+<p class="output">
+    <p><b>Output</b></p>
+true
+false
+false
+</p><br>
+<h3>String Methods List</h3><br>
+<table class="table table-bordered">
+    <tr>
+        <th>Method</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>char charAt(int index)</td>
+        <td>It returns char value for the particular index</td>
+    </tr>
+    <tr>
+        <td>int length()</td>
+        <td>It returns string length</td>
+    </tr>
+    <tr>
+        <td>static String format(String format, Object... args)</td>
+        <td>It returns a formatted string.</td>
+    </tr>
+    <tr>
+        <td>static String format(Locale l, String format, Object... args)</td>
+        <td>It returns formatted string with given locale.</td>
+    </tr>
+    <tr>
+        <td>String substring(int beginIndex)</td>
+        <td>It returns substring for given begin index.</td>
+    </tr>
+    <tr>
+        <td>String substring(int beginIndex, int endIndex)</td>
+        <td>It returns substring for given begin index and end index.</td>
+    </tr>
+    <tr>
+        <td>boolean contains(CharSequence s)</td>
+        <td>It returns true or false after matching the sequence of char value.</td>
+    </tr>
+    <tr>
+        <td>static String join(CharSequence delimiter, CharSequence... elements)</td>
+        <td>It returns a joined string.</td>
+    </tr>
+    <tr>
+        <td>static String join(CharSequence delimiter, Iterable&lt;? extends CharSequence&gt; elements)</td>
+        <td>It returns a joined string.</td>
+    </tr>
+    <tr>
+        <td>boolean equals(Object another)</td>
+        <td>It checks the equality of string with the given object.</td>
+    </tr>
+    <tr>
+        <td>boolean isEmpty()</td>
+        <td>It checks if string is empty.</td>
+    </tr>
+    <tr>
+        <td>String concat(String str)</td>
+        <td>It concatenates the specified string.</td>
+    </tr>
+    <tr>
+        <td>String replace(char old, char new)</td>
+        <td>It replaces all occurrences of the specified char value.</td>
+    </tr>
+    <tr>
+        <td>String replace(CharSequence old, CharSequence new)</td>
+        <td>It replaces all occurrences of the specified CharSequence.</td>
+    </tr>
+    <tr>
+        <td>static String equalsIgnoreCase(String another)</td>
+        <td>It compares another string. It doesn't check case.</td>
+    </tr>
+    <tr>
+        <td>String[] split(String regex)</td>
+        <td>It returns a split string matching regex.</td>
+    </tr>
+    <tr>
+        <td>String[] split(String regex, int limit)</td>
+        <td>It returns a split string matching regex and limit.</td>
+    </tr>
+    <tr>
+        <td>String intern()</td>
+        <td>It returns an interned string.</td>
+    </tr>
+    <tr>
+        <td>int indexOf(int ch)</td>
+        <td>It returns the specified char value index.</td>
+    </tr>
+    <tr>
+        <td>int indexOf(int ch, int fromIndex)</td>
+        <td>It returns the specified char value index starting with given index.</td>
+    </tr>
+    <tr>
+        <td>int indexOf(String substring)</td>
+        <td>It returns the specified substring index.</td>
+    </tr>
+    <tr>
+        <td>int indexOf(String substring, int fromIndex)</td>
+        <td>It returns the specified substring index starting with given index.</td>
+    </tr>
+    <tr>
+        <td>String toLowerCase()</td>
+        <td>It returns a string in lowercase.</td>
+    </tr>
+    <tr>
+        <td>String toLowerCase(Locale l)</td>
+        <td>It returns a string in lowercase using specified locale.</td>
+    </tr>
+    <tr>
+        <td>String toUpperCase()</td>
+        <td>It returns a string in uppercase.</td>
+    </tr>
+    <tr>
+        <td>String toUpperCase(Locale l)</td>
+        <td>It returns a string in uppercase using specified locale.</td>
+    </tr>
+    <tr>
+        <td>String trim()</td>
+        <td>It removes beginning and ending spaces of this string.</td>
+    </tr>
+    <tr>
+        <td>static String valueOf(int value)</td>
+        <td>It converts given type into string. It is an overloaded method.</td>
+    </tr>
+</table>
+                <div><ul class="pager">
+                <li class="previous">
+                   
+                <a href="file:///D:/example/Introduction%20to%20String.html">&larr; Prev</a>
+                </li>
+                <li class="next">
+                <a href="#">Next &rarr;</a>
+                </li>
+                </ul></div>
+                <hr/>
+
+
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br> <div class="container-fluid">
+      
+        <div class="row">
+         
+           <div class="col-sm-4">
+            <h5>JAVA TUTORIAL</h5>
+            <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+       
+        <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+        <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+        <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+            <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+             <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+             <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+             <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+             <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+             <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+             <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+             <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+             <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+             <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+             <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+             <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+             <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+             <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+             <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+             <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+             <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+             <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+             <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+             <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+             <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+               <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+               <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+               <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+               <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+             <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+             <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+               <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+                 <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+                 <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+                 <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+                 <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+                 <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+                 <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+                 <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+                 <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+                 <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+                
+               
+            <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+              <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+            <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+              <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+               <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+              <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+             <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+              <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+             <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+             <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+             <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+             <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+        
+       </div> 
+      </div><br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

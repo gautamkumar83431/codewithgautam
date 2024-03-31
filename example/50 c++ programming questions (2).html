@@ -1,0 +1,2271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 C++ programming questions</title>
+      <!--CSS Styles -->
+      <link rel="stylesheet" href="assets/css/styles.css" />
+
+      <!-- Favicons -->
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/icons/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/icons/favicon-32x32.png"
+      />
+  
+     <!-- Animate CSS CDN -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="50c++.css">
+    <link rel="stylesheet" href="Java_Tutorial.css">
+</head>
+<body>
+    <nav>
+        <h1>CODE WITH GAUTAM </h1>
+        <ul class="navigation">
+            <li> <a href="file:///D:/example/Home.html">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+  <div class="scrollmenu">
+    <a href="file:///D:/example/Home.html">Home</a>
+    <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+    <a href="file:///D:/example/codewithgautam.html">C++</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#support">Support</a>
+    <a href="#blog">Blog</a>
+   
+    
+  </div>
+    <br><br>&nbsp;&nbsp;
+<div class="container text-justify"> 
+    <div class="row">
+        <div class="col-lg-12">
+      
+      <h1>Top 50 C++ Coding Interview Questions and Answers (2023)</h1>
+   
+<br><br><br><br>
+         <p> <strong>  C++ is one of the most popular languages in the software industry for developing software ranging from operating systems, and DBMS to games. That is why it is also popular to be asked to write C++ Programs in live coding sessions in job placement interviews.
+       </strong>  </p> 
+                  <img src="D:\c++.png" alt="Lights" style="width:80%">
+            
+        <p><strong> article provides a list of C++ coding interview questions for beginners as well as experienced professionals. The questions are designed to test candidates’ understanding of the following topics:</strong></p><br><br><br><br>
+ <h1>List of 50 C++ Coding Interview Questions and Answers</h1>
+  <br><br><br><br>
+ <p> <strong> Here is a list of 50 C++ coding interview questions and answers.</strong></p>
+  
+<br><br><br><br>
+    
+<h2>1. Write a C++ Program to Check Whether a Number is a Positive or Negative Number.</h2>
+<br><br><br>
+
+<details><summary>check num. positive or negative</summary>
+<p>// C++ Program to check whether a number is positive or <br>
+// negative <br>
+#include &lt;iostream&gt; <br>
+using namespace std; <br>
+
+int main() <br>
+{ <br>
+int number; <br>
+number = -100; <br>
+if (number >= 0) { <br>
+    cout << number << " is a positive number." << endl; 
+} <br>
+else { <br>
+    cout << number << " is a negative number." << endl; <br>
+} <br>
+return 0; <br>
+}</p></details>
+<br>
+<h3 class="u">Output</h3>
+<p class="v">-100 is a negative number.</p>
+<br><br><br><br>
+
+<br>
+<h2>2. C++ Program To Check Whether Number is Even Or Odd</h2><br>
+<details><summary>C++ even or odd</summary>
+<p>// C++ program to check <br>
+// for even or odd <br>
+#include &lt;iostream&gt; <br>
+using namespace std; <br>
+  
+// Returns true if n is <br>
+// even, else odd <br>
+bool isEven(int n) { return (n % 2 == 0); } <br>
+  <br>
+// Driver code <br>
+int main() <br>
+{ <br>
+    int n = 247; <br>
+    if (isEven(n) == true) { <br>
+        cout << "Even" << endl; <br>
+    } <br>
+    else { <br>
+        cout << "Odd"; <br>
+    } <br>
+  
+    return 0; <br>
+}</p></details>
+<h3 class="u">Output</h3><br>
+<p class="v">Odd</p>
+<br><br><br>
+
+
+<h2>3. Write a Program to Find the ASCII Value of a Character</h2><br><br>
+ <br>
+    <details><summary>C++ ASCII value</summary>
+<p>// C++ Program to find ASCII value of a character <br>
+#include &lt;iostream&gt; <br>
+using namespace std; <br>
+  
+int main() <br>
+{ <br>
+    char ch; <br>
+  
+    ch = 'A';<br>
+    cout << The ASCII value of  << ch << "is"  << int(ch) <br>
+    << endl; <br>
+
+return 0; <br>
+}</p></details><br>
+    <h2>Output</h2><br>
+    <p>The ASCII value of A is 65</p><br><br>
+<h1>4. Write a Program to Check Whether a Character is a Vowel or Consonant<br><br><br><br>
+</h1>
+<details><summary>vowel or not</summary>
+<p>// C++ Program to print whether a character is vowel or not <br>
+#include &lt;cctype&gt; <br>
+    #include &lt;iostream&gt; <br>
+    using namespace std; <br>
+    int main() <br>
+{ 
+char ch = 'e'; <br>
+
+if (isalpha(ch)) { 
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o'<br>
+        || ch == 'u' || ch == 'A' || ch == 'E'<br>
+        || ch == 'I' || ch == 'O' || ch == 'U') { <br>
+        cout << ch <<  is a vowel. << endl; <br>
+    } <br>
+    else { <br>
+        cout << ch <<  is a consonant. << endl; <br>
+    } <br>
+} <br>
+else { <br>
+    cout << ch <<  is not an alphabet. << endl; <br>
+} <br>
+
+return 0; <br>
+}</p></details> <br><br>
+<h1>Output</h1><br><br>
+<p >e is a vowel.</p><br>
+<h2>5. Write a Program to Print Check Whether a Character is an Alphabet or Not</h2><br><br>
+       <br>
+<details><summary>C++ check char alphabet</summary>
+<p>// C++ program to print whether a character is a<br>
+#includ&lt;iostream&gt;<br>
+    #include &lt;string&gt;<br>
+    using name<br>
+      
+    <br>
+        char ch; 
+      
+    <br>
+      
+        if (isal<br>
+            cout << ch <<" is an alphabet<br>
+            cout << ch << " is not an alphabet.<br>
+      
+    
+    }</p></details><br>
+<h1>Output</h1><br><br>
+<p>a is an alphabet.</p><br>
+
+<h2>6. Write a Program to Find the Length of the String Without using strlen() Function </h2><br><br>
+                
+<details><summary>C++ program</summary>
+<p>// C++ Program to find the length of a string without using <br>
+// strlen() #include &lt;cstring&gt; <br>
+    #include &lt;iostream&gt;<br>
+    using namespace std; <br>
+      <br>
+    int main() <br>
+    { <br>
+        string str = "CodeWithGautam"; <br>
+        int length = 0; for (int i = 0; str[i] != '\0'; i++) { <br>
+            length++; <br>
+        } <br>
+      
+        cout << "The length of the string is: " <<" length "<br>
+             << endl; <br>
+      
+        return 0; <br>
+    }</p></details><br>
+    <h2>Output</h2><br><br>
+    <p >The length of the string is: 14</p><br>
+<br>
+<h2>7. Write a Program to Toggle Each Character in a String </h2><br>
+
+<details><summary>C++ toogle string</summary>
+<p>// C++ Program to toggle string <br>
+#include &lt;cstring&gt; <br>
+#include &lt;iostream&gt; <br>
+using namespace std; <br>
+  
+int main() <br>
+{ 
+    string str = CodewithGautam; <br>
+  
+    for (int i = 0; str[i] != '\0'; i++) { <br>
+        if (islower(str[i])) { <br>
+            str[i] = toupper(str[i]); <br>
+        } <br>
+        else if (isupper(str[i])) { <br>
+            str[i] = tolower(str[i]); <br>
+        } <br>
+    } <br>
+  
+    cout << Toggled string:  << str << endl; <br>
+  
+    return 0; <br>
+}</p></details><br>
+<h2 >Output</h2><br>
+<p >Toggled string: cODEWITHgAUTAM</p><br><br>
+
+<h2>8. Write a Program to Count the Number of Vowels </h2><br><br>
+       <br>
+<details><summary>C++ program example</summary>
+   <p> // C++ Program to count the number of vowels 
+    #include  &lt;cstring&gt;
+    #include &lt;iostream&gt;
+    using namespace std; 
+      
+    int main() 
+    { 
+        string str = "codewithgautam" to the moon"; 
+        int vowels = 0; 
+      
+        for (int i = 0; str[i] != '\0'; i++) { 
+            if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i'
+                || str[i] == 'o' || str[i] == 'u'
+                || str[i] == 'A' || str[i] == 'E'
+                || str[i] == 'I' || str[i] == 'O'
+                || str[i] == 'U') { 
+                vowels++; 
+            } 
+        } 
+      
+        cout << "Number of vowels in the string: " << vowels 
+             << endl; 
+      
+        return 0; 
+    }</p></details>
+            
+<h2>Output</h2><br>
+<p>Number of vowels in the string: 5</p><br><br>
+
+<h2>10. Write a Program to Remove the Vowels from a String</h2><br><br>
+<br>
+            <details><summary>remove vowel from string</summary>
+  <p>// C++ Program to remove the vowels from a string <br>
+    #include &lt;cstring&gt; <br>
+    #include&lt;iostream&gt; <br>
+    using namespace std; <br>
+      
+    int main() <br>
+    { <br>
+        int j = 0; <br>
+      
+        string str = "CodeWithGautam"; <br>
+      
+        for (int i = 0; str[i] != '\0'; i++) { <br>
+            if (str[i] != 'a' && str[i] != 'e' && str[i] != 'i'<br>
+                && str[i] != 'o' && str[i] != 'u'<br>
+                && str[i] != 'A' && str[i] != 'E'<br>
+                && str[i] != 'I' && str[i] != 'O'<br>
+                && str[i] != 'U') { <br>
+                str[j++] = str[i]; <br>
+            } <br>
+        } <br>
+        while (j < str.size()) { <br>
+      
+            str[j] = '\0'; <br>
+      
+            j++; <br>
+        } <br>
+        cout << "String without vowels: " << str << endl; <br>
+      
+        return 0; <br>
+    }</p></details><br>
+<br>
+<h2>Output</h2><br>
+<p>String without vowels:CdWthGtm </p><br>
+<h1>11. Write a Program to Remove All Characters From a String Except Alphabets</h1><br>
+<details><summary>remove all char from string</summary>
+<p>// C++ Programto remove all characters from a string except <br>
+    // alphabets <br>
+    #include &lt;cstring&gt; <br>
+    #include&lt;iostream&gt;
+    #include &lt;string&gt; <br>
+      
+    using namespace std; <br>
+      
+    string remove_non_alphabets(string str) <br>
+    { 
+        string result = ""; <br>
+        for (char c : str) { <br>
+            if (isalpha(c)) { <br>
+                result += c; <br>
+            } <br>
+        } <br>
+        return result; <br>
+    } <br>
+      
+    int main() <br>
+    { <br>
+        string str = "Code$with$gautam$"; <br>
+      
+        cout << "Alphabets only: " << remove_non_alphabets(str) <br>
+             << endl; <br>
+      <br>
+        return 0; <br>
+    }</p></details><br>
+    
+    <h2>Output</h2><br>
+    <p>Alphabets only: Codewithgautam</p><br>
+      <br>
+<h1>12. Write a Program to Remove Spaces From a String</h1><br>
+<details><summary>remove space from String</summary>
+<p> C++ Program to remove spaces from a string <br>
+    #include &lt;cstring&gt; <br>
+    #include&lt;iostream&gt;
+
+    using namespace std; <br>
+      
+    string remove_spaces(string str) <br>
+    { <br>
+        string result = ""; <br>
+        for (char c : str) { <br>
+            if (c != ' ') { <br>
+                result += c; <br>
+            } <br>
+        } <br>
+        return result; <br>
+    } <br>
+      
+    int main() <br>
+    { <br>
+        string str = "code with gautam"; <br>
+      
+        cout << "Without spaces: " << remove_spaces(str) <br>
+             << endl; <br>
+      
+        return 0; <br>
+    }</p></details><br>
+    <h2 >Output</h2><br>
+    <p >Without spaces: codewithgautam</p><br>
+
+<h1>13. Write a Program to Find the Sum of the First N Natural Numbers</h1><br><br>
+            <br>
+<details><summary>sum of first num.</summary>
+   <p> // C++ program to find <br>
+    // Sum of first <br>
+    // n natural numbers. <br>
+    #include &lt;iostream&gt; <br>
+   
+    using namespace std; <br>
+      
+    // Function to find sum <br>
+    int findSum(int n) <br>
+    { <br>
+        int sum = 0; <br>
+        for (int i = 1; i <= n; i++) <br>
+            sum = sum + i; <br>
+        return sum; <br>
+    } <br>
+      
+    int main() <br>
+    { 
+        int n = 7; <br>
+        cout << findSum(n); <br>
+        return 0; <br>
+    } <br>
+   </p></details>
+<h2  >Output</h2><br>
+<p >28</p><br>
+
+<h1>14. Write a Program to Find the Factorial of a Number Using Loops</h1><br> 
+      <br><br>
+<details><summary>C++ factorial</summary>
+<p>// C++ program to find factorial using loops <br>
+#include &lt;bits/stdc++.h&gt;<br>
+using namespace std; <br>
+  
+// function to find factorial <br>
+int factorial(int n) <br>
+{ <br>
+    int fact = 1; <br>
+    while (n > 1) { <br>
+        fact *= n; <br>
+        n--; <br>
+    } <br>
+  
+    return fact; <br>
+} <br>
+  
+// driver code <br>
+int main() <br>
+{ <br>
+    int num = 5; <br>
+  
+    cout << factorial(num); <br>
+  
+    return 0; <br>
+}</p></details><br>
+<h2>Output</h2><br>
+<p >120</p><br>
+<h1>15. Write a Program to Find a Leap Year or Not</h1><br>
+<details><summary>Leap year or not</summary>
+<p>// C++ program to check if a given 
+    // year is leap year or not <br>
+    #include &lt;iostream&gt; <br>
+  
+    using namespace std; <br>
+      
+    bool checkYear(int year) <br>
+    { <br>
+        // leap year <br>
+        if (year % 400 == 0) <br>
+            return true; <br>
+      
+        // Not leap year <br>
+        if (year % 100 == 0) <br>
+            return false; <br>
+      
+        // leap year <br>
+        if (year % 4 == 0) <br>
+            return true; <br>
+      
+        // Not leap year <br>
+        return false; <br>
+    } <br>
+      
+    int main() <br>
+    { <br>
+        int year = 2000; <br>
+      
+        if (checkYear(year)) <br>
+            cout << "Leap Year"; <br>
+        else
+            cout << "Not a Leap Year";<br> 
+        return 0; <br>
+    }</p></details><br>
+    <h2 >Output</h2><br>
+    <p >Leap Year</p><br>>
+              <br><br>
+    <h1>16. Write a Program to Check the Prime Number</h1><br>
+    <details><summary>prime num or not</summary>
+    <p>// C++ program to check if a <br>
+        // Number is prime <br>
+        #include &lt;iostream&gt; <br>
+t;
+        using namespace std; <br>
+          
+        bool isPrime(int n) <br>
+        { <br>
+            // base condition <br>
+            if (n <= 1) <br>
+                return false; <br>
+          
+            // Check from 2 to n-1 <br>
+            for (int i = 2; i < n; i++) <br>
+                if (n % i == 0) <br>
+                    return false; <br>
+          
+            return true; <br>
+        } <br>
+          
+        int main() <br>
+        { <br>
+            isPrime(21) ? cout << " true\n" : cout << " false\n"; <br>
+            isPrime(17) ? cout << " true\n" : cout << " false\n"; <br>
+            return 0; <br>
+        }</p></details>
+        <h2 class="u">Output</h2><br>
+        <p class="u">false</p><br><br>
+        <p  class="u">true</p><br><br>
+   
+    <h1>17. Write a Program to Check Palindrome</h1><br><br><br><br>
+                 <br><br>
+        <textarea  id="G" cols="50" rows="30">// C++ program to check if a 
+            // number is Palindrome or not 
+            #include &lt;iostream&gt; <br>
+           
+            using namespace std; 
+              
+            // Function to check Palindrome 
+            bool checkPalindrome(int n) 
+            { 
+                int ans = 0; 
+                int temp = n; 
+                while (temp != 0) { 
+                    ans = (ans * 10) + (temp % 10); 
+                    temp = temp / 10; 
+                } 
+              
+                return (ans == n); 
+            } 
+              
+            int main() 
+            { 
+                int n = 12321; 
+              
+                if (checkPalindrome(n) == 1) { 
+                    cout << "Yes\n"; 
+                } 
+                else { 
+                    cout << "No\n"; 
+                } 
+              
+                return 0; 
+            }</textarea>
+            <h2 class="u">Output</h2><br>
+            <p  class="u">Yes</p><br><br>
+      <br><br>
+    <h1>18. Write a Program to Check Whether a Number is an Armstrong Number or Not</h1><br><br><br><br>
+    
+        <textarea id="K" cols="50" rows="30">// C++ Program to check 
+            // if number is Armstrong 
+            // or not 
+            #include &lt;iostream&gt; <br>
+        
+            using namespace std; 
+              
+            int main() 
+            { 
+                int n = 153; 
+                int temp = n; 
+                int ans = 0; 
+              
+                // function to calculate 
+                // the sum of individual digits 
+                while (n > 0) { 
+              
+                    int rem = n % 10; 
+                    ans = (ans) + (rem * rem * rem); 
+                    n = n / 10; 
+                } 
+              
+                // condition to check 
+                if (temp == ans) { 
+                    cout << ("Yes, it is Armstrong Number"); 
+                } 
+                else { 
+                    cout << ("No, it is not an Armstrong Number"); 
+                } 
+                return 0; 
+            }</textarea>
+            <h2  class="u">Output</h2><br>
+            <p  class="u">Yes, it is Armstrong Number</p><br>
+    <br><br>
+    <h1>19. Write a Program to Find the Nth Term of the Fibonacci Series</h1>
+    
+        <textarea id="G" cols="50" rows="30">// C++ Program to Find the 
+            // Nth Term of the Fibonacci Series 
+            #include &lt;iostream&gt; <br>
+   
+            using namespace std; 
+              
+            int fib(int n) 
+            { 
+                int first = 0, second = 1, ans; 
+                if (n == 0) 
+                    return first; 
+              
+                for (int i = 2; i <= n; i++) { 
+                    ans = first + second; 
+                    first = second; 
+                    second = ans; 
+                } 
+              
+                return ans; 
+            } 
+              
+            int main() 
+            { 
+                int n = 13; 
+              
+                cout << fib(n); 
+                return 0; 
+            }</textarea>
+            <h2  class="u">Output</h2><br>
+            <p  class="u">233</p><br>
+
+    
+    <h1>20. Write a Program to Calculate the Greatest Common Divisor of Two Numbers</h1><br><br><br><br>
+    <textarea id="G" cols="50" rows="30">// C++ program to find 
+        // GCD of two numbers 
+        #include &lt;iostream&gt; <br>
+          
+        using namespace std; 
+          
+        // Function to return gcd of a and b 
+        int gcd(int a, int b) 
+        { 
+            int result = min(a, b); 
+          
+            while (result > 0) { 
+                if (a % result == 0 && b % result == 0) { 
+                    break; 
+                } 
+                result--; 
+            } 
+          
+            return result; 
+        } 
+          
+        int main() 
+        { 
+            int a = 54, b = 33; 
+          
+            cout << "GCD: " << gcd(a, b); 
+          
+            return 0; 
+        }</textarea>
+        <h2  class="u">Output</h2><br>
+        <p  class="u">GCD: 3</p><br>
+        
+        <h1>21. Write a Program to Calculate the Lowest Common Multiple (LCM) of Two Numbers</h1>
+       <br><br>
+            <textarea id="J" cols="50" rows="30">// C++ program to 
+                // Find LCM of two numbers 
+                #include &lt;iostream&gt; <br>
+             
+                using namespace std; 
+                  
+                long long gcd(long long int a, long long int b) 
+                { 
+                    if (b == 0) 
+                        return a; 
+                    return gcd(b, a % b); 
+                } 
+                  
+                // Function to return LCM of two numbers 
+                long long lcm(int a, int b) 
+                { 
+                    long long result = (a / gcd(a, b)) * b; 
+                    return result; 
+                } 
+                  
+                int main() 
+                { 
+                    int a = 24, b = 13; 
+                    cout << "LCM : " << lcm(a, b); 
+                    return 0; 
+                }</textarea>
+                <h2  class="u">Output</h2><br>
+                <p class="u">LCM : 312</p><br>
+
+        <br><br>
+    <h1>22. Write a Program for Finding the Roots of a Quadratic Equation</h1><br>
+    
+        <textarea id="J" cols="50" rows="30">// C++ program to find 
+            // Roots of a quadratic equation 
+           
+    #include&lt;iostream&gt;<br>
+    #include &lt;math.h&gt; <br>
+ 
+            using namespace std; 
+              
+            // Prints roots of quadratic equation ax*2 + bx + c 
+            void findRoots(int a, int b, int c) 
+            { 
+                // If a is 0, then equation is not quadratic 
+                if (a == 0) { 
+                    cout << "Invalid"; 
+                    return; 
+                } 
+              
+                // Formulae to calculate D 
+                int d = b * b - 4 * a * c; 
+              
+                // Formulae to calculate 
+                // square root of D 
+                double sqrt_val = sqrt(abs(d)); 
+              
+                // Conditons for checking root 
+                if (d > 0) { 
+                    cout << "Roots are real and different \n"; 
+                    cout << (double)(-b + sqrt_val) / (2 * a) << "\n"
+                         << (double)(-b - sqrt_val) / (2 * a); 
+                } 
+                else if (d == 0) { 
+                    cout << "Roots are real and same \n"; 
+                    cout << -(double)b / (2 * a); 
+                } 
+                else { 
+                    cout << "Roots are complex \n"; 
+                    cout << -(double)b / (2 * a) << " + i"
+                         << sqrt_val / (2 * a) << "\n"
+                         << -(double)b / (2 * a) << " - i"
+                         << sqrt_val / (2 * a); 
+                } 
+            } 
+              
+            int main() 
+            { 
+                int a = 1, b = 4, c = 4; 
+              
+                findRoots(a, b, c); 
+              
+                return 0; 
+            }</textarea>
+            <h2  class="u">Output</h2><br>
+            <p  class="u">Roots are real and same </p><br>
+    
+    <h1>23. Write a Program to Find the Smallest and Largest Element in an Array</h1><br>
+<br>
+        <textarea id="J" cols="50" rows="30">// C++ code to for 
+            // Finding the minimum 
+            // And maximum of the array 
+            #include &lt;iostream&gt; <br>
+            using namespace std; 
+              
+            // Function to find the minimum 
+            // and maximum of the array 
+            void findMinMax(int arr[], int n) 
+            { 
+                int mini = arr[0]; 
+                int maxi = arr[0]; 
+              
+                for (int i = 0; i < n; i++) { 
+                    if (arr[i] < mini) { 
+                        mini = arr[i]; 
+                    } 
+                    else if (arr[i] > maxi) { 
+                        maxi = arr[i]; 
+                    } 
+                } 
+              
+                cout << "Min: " << mini << endl; 
+                cout << "Max: " << maxi << endl; 
+            } 
+              
+            int main() 
+            { 
+                int arr[] = { 1, 2, 3, 4, 5 }; 
+                int N = sizeof(arr) / sizeof(arr[0]); 
+              
+                findMinMax(arr, N); 
+              
+                return 0; 
+            }</textarea>
+            <h2  class="u">Output</h2><br>
+            <p  class="u">Min: 1</p>
+            <p  class="u">Max: 5</p><br><br>
+   <br>
+    <h1>24. Write a Program to Find the Second Smallest Element in an Array</h1><br><br><br><br>
+    
+        <textarea id="J" cols="50" rows="30">// C++ program to find 
+            // Second smallest elements 
+            #include &lt;climits&gt; <br>
+            #include &lt;iostream&gt; <br> 
+            using namespace std; 
+              
+            void print2Smallest(int arr[], int n) 
+            { 
+                int first, second; 
+              
+                if (n < 2) { 
+                    cout << " Invalid Input "; 
+                    return; 
+                } 
+              
+                first = second = INT_MAX; 
+                for (int i = 0; i < n; i++) { 
+                    // If current element is smaller than first 
+                    // Then update both first and second 
+                    if (arr[i] < first) { 
+                        second = first; 
+                        first = arr[i]; 
+                    } 
+              
+                    // If arr[i] is in between first and second 
+                    // Then update second 
+                    else if (arr[i] < second && arr[i] != first) 
+                        second = arr[i]; 
+                } 
+                if (second == INT_MAX) 
+                    cout << "There is no second smallest element\n"; 
+                else
+                    cout << " Second smallest element is " << second 
+                         << endl; 
+            } 
+              
+            int main() 
+            { 
+                int arr[] = { 21, 3, 15, 41, 34, 10 }; 
+                int n = sizeof(arr) / sizeof(arr[0]); 
+              
+                print2Smallest(arr, n); 
+              
+                return 0; 
+            }</textarea>
+            <h2  class="u">Output</h2><br>
+            <p  class="u">Second smallest element is 10</p><br><br>
+    <br><br>
+    <h1>25. Write a Program to Calculate the Sum of Elements in an Array</h1><br><br><br><br>
+   
+        <textarea id="J" cols="50" rows="30">// C++ Program to calculate 
+            // sum of elements in an array 
+            #include &lt;iostream&gt; <br>
+            using namespace std; 
+              
+            int sum(int arr[], int n) 
+            { 
+                int sum = 0; 
+              
+                for (int i = 0; i < n; i++) 
+                    sum += arr[i]; 
+              
+                return sum; 
+            } 
+              
+            int main() 
+            { 
+                int arr[] = { 1, 23, 54, 12, 9 }; 
+                int n = sizeof(arr) / sizeof(arr[0]); 
+              
+                cout << "Sum: " << sum(arr, n); 
+              
+                return 0; 
+            }</textarea>
+            <h2 class="u">Output</h2><br>
+            <p class="u">Sum: 99</p><br>
+   <br>
+    <h1>
+        26. Write a Program to Check if the Given String is Palindrome or Not?
+    </h1><br>
+    
+        <textarea id="J" cols="50" rows="30">// C++ program for checking 
+            // if it is Palindrome or not 
+            #include &lt;iostream&gt; <br>
+            using namespace std; 
+              
+            string isPalindrome(string S) 
+            { 
+                for (int i = 0; i < S.length() / 2; i++) { 
+                    if (S[i] != S[S.length() - i - 1]) { 
+                        return "No"; 
+                    } 
+                } 
+              
+                return "Yes"; 
+            } 
+              
+            int main() 
+            { 
+                string S = "GautammatuaG"; 
+              
+                cout << is Palindrome(S); 
+              
+                return 0; 
+            }</textarea>
+            <h2  class="u">Output</h2><br>
+            <p  class="u">Yes</p><br><br>
+  <br>
+    <h1>27. Write a Program to Check if Two Strings are Anagram or Not</h1><br>
+    <textarea id="J" cols="50" rows="30">// C++ program to check if two strings 
+        // Are anagrams of each other 
+        #include &lt;iostream&gt; <br>
+        using namespace std; 
+          
+        #define NO_OF_CHARS 256 
+          
+        bool areAnagram(char* str1, char* str2) 
+        { 
+            // Create 2 count arrays and initialize all values as 0 
+            int count1[NO_OF_CHARS] = { 0 }; 
+            int count2[NO_OF_CHARS] = { 0 }; 
+            int i; 
+          
+            // For each character in input strings, increment count 
+            // in the corresponding count array 
+            for (i = 0; str1[i] && str2[i]; i++) { 
+                count1[str1[i]]++; 
+                count2[str2[i]]++; 
+            } 
+          
+            if (str1[i] || str2[i]) 
+                return false; 
+          
+            // Compare count arrays 
+            for (i = 0; i < NO_OF_CHARS; i++) 
+                if (count1[i] != count2[i]) 
+                    return false; 
+          
+            return true; 
+        }
+        int main() 
+        { 
+            char str1[] = "Code"; 
+            char str2[] = "for"; 
+          
+            if (areAnagram(str1, str2)) 
+                cout << "The two strings are anagram of each other"; 
+            else
+                cout << "The two strings are not anagram of each "
+                        "other"; 
+          
+            return 0; 
+        } </textarea>
+        <h2 class="u">Output</h2><br>
+        <p  class="u">The two strings are not anagram of each other</p><br><br>
+<br><br>
+    <h1>28. Write a Program to Print a Diamond Pattern</h1><br><br>
+    <h3 class="h3"><br>
+         *<br>
+        ***<br>
+       *****<br>
+      *******<br>
+       *****<br>
+        ***<br>
+         *</h3>
+    <textarea id="J" cols="50" rows="30">// C++ program to print 
+        // Diamond shape 
+        #include &lt;iostream&gt; <br>
+        using namespace std; 
+          
+        void printDiamond(int n) 
+        { 
+            int space = n - 1; 
+          
+            for (int i = 0; i < n; i++) { 
+                for (int j = 0; j < space; j++) 
+                    cout << " "; 
+          
+                // Print i+1 stars 
+                for (int j = 0; j <= i; j++) 
+                    cout << "* "; 
+          
+                cout << endl; 
+                space--; 
+            } 
+          
+            space = 0; 
+          
+            // run loop (parent loop) 
+            for (int i = n; i > 0; i--) { 
+                for (int j = 0; j < space; j++) 
+                    cout << " "; 
+          
+                // Print i stars 
+                for (int j = 0; j < i; j++) 
+                    cout << "* "; 
+          
+                cout << endl; 
+                space++; 
+            } 
+        } 
+          
+        int main() 
+        { 
+            printDiamond(5); 
+            return 0; 
+        }</textarea>
+        <br>
+    <h2"  class="u">Output</h2><br>
+    <h3 class="h3">
+         * <br>
+        * * <br>
+       * * * <br>
+      * * * * <br>
+     * * * * * <br>
+     * * * * * <br>
+      * * * * <br>
+       * * * <br>
+        * * <br>
+         * </h3>
+  <br><br>
+<h1>29. Write a Program to Print a Pyramid Pattern</h1><br>
+
+<h3 class="h3">
+* <br>
+* * <br>
+* * * <br>
+* * * * <br>
+* * * * * <br>
+</h3>
+
+<textarea id="J" cols="50" rows="30">// C++ Program to 
+    // Print Pyramid pattern 
+    #include &lt;iostream&gt; <br>
+    using namespace std; 
+      
+    void pattern(int n) 
+    { 
+        int k = 2 * n - 2; 
+      
+        for (int i = 0; i < n; i++) { 
+      
+            for (int j = 0; j < k; j++) 
+                cout << " "; 
+      
+            k = k - 1; 
+            for (int j = 0; j <= i; j++) { 
+                // Printing stars 
+                cout << "* "; 
+            } 
+            cout << endl; 
+        } 
+    } 
+      
+    int main() 
+    { 
+        int n = 5; 
+      
+        pattern(n); 
+        return 0; 
+    }</textarea>
+    <h2 class="u">Output</h2><br>
+    <h3 class="h3">
+         * <br>
+        * * <br>
+       * * * <br>
+      * * * * <br>
+     * * * * * <br>
+    </h3>
+<br>
+<h1>30. Write a Program to print an Inverted Pyramid </h1><br><br><br><br>
+<h3 class="h3">
+* * * * * <br>
+ * * * * <br>
+  * * * <br>
+   * * <br>
+    * <br>
+</h3>
+
+<textarea id="J" cols="50" rows="30">// C++ Program to print inverted pyramid 
+    #include &lt;iostream&gt; <br>
+    using namespace std; 
+      
+    int main() 
+    { 
+        int rows = 5; 
+      
+        for (int i = rows; i >= 1; i--) { 
+            for (int j = rows; j > i; j--) { 
+                cout << " "; 
+            } 
+            for (int k = 1; k <= (2 * i - 1); k++) { 
+                cout << "*"; 
+            } 
+            cout << endl; 
+        } 
+      
+        return 0; 
+    }</textarea>
+    <h3 class="h3">
+        * * * * * <br>
+         * * * * <br>
+          * * * <br>
+           * * <br>
+            * <br>
+   </h3>
+<br>
+<h1>31.Write a Program to Print a Triangle Star Pattern</h1><br><br><br><br>
+<h3 class="h3">
+*<br>
+**<br>
+***<br>
+****<br>
+*****<br>
+</h3>
+
+<textarea id="J" cols="50" rows="30">// C++ Program to print a triangle star patter 
+    #include &lt;iostream&gt; <br>
+    using namespace std; 
+      
+    int main() 
+    { 
+        int rows; 
+      
+        rows = 5; 
+      
+        for (int i = 1; i <= rows; i++) { 
+            for (int j = 1; j <= i; j++) { 
+                cout << "*"; 
+            } 
+            cout << endl; 
+        } 
+      
+        return 0; 
+    }</textarea>
+    <h2 class="u">Output</h2><br>
+    <h3 class="h3">
+        *<br>
+        **<br>
+        ***<br>
+        ****<br>
+        *****<br>
+    </h3>
+<br><br>
+<h1>32. Write a Program to Print Floyd’s Triangle</h1><br>
+<h3 class="h3">
+1<br>
+2 3<br>
+4 5 6<br>
+7 8 9 10<br>
+
+</h3>
+<textarea id="J" cols="50" rows="30">// C Program to print the Floyd's Triangle 
+    #include &lt;iostream&gt; <br>
+  
+int main() 
+{ 
+    int rows = 4; 
+    int n = 1; 
+  
+    // outer loop to print all rows 
+    for (int i = 0; i < rows; i++) { 
+  
+        // innter loop to print abphabet in each row 
+        for (int j = 0; j <= i; j++) { 
+            printf("%d ", n++); 
+        } 
+        printf("\n"); 
+    } 
+    return 0; 
+}</textarea></div>
+<h2 class="u">Output</h2><br>
+<h3 class="h3">
+    1<br>
+    2 3<br>
+    4 5 6<br>
+    7 8 9 10<br>
+    
+</h3>
+  <br>
+<h1>33. Write a Program to Print the Pascal Triangle</h1><br>
+<h3 class="h3">
+     1<br>
+   1   1<br>
+ 1   2   1<br>
+1   3   3  1<br>
+1   4   6   4   1<br>
+1  5   10  10    5   1<br>
+
+  
+</h3>
+
+<textarea style="width: 400px  ">// C++ program to print 
+    // Pascal’s Triangle 
+    #include &lt;iostream&gt; <br>
+    using namespace std; 
+      
+    void printPascal(int n) 
+    { 
+      
+        int arr[n][n]; 
+      
+        for (int line = 0; line < n; line++) { 
+            // Every line has number of integers 
+            // equal to line number 
+            for (int i = 0; i <= line; i++) { 
+                // First and last values in every row are 1 
+                if (line == i || i == 0) 
+                    arr[line][i] = 1; 
+                else
+                    arr[line][i] = arr[line - 1][i - 1] 
+                                   + arr[line - 1][i]; 
+                cout << arr[line][i] << " "; 
+            } 
+            cout << "\n"; 
+        } 
+    } 
+      
+    int main() 
+    { 
+        int n = 6; 
+        printPascal(n); 
+        return 0; 
+    }</textarea>
+    <h2 class="u">Output</h2><br>
+    <h3 class="h3">
+        1<br>
+      1   1<br>
+    1   2   1<br>
+  1   3   3  1<br>
+1   4   6   4   1<br>
+1  5   10  10    5   1<br>
+<br>
+<h1> 34. Write a Program to Print the Given String in Reverse Order?
+</h1><br>
+<textarea style="width: 400px;" >// C++ Program to reversea string 
+    #include &lt;cstring&gt; <br>
+    #include &lt;iostream&gt; <br>
+    using namespace std; 
+      
+    int main() 
+    { 
+      
+        int len; 
+      
+        string str = "codewithgautam"; 
+      
+        len = str.size(); 
+      
+        cout << "Reverse of the string: "; 
+        for (int i = len - 1; i >= 0; i--) { 
+            cout << str[i]; 
+        } 
+        cout << endl; 
+      
+        return 0; 
+    }</textarea><br>
+    <h2  class="u">Output</h2><br>
+    <p  class="u">Reverse of the string: matuaghtiwedoc</p><br><br><br><br>
+<br><br>
+<h1>35. Write a C++ Program to Print the Given String in Reverse Order Using Recursion</h1><br>
+<textarea style="width: 400px;">// C++ Program to 
+    // Reverse string using 
+    // recursion 
+    #include &lt;iostream&gt; <br>
+    using namespace std; 
+      
+    void reverse_str(string& s, int n, int i) 
+    { 
+        if (n <= i) { 
+            return; 
+        } 
+      
+        swap(s[i], s[n]); 
+        reverse_str(s, n - 1, i + 1); 
+    } 
+      
+    int main() 
+    { 
+        string str = " CodewithGautam"; 
+        reverse_str(str, str.length() - 1, 0); 
+        cout << str << endl; 
+    }</textarea>
+    <h2  class="u">Output</h2><br>
+    <p  class="u">matuaGhtiwedoC</p><br><br>
+<br>
+<h1>36. Write a Program to Calculate the Length of the String Using Recursion</h1><br>
+<textarea style="width: 400px;">// C++ Program for calculating 
+    // the length of string 
+    #include &lt;iostream&gt; <br> 
+    using namespace std; 
+      
+    int cal(char* str) 
+    { 
+        // base condition 
+        if (*str == '\0') 
+            return 0; 
+        else
+            return 1 + cal(str + 1); 
+    } 
+      
+    int main() 
+    { 
+        char str[] = "codewithgautam"; 
+        cout << cal(str); 
+        return 0; 
+    }</textarea>
+    <h2  class="u">Output</h2><br>
+    <p  class="u">14</p><br><br>
+<br>
+<h1>37. Write a Program to Count the Sum of Numbers in a String</h1><br><br><br><br>
+<textarea style="width: 400px;">// C++ Program to count the sume of numbers in a string 
+    #include &lt;iostream&gt; <br>
+    #include &lt;stream&gt; <br>
+    #include &lt;string&gt; <br>
+      
+    using namespace std; 
+      
+    int sum_of_numbers(string str) 
+    { 
+        int sum = 0; 
+        for (char ch : str) { 
+            if (isdigit(ch)) { 
+                sum += ch - '0'; 
+            } 
+        } 
+        return sum; 
+    } 
+      
+    int main() 
+    { 
+        string str; 
+      
+        str = "1234"; 
+      
+        cout << "Sum of numbers: " << sum_of_numbers(str) 
+             << endl; 
+      
+        return 0; 
+    }</textarea>
+    <h2  class="u">Output</h2><br>
+    <p  class="u">Sum of numbers: 10</p><br><br><br>
+<br>
+<h1>38. Write a Program to Print All Natural Numbers up to<br> N Without Using a Semi-Colon</h1><br><br><br><br>
+<textarea style="width: 400px;">// C++ program to print all natural numbers upto 
+    // N without using semi-colon 
+    #include &lt;iostream&gt; <br>
+    using namespace std; 
+    #define N 10 
+      
+    int main() 
+    { 
+        static int x = 1; 
+        if (cout << x << " " && x++ < N && main()) { 
+        } 
+        return 0; 
+    }</textarea>
+    <h2  class="u">Output</h2><br>
+    <p  class="u">1 2 3 4 5 6 7 8 9 10 </p><br><br>
+
+<h1>39. Write a Program to  Swap the Values of Two Variables Without<br> Using any Extra Variable</h1><br><br>
+<br><br>
+<textarea style="width: 400px;">// C++ program to check 
+        // If two numbers are equal 
+        #include &lt;iostream&gt; <br>
+        using namespace std; 
+          
+        int main() 
+        { 
+            int x = 3; 
+            int y = 4; 
+          
+            cout << "X : " << x << endl; 
+            cout << "Y : " << y << endl; 
+          
+            x = x + y; 
+            y = x - y; 
+            x = x - y; 
+          
+            cout << endl; 
+            cout << "After:" << endl; 
+          
+            cout << "X : " << x << endl; 
+            cout << "Y : " << y << endl; 
+          
+            return 0; 
+        }</textarea>
+        <h2  class="u">Output</h2><br>
+        <p  class="u">X : 3</p><br>
+        <p class="u">Y : 4</p><br>
+
+        <p class="u">After:</p><br>
+
+        <p class="u">X : 4</p>
+        <p class="u">Y : 3</p>
+<br><br>
+<h1>40. Write a Program for Octal to Decimal Conversion</h1><br><br>
+<textarea style="width: 400px;">// C++ Program to convert ocatal to decimal 
+    #include &lt;cmath&gt; <br>
+    #include &lt;iostream&gt; <br>
+      
+    using namespace std; 
+      
+    int main() 
+    { 
+        int oct, dec = 0, place = 0; 
+        // 67 is an octal number with binary equivalent 110000 
+        oct = 67; 
+      
+        int temp = oct; 
+        while (temp) { 
+            int lastDigit = temp % 10; 
+            temp /= 10; 
+            dec += lastDigit * pow(8, place); 
+            ++place; 
+        } 
+      
+        cout << "Decimal equivalent is: " << dec << endl; 
+      
+        return 0; 
+    }</textarea>
+    <h2 class="u">Output</h2><br><br>
+    <p class="u">Decimal equivalent is: 55</p><br><br>
+<br>
+
+<h1>41. Write a Program for Hexadecimal to Decimal Conversion</h1><br><br><br><br>
+<textarea style="width: 400px;">// C++ Program to convert hexadecimal to decimal conversion 
+    #include &lt;cmath&gt; <br>
+    #include &lt;iostream&gt; <br>
+    using namespace std; 
+      
+    int hexToDecimal(char hexDigit) 
+    { 
+        if (hexDigit >= '0' && hexDigit <= '9') { 
+            return int(hexDigit - '0'); 
+        } 
+        else if (hexDigit >= 'A' && hexDigit <= 'F') { 
+            return int(hexDigit - 'A' + 10); 
+        } 
+        else if (hexDigit >= 'a' && hexDigit <= 'f') { 
+            return int(hexDigit - 'a' + 10); 
+        } 
+        return -1; 
+    } 
+      
+    int main() 
+    { 
+        string hex; 
+        int decimal = 0, place = 0; 
+      
+        hex = "67"; 
+      
+        int n = hex.length(); 
+        for (int i = n - 1; i >= 0; i--) { 
+            int digit = hexToDecimal(hex[i]); 
+            decimal += digit * pow(16, place); 
+            place++; 
+        } 
+      
+        cout << "Decimal equivalent " << decimal << endl; 
+      
+        return 0; 
+    }</textarea>
+    <h2 class="u">Output</h2><br>
+    <p class="u">Decimal equivalent 103</p><br>
+
+<h1>42. Write a Program for Decimal to Binary Conversion</h1>
+<textarea style="width: 400px;">// c++ program to convert decimal to binary 
+    #include &lt;bitset&gt; <br>
+    #include &lt;iostream&gt; <br>
+      
+    using namespace std; 
+      
+    int main() 
+    { 
+        int decimal = 7; 
+      
+        // simplest method to convert decimal to binary 
+        bitset<32> binary(decimal); 
+      
+        cout << "Binary equivalent: " << binary << endl; 
+      
+        return 0; 
+    }</textarea>
+    <h2 class="u">Output</h2><br><br>
+    <p class="u">Binary equivalent: 00000000000000000000000000000111</p><br><br>
+
+
+<h1>43. Write a Program for Decimal Octal Conversion</h1><br>
+<textarea style="width: 400px;">// C++ Program to convert decimal to octal equivalent 
+    #include &lt;cmath&gt; <br>
+    #include &lt;iostream&gt; <br>
+      
+    using namespace std; 
+      
+    int main() 
+    { 
+        int decimal, octal = 0, place = 1; 
+      
+        decimal = 55; 
+      
+        int temp = decimal; 
+        while (temp) { 
+            int lastDigit = temp % 8; 
+            temp /= 8; 
+            octal += lastDigit * place; 
+            place *= 10; 
+        } 
+      
+        cout << "Octal equivalent " << octal << endl; 
+      
+        return 0; 
+    }</textarea>
+    <h2 class="u">Output</h2><br><br>
+    <p class="u">Octal equivalent 67</p><br>
+
+<h1>44. Program to Perform Insert, Delete, and Print <br>Operations Singly Linked List</h1><br><br>
+<textarea style="width: 400px;">// C++ Program to perform insertion, deletion, and print 
+    // operations in LL 
+    #include &lt;iostream&gt; <br>
+      
+    using namespace std; 
+      
+    struct Node { 
+        int data; 
+        Node* next; 
+    }; 
+      
+    Node* head = nullptr; 
+      
+    // Function to insert node in LL 
+    void insert(int data) 
+    { 
+        Node* newNode = new Node(); 
+        newNode->data = data; 
+        newNode->next = head; 
+        head = newNode; 
+    } 
+    // function to delete node of LL 
+    void deleteNode(int data) 
+    { 
+        Node *temp = head, *prev = nullptr; 
+        if (temp != nullptr && temp->data == data) { 
+            head = temp->next; 
+            delete temp; 
+            return; 
+        } 
+        while (temp != nullptr && temp->data != data) { 
+            prev = temp; 
+            temp = temp->next; 
+        } 
+        if (temp == nullptr) 
+            return; 
+        prev->next = temp->next; 
+        delete temp; 
+    } 
+      
+    // function to print LL 
+    void printList() 
+    { 
+        Node* temp = head; 
+        while (temp != nullptr) { 
+            cout << temp->data << " "; 
+            temp = temp->next; 
+        } 
+        cout << endl; 
+    } 
+      
+    int main() 
+    { 
+        insert(1); 
+        insert(2); 
+        insert(3); 
+        insert(4); 
+        insert(5); 
+        cout << "Linked List is \n"; 
+      
+        printList(); 
+        deleteNode(3); 
+        cout << "Linked List after deletion of 3: "; 
+        printList(); 
+      
+        return 0; 
+    }</textarea>
+<h2 class="u">Output</h2><br>
+<p class="u">Linked List is </p><br>
+<p class="u">5 4 3 2 1 </p>
+<p class="u">Linked List after deletion of 3: 5 4 2 1</p><br>
+<br><br>
+<h1>
+    45. Program to Perform Insert, Delete, and Print Operations Doubly Linked List?
+</h1><br><br>
+<textarea style="width: 400px;">// C++ Program to implement insert, delete, and print 
+    // operation in doubly linked list 
+    #include &lt;iostream&gt; <br>
+      
+    using namespace std; 
+      
+    struct Node { 
+        int data; 
+        Node* next; 
+        Node* prev; 
+    }; 
+      
+    class DoublyLinkedList { 
+    private: 
+        Node* head; 
+      
+    public: 
+        DoublyLinkedList() 
+            : head(NULL) 
+        { 
+        } 
+      
+        void insertAtStart(int data) 
+        { 
+            Node* newNode = new Node; 
+            newNode->data = data; 
+            newNode->next = head; 
+            newNode->prev = NULL; 
+      
+            if (head != NULL) 
+                head->prev = newNode; 
+      
+            head = newNode; 
+        } 
+      
+        void deleteNode(int data) 
+        { 
+            Node* temp = head; 
+            while (temp != NULL && temp->data != data) 
+                temp = temp->next; 
+      
+            if (temp == NULL) 
+                return; 
+      
+            if (temp->prev != NULL) 
+                temp->prev->next = temp->next; 
+            else
+                head = temp->next; 
+      
+            if (temp->next != NULL) 
+                temp->next->prev = temp->prev; 
+      
+            delete temp; 
+        } 
+      
+        void printList() 
+        { 
+            Node* temp = head; 
+            while (temp != NULL) { 
+                std::cout << temp->data << " "; 
+                temp = temp->next; 
+            } 
+            std::cout << std::endl; 
+        } 
+    }; 
+      
+    int main() 
+    { 
+        DoublyLinkedList dll; 
+      
+        dll.insertAtStart(1); 
+        dll.insertAtStart(2); 
+        dll.insertAtStart(3); 
+        dll.insertAtStart(4); 
+        dll.insertAtStart(5); 
+      
+        std::cout << "Original Doubly Linked List: "; 
+        dll.printList(); 
+      
+        dll.deleteNode(2); 
+      
+        std::cout << "Doubly Linked List after deletion: "; 
+        dll.printList(); 
+      
+        return 0; 
+    }</textarea>
+<h2 class="u">Output</h2><br><br>
+<p class="u">Original Doubly Linked List: 5 4 3 2 1 </p><br>
+<p class="u">
+    Doubly Linked List after deletion: 5 4 3 1    
+</p><br><br>
+<h1>46. Write a Program to Print the Maximum Value of an Unsigned<br> int Using One’s Complement (~) Operator</h1><br><br>
+<textarea style="width: 400px;">// C++ program to print maximum value of 
+// unsigned int. 
+#include &lt;iostream&gt; <br>
+  
+using namespace std; 
+  
+int main() 
+{ 
+    unsigned int max; 
+    max = 0; 
+    max = ~max; 
+  
+    cout << "Max value possible : " << max; 
+  
+    return 0; 
+}</textarea><br><br>
+<h2 class="u">Output</h2><br>
+<p class="u">Max value possible : 4294967295</p><br><br>
+
+<h1>47. Write a Program to Check for the Equality of Two Numbers<br> Without Using Arithmetic or Comparison Operator</h1><br><br>
+<textarea style="width: 400px;">// C++ Program to equality of 
+// Two numbers without using 
+// Arithmetic or comparison operator 
+#include &lt;iostream&gt; <br>
+using namespace std; 
+  
+int main() 
+{ 
+    int a = 10, b = 10; 
+  
+    if (a ^ b) 
+        cout << "Not-Equal"; 
+    else
+        cout << "Equal"; 
+  
+    return 0; 
+}</textarea><br><br>
+<h2 class="u">Output</h2><br><br>
+<p class="u">Equal</p><br><br>
+
+<h1>48. Write a Program to Implement the Concept of Operator Overloading</h1><br><br>
+<textarea style="width: 400px;">// C++ program to demonstrate 
+// Operator Overloading 
+#include &lt;iostream&gt; <br>
+using namespace std; 
+  
+class Complex { 
+private: 
+    int real, imag; 
+  
+public: 
+    Complex(int r = 0, int i = 0) 
+    { 
+        real = r; 
+        imag = i; 
+    } 
+  
+    // This is automatically called 
+    // when '+' is used 
+    Complex operator+(Complex const& obj) 
+    { 
+        Complex res; 
+        res.real = real + obj.real; 
+        res.imag = imag + obj.imag; 
+        return res; 
+    } 
+    void print() { cout << real << " + " << imag << "i\n"; } 
+}; 
+  
+int main() 
+{ 
+    Complex c1(15, 5), c2(3, 5); 
+  
+    Complex c3 = c1 + c2; 
+    c3.print(); 
+}</textarea><br><br>
+<h2 class="u">Output</h2><br>
+<p class="u">18 + 10i</p><br>
+
+<h1>49. Write a Program to Implement the Concept of Function<br> Overriding or Runtime Polymorphism</h1><br><br>
+<textarea style="width: 400px;">// C++ program for implementation 
+// of Function Overloading or 
+// Compile time Polymorphism 
+#include &lt;iostream&gt; <br>
+using namespace std; 
+  
+class base { 
+public: 
+    virtual void print() 
+    { 
+        cout << "print base class" << endl; 
+    } 
+  
+    void show() { cout << "show base class" << endl; } 
+}; 
+  
+class derived : public base { 
+public: 
+    void print() { cout << "print derived class" << endl; } 
+  
+    void show() { cout << "show derived class" << endl; } 
+}; 
+  
+int main() 
+{ 
+    base* bptr; 
+    derived d; 
+    bptr = &d; 
+  
+    bptr->print(); 
+  
+    // Non-virtual function, binded 
+    // at compile time 
+    bptr->show(); 
+  
+    return 0; 
+} </textarea><br><br>
+<h2 class="u">
+Output
+</h2><br><br>
+<p class="u">print derived class</p><br>
+<p class="u">show base class</p><br>
+<h1>50. Write a Program to Implement the Inch Feet System</h1><br><br>
+<textarea style="width: 400px;">// C++ Program to create a class of inchFeet length system 
+#include &lt;bits/stdc++.h&gt;
+using namespace std; 
+  
+// inch-feet length system datatype 
+struct c { 
+    double feet; 
+    double inch; 
+}; 
+  
+// inchFeet class 
+class inchFeet { 
+private: 
+    struct c length; 
+  
+public: 
+    // constructors 
+    inchFeet() {} 
+    inchFeet(double feet, double inch) 
+    { 
+        length.inch = inch; 
+        length.feet = feet; 
+    } 
+    inchFeet(inchFeet& var) 
+    { 
+        length.inch = var.length.inch; 
+        length.feet = var.length.feet; 
+    } 
+  
+    // utility functions 
+    void print() 
+    { 
+        cout << length.feet << " feet and " << length.inch 
+             << " inches" << endl; 
+    } 
+  
+    double inches() { return length.inch; } 
+    double feet() { return length.feet; } 
+  
+    // overloaded operators 
+    inchFeet operator+(inchFeet& obj1) 
+    { 
+        inchFeet var; 
+        var.length.feet = length.feet + obj1.length.feet; 
+        var.length.inch = length.inch + obj1.length.inch; 
+        if (var.length.inch >= 12.0) { 
+            var.length.feet++; 
+            var.length.inch - 12.0; 
+        } 
+  
+        return var; 
+    } 
+    inchFeet operator-(inchFeet& obj1) 
+    { 
+        inchFeet var; 
+        struct c temp = length; 
+        if (temp.feet > obj1.length.feet) { 
+            if (temp.inch < obj1.length.inch) { 
+                temp.feet--; 
+                temp.inch += 12; 
+            } 
+            var.length.feet = temp.feet - obj1.length.feet; 
+            var.length.inch = temp.inch - obj1.length.inch; 
+        } 
+        else { 
+            cout << "Negative Length is not Possible\n"; 
+        } 
+        return var; 
+    } 
+}; 
+  
+// driver code 
+int main() 
+{ 
+    inchFeet a(11, 4), b(5, 8); 
+    inchFeet c; 
+    c = a - b; 
+  
+    a.print(); 
+    b.print(); 
+    c.print(); 
+  
+    return 0; 
+}</textarea><br>
+<h2 class="u">Output</h2><br>
+<p class="u">11 feet and 4 inches</p>
+<p class="u">5 feet and 8 inches</p><br>
+<p class="u">5 feet and 8 inches</p><br>
+
+<h1>
+51. Write a Program to Implement Binary Search?
+</h1><br><br>
+<textarea style="width: 400px;">// C++ program to implement 
+// Binary Search 
+#include &lt;iostream&gt; <br>
+using namespace std; 
+  
+// Binary Search Function 
+int binarySearch(int arr[], int l, int r, int x) 
+{ 
+    if (r >= l) { 
+        // Middle element 
+        int mid = l + (r - l) / 2; 
+  
+        if (arr[mid] == x) 
+            return mid; 
+  
+        if (arr[mid] > x) 
+            return binarySearch(arr, l, mid - 1, x); 
+  
+        return binarySearch(arr, mid + 1, r, x); 
+    } 
+  
+    // We reach here when element is not 
+    // present in array 
+    return -1; 
+} 
+  
+int main(void) 
+{ 
+    int arr[] = { 1, 2, 3, 4, 5, 6 }; 
+    int x = 5; 
+    int n = sizeof(arr) / sizeof(arr[0]); 
+  
+    int result = binarySearch(arr, 0, n - 1, x); 
+  
+    if (result == -1) 
+        cout << "Element is not present in array"; 
+    else
+        cout << "Element is present at index " << result; 
+    return 0; 
+}</textarea><br>
+<h2 class="u">Output</h2><br>
+<p class="u">Element is present at index 4</p><br><br>
+<br>
+<h1>52. Write a Program to Find the Index of a Given Element in a Vector</h1><br><br><br>
+<textarea style="width: 400px;">// C++ program to find the index 
+// of an element in a vector 
+#include &lt;bits/stdc++.h&gt;
+  
+using namespace std; 
+  
+// print index of element 
+void print_index(vector<int> v, int element) 
+{ 
+    auto it = find(v.begin(), v.end(), element); 
+  
+    // Condition if element found 
+    if (it != v.end()) { 
+  
+        // Calculating the index 
+        // of element 
+        int index = it - v.begin(); 
+        cout << index << endl; 
+    } 
+    // No such element in vector 
+    else { 
+        cout << "-1" << endl; 
+    } 
+} 
+  
+int main() 
+{ 
+    vector<int> v = { 1, 2, 3, 4, 5, 6 }; 
+  
+    int element = 5; 
+    print_index(v, element); 
+  
+    return 0; 
+}</textarea><br><br><br>
+<h class="u">Output</h><br>
+<p class="u">4</p><br><br>
+<h1>Conclusion</h1>
+<p class="E">Coding interviews can be challenging task, but they are also a great opportunity to test your skills and knowledge. By practicing with commonly ask C++ coding interview questions, you can increase your chances of success.
+
+    Remember to stay calm, communicate your thought<br> process clearly, and don’t be afraid to ask for clarification if needed. With hard work and preparation, you can ace your interview and land your dream job!</p><br>
+    <h1>C++ Coding Interview Questions – FAQs</h1><br>
+    <h2>Q: What are the most common C++ coding interview questions?</h2><br>
+
+<p class="E">The most common C++ coding interview questions are designed to test your knowledge of the following topics:</p><br>
+
+<ol style="font-size: 25px;">
+    <li>C++ syntax and semantics</li>
+    <li> Data structures and algorithms</li>
+    <li> Object-oriented programming</li>
+    <li> Memory management</li>
+    <li> 3 Pointers</li>
+    <li> Templates & More.</li>
+</ol>
+<br>
+<h1>Q: What should I do during a C++ coding interview?</h1><br><br>
+<h3>When you are asked a coding question in an interview, take a moment to think about the problem before you start coding. Explain your thought process to the interviewer as you are coding. This will help them to understand your approach to solving problems.</h3><br>
+
+<h1>Q: How can I improve my communication skills during C++ coding interviews?</h1><br>
+<h3>Here are some tips for improving your communication skills during C++ coding interviews:</h3><br><br>
+<ol style="font-size: 25px;">
+    
+        <li> Speak clearly and concisely.</li>
+        <li> Explain your thought process to the interviewer.</li>
+        <li> Ask clarifying questions if needed.</li>
+        <li> Be prepared to answer questions about your code.</li>
+        <li> Be open to feedback.</li>
+</ol>
+    <br><br><br>
+    <div id="bottomnextup">
+        <a class="prev"  href="file:///D:/example/Array.html">C++ Arrays&larr; prev</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="next" href="file:///D:/example/Array.html">next &rarr;50 C++ Interview Q/A</a>
+        </div>
+</div></div></div>  <br> <div class="container-fluid">
+      
+    <div class="row">
+     
+       <div class="col-sm-4">
+        <h5>JAVA TUTORIAL</h5>
+        <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+   
+    <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+    <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+    <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+        <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+         <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+         <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+         <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+         <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+         <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+         <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+         <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+         <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+         <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+         <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+         <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+         <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+         <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+         <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+         <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+         <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+         <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+         <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+         <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+         <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+           <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+           <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+           <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+           <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+         <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+         <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+           <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+             <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+             <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+             <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+             <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+             <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+             <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+             <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+             <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+             <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+            
+           
+        <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+          <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+        <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+          <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+           <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+          <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+         <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+          <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+         <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+         <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+         <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+         <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+    
+   </div> 
+  </div><br><br><br><br><br><br><br><br><br>
+<section class="hero" id="about">
+  <div class="bio animate__animated animate__shakeX">
+    <h2 class="bio-title">About Me</h2>
+    <p class="bio-text">
+        My name is Gautam, I’ve been studying computer science for two years. In order to kick-start my career before I graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for four years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+
+    </p>
+  </div>
+</section><br>
+<section class="skills" id="skills">
+  <h2 class="skill-header">My Top Skills</h2>
+
+  <div class="skills-wrapper">
+    <div class="first-set animate__animated animate__pulse">
+      <img
+        src="C:\Users\Admin\Pictures\c++.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="C:\Users\Admin\Pictures\java.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="C:\Users\Admin\Pictures\html.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+
+    <div class="second-set animate__animated animate__pulse">
+      <img
+        src="C:\Users\Admin\Pictures\css-3.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="C:\Users\Admin\Pictures\js.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+      <img
+        src="C:\Users\Admin\Pictures\icons-heroo.png"
+        alt=""
+        loading="lazy"
+        class="icon icon-card"
+      />
+    </div>
+  </div>
+</section>
+<section class="projects" id="projects">
+  <h2 class="projects-title">Some of my Recent Projects</h2>
+  <div class="projects-container">
+    <div class="project-container project-card">
+      <img
+        src="C:\Users\Admin\Pictures\insta.png"
+        alt="instagram-clone"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">Instagram Clone</h3>
+      <p class="project-details">
+        I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+      </p>
+      <a href="#" target="_blank" class="project-link">Check it Out</a>
+    </div>
+    <div class="project-container project-card">
+      <img
+        src="C:\Users\Admin\Pictures\quiz.jpg"
+        alt="quiz-app"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">QUIZ</h3>
+      <p class="project-details">
+        I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+      </p>
+      <a href="#" target="_blank" class="project-link">Check it Out</a>
+    </div>
+    <div class="project-container project-card">
+      <img
+        src="C:\Users\Admin\Pictures\todo.jpg"
+        alt="todo-app"
+        loading="lazy"
+        class="project-pic"
+      />
+      <h3 class="project-title">TO DO APP</h3>
+      <p class="project-details">
+        I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+      </p>
+      <a href="#" target="_blank" class="project-link">Check it Out</a>
+    </div>
+  </div>
+</section><section class="contact" id="contact">
+  <h2>Get In Touch With Me</h2>
+  <div class="contact-form-container">
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+        <div class="form-control">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="sender-name"
+            placeholder="Enter Your Name"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="sender-email"
+            placeholder="Enter Your Email"
+            class="input-field"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            cols="60"
+            rows="10"
+            placeholder="Enter Your Message"
+            name="message"
+            class="input-field"
+            required
+          ></textarea>
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          id="submit-btn"
+          class="submit-btn"
+        /><br>
+        <span id="success"></span>
+      </form>
+    </div>
+  </div>
+</section><br><br><br>
+<div class="container">
+  <div class="all flex-row">
+    <div class="menu flex-column">
+      <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+      <div class="profil-info">
+        <h2 class="name">Gautam Kumar</h2>
+        <h3 class="city">Patna,Bihar</h3>
+      </div></div></div></div></div>
+<div class="socials">
+  <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+    ><img
+      src="C:\Users\Admin\Pictures\insta.png"
+      alt="Instagram"
+      loading="lazy"
+      class="socicon"
+  />Instagram</a>
+  <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+    ><img
+      src="C:\Users\Admin\Pictures\facebookk.png"
+      alt="Facebook"
+      loading="lazy"
+      class="socicon"
+  />Facebook</a>
+  <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+    ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+  />Youtube</a>
+  <footer>
+      <p class="copy">&copy; Copyright 2024</p>
+      <p class="copy">
+        Built with &#x2661; by CODE WITH GAUTAM</Code>
+       
+      </p>
+</footer>
+<i class="scroll-up" id="scroll-up"
+><img
+  src="assets/icons/icons8-upward-arrow.gif"
+  class="socicon up-arrow"
+  alt="scroll-up"
+/></i>
+
+<script src="portfolio.js">
+</script>
+<script
+type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+nomodule
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+
+</body>
+</html>

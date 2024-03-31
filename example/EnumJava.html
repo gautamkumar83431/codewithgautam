@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>Enumaration in java
+      --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li> <a href="file:///D:/example/Home.html">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<div class="scrollmenu">
+   
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+  <a href="file:///D:/example/Exception%20Handling.html">Exception handling</a>
+  <a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                   </div></div>
+                  
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+                <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+            </div>
+            <div class="mega-url-list">
+         
+                <h1 class="h1">Java Enums</h1><br>
+                <p>The <strong>Enum in Java</strong> is a data type which contains a fixed set of constants. </p><br>
+                <p>It can be used for days of the week (SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, and SATURDAY) , directions (NORTH, SOUTH, EAST, and WEST), season (SPRING, SUMMER, WINTER, and AUTUMN or FALL), colors (RED, YELLOW, BLUE, GREEN, WHITE, and BLACK) etc. According to the Java naming conventions, we should have all constants in capital letters. So, we have enum constants in capital letters.</p><br>
+                <p>Java Enums can be thought of as classes which have a fixed set of constants (a variable that does not change). The Java enum constants are static and final implicitly. It is available since JDK 1.5.</p><br>
+                <p>Enums are used to create our own data type like classes. The <strong>enum</strong> data type (also known as Enumerated Data Type) is used to define an enum in Java. Unlike C/C++, enum in Java is more <em>powerful</em>. Here, we can define an enum either inside the class or outside the class.</p><br>
+                <p>Java Enum internally inherits the <em>Enum class</em>, so it cannot inherit any other class, but it can implement many interfaces. We can have fields, constructors, methods, and main methods in Java enum.</p><br>
+                <h2 class="h2">Points to remember for Java Enum</h2><br>
+               
+                <li>Enum improves type safety</li>
+                <li>Enum can be easily used in switch</li>
+                <li>Enum can be traversed</li>
+                <li>Enum can have fields, constructors and methods</li>
+                <li>Enum may implement many interfaces but cannot extend any class because it internally extends Enum class</li>
+             <br>
+                <img src="C:\Users\Admin\Pictures/java-enum.png" alt="Java Enum Points" id="imgee">
+                <hr/><br>
+                <h3 class="h2">Simple Example of Java Enum</h3><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                class EnumExample1{
+                //defining the enum inside the class
+                public enum Season { WINTER, SPRING, SUMMER, FALL }
+                //main method
+                public static void main(String[] args) {
+                //traversing the enum
+                for (Season s : Season.values())
+                System.out.println(s);
+                }}
+                </textarea></div><br>
+              
+                <p>Output:</p>
+                <div class="codeblock3"><pre>
+                WINTER
+                SPRING
+                SUMMER
+                FALL
+                </pre></div><br>
+                <p>Let us see another example of Java enum where we are using value(), valueOf(), and ordinal() methods of Java enum.</p><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                class EnumExample1{
+                //defining enum within class
+                public enum Season { WINTER, SPRING, SUMMER, FALL }
+                //creating the main method
+                public static void main(String[] args) {
+                //printing all enum
+                for (Season s : Season.values()){
+                System.out.println(s);
+                }
+                System.out.println("Value of WINTER is: "+Season.valueOf("WINTER"));
+                System.out.println("Index of WINTER is: "+Season.valueOf("WINTER").ordinal());
+                System.out.println("Index of SUMMER is: "+Season.valueOf("SUMMER").ordinal());
+                
+                }}
+                
+                </textarea></div><br>
+                <p>Output:</p>
+                <div class="codeblock3"><pre>
+                WINTER
+                SPRING
+                SUMMER
+                FALL
+                Value of WINTER is: WINTER
+                Index of WINTER is: 0
+                Index of SUMMER is: 2
+                </pre></div><br>
+                <p class="n">Note: Java compiler internally adds values(), valueOf() and ordinal() methods within the enum at compile time. It internally creates a static and final class for the enum.</p><br>
+                <h3 class="h3">What is the purpose of the values() method in the enum?</h3><br>
+                <p>The Java compiler internally adds the values() method when it creates an enum. The values() method returns an array containing all the values of the enum.</p><br>
+                <h3 class="h3">What is the purpose of the valueOf() method in the enum?</h3><br>
+                <p>The Java compiler internally adds the valueOf() method when it creates an enum. The valueOf() method returns the value of given constant enum.</p><br>
+                <h3 class="h3">What is the purpose of the ordinal() method in the enum?</h3>
+                <p>The Java compiler internally adds the ordinal() method when it creates an enum. The ordinal() method returns the index of the enum value.</p>
+                <hr/><br>
+                
+                <h2 class="h2">Defining Java Enum</h2>
+                <p>The enum can be defined within or outside the class because it is similar to a class. The semicolon (;) at the end of the enum constants are optional. For example:</p><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                enum Season { WINTER, SPRING, SUMMER, FALL }
+                </textarea></div>
+                <p>Or,</p><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                enum Season { WINTER, SPRING, SUMMER, FALL; }
+                </textarea></div><br>
+                <p>Both the definitions of Java enum are the same.</p><br>
+                <h3 class="h3">Java Enum Example: Defined outside class</h3><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                enum Season { WINTER, SPRING, SUMMER, FALL }
+                class EnumExample2{
+                public static void main(String[] args) {
+                Season s=Season.WINTER;
+                System.out.println(s);
+                }} 
+                </textarea></div><br>
+               
+                <p>Output:</p><br>
+                <div class="codeblock3"><pre>
+                WINTER
+                </pre></div><br>
+                <h3 class="h3">Java Enum Example: Defined inside class</h3><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                class EnumExample3{
+                enum Season { WINTER, SPRING, SUMMER, FALL; }//semicolon(;) is optional here
+                public static void main(String[] args) {
+                Season s=Season.WINTER;//enum type is required to access WINTER
+                System.out.println(s);
+                }}
+                </textarea></div><br>
+              
+                <p>Output:</p>
+                <div class="codeblock3"><pre>
+                WINTER
+                </pre></div><br>
+                <h3 class="h3">Java Enum Example: main method inside Enum</h3><br>
+                <p>If you put main() method inside the enum, you can run the enum directly.</p><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                enum Season { 
+                WINTER, SPRING, SUMMER, FALL;
+                public static void main(String[] args) {
+                Season s=Season.WINTER;
+                System.out.println(s);
+                }
+                }
+                </textarea></div><br>
+                <p>Output:</p><br>
+                <div class="codeblock3"><pre>
+                WINTER
+                </pre></div>
+                <hr/><br>
+                <h3 class="h2">Initializing specific values to the enum constants</h3><br>
+                <p>The enum constants have an initial value which starts from 0, 1, 2, 3, and so on. But, we can initialize the specific value to the enum constants by defining fields and constructors. As specified earlier, Enum can have fields, constructors, and methods.</p><br>
+                <h3 class="h3">Example of specifying initial value to the enum constants</h3><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                
+                class EnumExample4{
+                enum Season{ 
+                WINTER(5), SPRING(10), SUMMER(15), FALL(20); 
+                
+                private int value;
+                private Season(int value){
+                this.value=value;
+                }
+                }
+                public static void main(String args[]){
+                for (Season s : Season.values())
+                System.out.println(s+" "+s.value);
+                
+                }}
+                    
+                </textarea></div><br>
+               
+                <p>Output:</p>
+                <div class="codeblock3"><pre>
+                WINTER 5
+                SPRING 10
+                SUMMER 15
+                FALL 20
+                </pre></div>
+                <hr/><br>
+                <h4 class="n">Constructor of enum type is private. If you don't declare private compiler internally creates private constructor.</h4><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                enum Season{
+                WINTER(10),SUMMER(20);
+                private int value;
+                Season(int value){
+                this.value=value;
+                }
+                }    
+                </textarea></div><br>
+                <h3 class="h3">Internal code generated by the compiler for the above example of enum type</h3><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                final class Season extends Enum
+                {
+                    public static Season[] values()
+                    {
+                        return (Season[])$VALUES.clone();
+                    }
+                    public static Season valueOf(String s)
+                    {
+                        return (Season)Enum.valueOf(Season, s);
+                    }
+                    private Season(String s, int i, int j)
+                    {
+                        super(s, i);
+                        value = j;
+                    }
+                    public static final Season WINTER;
+                    public static final Season SUMMER;
+                    private int value;
+                    private static final Season $VALUES[];
+                    static 
+                    {
+                        WINTER = new Season("WINTER", 0, 10);
+                        SUMMER = new Season("SUMMER", 1, 20);
+                        $VALUES = (new Season[] {
+                            WINTER, SUMMER
+                        });
+                    }
+                }
+                </textarea></div>
+                <hr/>
+                <h3 class="h3">Can we create the instance of Enum by new keyword?</h3><br>
+                <table>
+                <tr><td>No, because it contains private constructors only.</td></tr>
+                </table>
+                <hr/>
+                <h3 class="h3">Can we have an abstract method in the Enum?</h3><br>
+                <p>Yes, Of course! we can have abstract methods and can provide the implementation of these methods.</p><br>
+                <hr/>
+                <h2 class="h2">Java Enum in a switch statement</h2><br>
+                <p>We can apply enum on switch statement as in the given example:</p><br>
+                <p><strong>Example of applying Enum on a switch statement</strong></p><br>
+                <div class="codeblock"><textarea name="code" class="java">
+                
+                class EnumExample5{
+                enum Day{ SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY}
+                public static void main(String args[]){
+                Day day=Day.MONDAY;
+                
+                switch(day){
+                case SUNDAY: 
+                 System.out.println("sunday");
+                 break;
+                case MONDAY: 
+                 System.out.println("monday");
+                 break;
+                default:
+                System.out.println("other day");
+                }
+                }}
+                </textarea></div><br>
+               
+                <p>Output:</p>
+                <div class="codeblock3"><pre>
+                monday
+                </pre></div><br>
+               
+                <div><ul class="pager">
+                <li class="previous">
+                <a href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">&larr; Prev</a>
+                </li>
+                <li class="next">
+                <a href="#">Next &rarr;</a>
+                </li>
+                </ul></div>
+                <hr/>
+              
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br> <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> 
+    </div><br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

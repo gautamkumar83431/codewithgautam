@@ -1,0 +1,175 @@
+
+*{
+    margin :0px;
+    padding: 0px;
+}
+/*Header Styling*/
+.search{
+    text-align: right;
+    position: sticky;
+     top: 200px;
+     border-radius: 2px;
+ 
+}
+
+.header
+{
+  margin: 0px;
+  padding: 0px;
+    position: sticky;
+    top: 5px;
+    background: rgb(250, 246, 246);
+}
+
+
+
+#top{
+    
+    color:rgb(245, 10, 10);
+    text-align:center;
+    font-size:46px;
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: black;
+    
+}
+#top1{
+    text-align:center ;
+    color:rgb(214, 28, 28);
+    font-size:27px;
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: black;
+}
+/* Navigation bar styling*/
+
+/*Navbar image styling*/
+#navbar img{
+    display:block;
+    width: 100px;
+    height:100px;
+    margin:auto;
+    margin-bottom: 3px;
+}
+
+
+/*Navbar Functionality*/
+#navbar{
+    display:flex;
+    flex-direction: column;
+    background-color: gray;
+    height: 14vh;
+    width: 100vw;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top:1px;
+   border: 2px solid black;
+   border-radius:15px;
+   position: sticky;
+   top: 90px;
+}
+
+
+/*Navbar content functionality*/
+#navcontent{
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    margin-top: 10px;
+}
+/*Navbar content styling*/
+ul li{
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+}
+ul li a{
+    padding: 1px;
+    color:white;
+    text-decoration: none;
+    border-radius:10px;
+}
+ul li a:hover{
+    background-color: red;
+    border-radius: 10px;
+}
+.row1
+{
+    color: rgb(20, 9, 6);
+    text-align: center;
+    background-color:yellowgreen;
+    font-size: 30px;
+    
+}
+p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+   
+        h1{
+            color: rgb(185, 234, 229);
+           
+        }
+        h2{
+            color: white;
+           
+        }
+        .e
+        {
+          
+            color: white;
+            
+        }
+        .L
+        {
+            
+            color: white;
+        }
+        body{
+        background: rgb(12, 6, 6);
+
+
+        }
+        h3{
+          
+           
+            margin-top: auto;
+            padding-left: 40px;
+            color: white;
+        }
+        table
+        {
+           border-color: brown;
+           
+          color: white;
+           
+         
+          
+        }
+        
+        h4{
+            color: white;
+            
+            background-color: rgb(188, 148, 176);
+        }
+        ul{
+            
+            
+            color: white;
+        }
+        details{
+          
+            background-color: rgb(225, 232, 230);
+            border: 2px solid;
+
+        }   
+        fieldset{
+            width: 40px;
+           
+            background-color: rgb(183, 195, 125);
+        }
+        
+            
+        
+       
+        

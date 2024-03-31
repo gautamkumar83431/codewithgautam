@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--CSS Styles -->
+     <link rel="stylesheet" href="assets/css/styles.css" />
+
+     <!-- Favicons -->
+     <link
+       rel="apple-touch-icon"
+       sizes="180x180"
+       href="assets/icons/apple-touch-icon.png"
+     />
+     <link
+       rel="icon"
+       type="image/png"
+       sizes="32x32"
+       href="assets/icons/favicon-32x32.png"
+     />
+ 
+    <!-- Animate CSS CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+ 
+     <link rel="stylesheet" href="Java_Tutorial.css">
+    <title>this keyword in Java
+      --CodeWithGautam--</title>
+</head>
+<body> <nav>
+    <h1>CODE WITH GAUTAM </h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+<div class="scrollmenu">
+  <a href="file:///D:/example/Home.html">Home</a>
+  <a href="file:///D:/example/Java_Tutorial.html">Java</a>
+  <a href="file:///D:/example/codewithgautam.html">C++</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a>
+<a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a>
+<a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a>
+<a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a>
+<a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a>
+<a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a>
+<a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a>
+<a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading in java</a>
+<a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding in java</a>
+<a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism in java </a>
+
+<a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection in java</a>
+<a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a>
+<a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a>
+<a href="file:///D:/example/Package%20in%20java.html">Java Package</a>
+<a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a>
+<a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class in java</a>
+<a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a>
+<a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class in java</a>
+<a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+ 
+  
+</div>
+    <div class="slidenew active" id="slide-1">
+        <div class="row">
+            <div class="col-md-2 mt-2">
+                <div class="p-3">
+                    <div class="mb-3">
+                        <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"></h3></a>
+                    </div>
+                   </div></div>
+                  
+    <div class="col-md-8 mt-2">
+        <div class="p-3">
+            <div class="mb-3">
+                <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+            </div>
+            <div class="mega-url-list">
+              
+                    <h1>Java this Keyword</h1><br>
+    
+
+<h2>this Keyword</h2><br><br>
+
+<p>In Java, this keyword is used to refer to the current object inside a method or a constructor. For example,</p><br>
+<br>
+<pre class="java-exec">
+<code>
+    <textarea> Main {
+int instVar;
+
+Main(int instVar){
+this.instVar = instVar;
+System.out.println("this reference = " + this);
+}
+
+public static void main(String[] args) {
+Main obj = new Main(8);
+System.out.println("object reference = " + obj);
+}
+}</textarea></code></pre><br>
+
+<p><strong>Output</strong>:</p><br>
+
+<pre>
+<samp>this reference = Main@23fc625e
+object reference = Main@23fc625e</samp></pre><br>
+
+<p>In the above example, we created an object named <var>obj</var> of the class <var>Main</var>. We then print the reference to the object <var>obj</var> and <code>this</code> keyword of the class.</p>
+<br>
+<p>Here, we can see that the reference of both <var>obj</var> and <code>this</code> is the same. It means this is nothing but the reference to the current object.</p>
+<br>
+<hr>
+<h2>Use of this Keyword</h2><br>
+
+<p>There are various situations where <code>this</code> keyword is commonly used.</p>
+<br>
+<h2 id="disambiguate-reference">Using this for Ambiguity Variable Names</h2>
+<br>
+<p>In Java, it is not allowed to declare two or more variables having the same name inside a scope (class scope or method scope). However, instance variables and parameters may have the same name. For example,</p>
+<br>
+<pre>
+<code>
+    <textarea> MyClass {
+// instance variable
+int age;
+
+// parameter
+MyClass(int age){
+age = age;
+}
+}</textarea></code></pre><br>
+
+<p>In the above program, the instance variable and the parameter have the same name: age. Here, the Java compiler is confused due to name ambiguity.</p>
+<br>
+<p>In such a situation, we use this keyword. For example,</p>
+<br>
+<p>First, let's see an example without using <code>this</code> keyword:</p>
+<br>
+<pre class="java-exec">
+<code>
+    <textarea> Main {
+
+int age;
+Main(int age){
+age = age;
+}
+
+public static void main(String[] args) {
+Main obj = new Main(8);
+System.out.println("obj.age = " + obj.age);
+}
+}</textarea></code></pre><br>
+
+<p><strong>Output</strong>:</p><br>
+
+<pre>
+<samp>obj.age = 0</samp></pre>
+<br>
+<p>In the above example, we have passed <code>8</code> as a value to the constructor. However, we are getting <code>0</code> as an output. This is because the Java compiler gets confused because of the ambiguity in names between instance the variable and the parameter.</p>
+<br>
+<p>Now, let's rewrite the above code using <code>this</code> keyword.</p>
+<br>
+<pre class="java-exec">
+<code><textarea> Main {
+
+int age;
+Main(int age){
+this.age = age;
+}
+
+public static void main(String[] args) {
+Main obj = new Main(8);
+System.out.println("obj.age = " + obj.age);
+}
+}</textarea></code></pre><br>
+
+<p><strong>Output</strong>:</p><br>
+
+<pre>
+<samp>obj.age = 8</samp></pre><br>
+
+</div><div class="clearfix"></div><p>Now, we are getting the expected output. It is because when the constructor is called, <code>this</code> inside the constructor is replaced by the object <var>obj</var> that has called the constructor. Hence the <var>age</var> variable is assigned value <var>8</var>.</p>
+<br>
+<p>Also, if the name of the parameter and instance variable is different, the compiler automatically appends this keyword. For example, the code:</p>
+<br>
+<pre>
+<code>class Main {
+int age;
+
+Main(int i) {
+age = i;
+}
+}</code></pre>
+
+<p>is equivalent to:</p>
+
+<pre>
+<code>
+    <textarea> Main {
+int age;
+
+Main(int i) {
+this.age = i;
+}
+}</textarea></code></pre><br>
+
+<hr>
+<h3 id="getter-setter">this with Getters and Setters</h3>
+<br>
+<p>Another common use of <code>this</code> keyword is in <em>setters and getters methods</em> of a class. For example:</p>
+<br>
+<pre class="java-exec">
+<code><textarea> Main {
+String name;
+
+// setter method
+void setName( String name ) {
+this.name = name;
+}
+
+// getter method
+String getName(){
+return this.name;
+}
+
+public static void main( String[] args ) {
+Main obj = new Main();
+
+// calling the setter and the getter method
+obj.setName("Toshiba");
+System.out.println("obj.name: "+obj.getName());
+}
+}</textarea></code></pre><br>
+
+<p><strong>Output</strong>:</p><br>
+
+<pre>
+<samp>obj.name: Toshiba</samp></pre><br>
+
+<p>Here, we have used <code>this</code> keyword:</p>
+<br>
+
+<li>to assign value inside the setter method</li>
+<li>to access value inside the getter method</li>
+<br>
+
+<hr>
+<h2 id="constructor-overloading">Using this in Constructor Overloading</h2>
+<br>
+<p>While working with <mark">constructor overloading</mark>, we might have to invoke one constructor from another constructor. In such a case, we cannot call the constructor explicitly. Instead, we have to use <code>this</code> keyword.</p>
+<br>
+<p>Here, we use a different form of this keyword. That is, <code>this()</code>. Let's take an example,</p>
+<br>
+<pre class="java-exec">
+<code>
+    <textarea> Complex {
+
+private int a, b;
+
+// constructor with 2 parameters
+private Complex( int i, int j ){
+this.a = i;
+this.b = j;
+}
+
+// constructor with single parameter
+private Complex(int i){
+// invokes the constructor with 2 parameters
+this(i, i); 
+}
+
+// constructor with no parameter
+private Complex(){
+// invokes the constructor with single parameter
+this(0);
+}
+
+@Override
+public String toString(){
+return this.a + " + " + this.b + "i";
+}
+
+public static void main( String[] args ) {
+
+// creating object of Complex class
+// calls the constructor with 2 parameters
+Complex c1 = new Complex(2, 3); 
+
+// calls the constructor with a single parameter
+Complex c2 = new Complex(3);
+
+// calls the constructor with no parameters
+Complex c3 = new Complex();
+
+// print objects
+System.out.println(c1);
+System.out.println(c2);
+System.out.println(c3);
+}
+}</textarea></code></pre><br>
+
+<p><strong>Output</strong>:</p><br>
+
+<pre>
+<samp>2 + 3i
+3 + 3i
+0 + 0i</samp></pre><br>
+
+<p>In the above example, we have used <code>this</code> keyword,</p><br>
+
+<ol>
+<li>to call the constructor <code>Complex(int i, int j)</code> from the constructor <code>Complex(int i)</code></li>
+<li>to call the constructor <code>Complex(int i)</code> from the constructor <code>Complex()</code></li>
+</ol>
+
+<p>Notice the line,</p><br>
+
+<pre>
+<code>System.out.println(c1);</code></pre><br>
+
+<p>Here, when we print the object <var>c1</var>, the object is converted into a string. In this process, the <code>toString()</code> is called. Since we override the <code>toString()</code> method inside our class, we get the output according to that method.</p><br>
+
+<p>One of the huge advantages of <code>this()</code> is to reduce the amount of duplicate code. However, we should be always careful while using <code>this()</code>.</p><br>
+
+<p>This is because calling constructor from another constructor adds overhead and it is a slow process. Another huge advantage of using <code>this()</code> is to reduce the amount of duplicate code.</p><br>
+
+<p class="note-tip"><strong>Note</strong>: Invoking one constructor from another constructor is called explicit constructor invocation.</p><br>
+
+<hr>
+<h3 id="argument">Passing this as an Argument</h3><br>
+
+<p>We can use <code>this</code> keyword to pass the current object as an argument to a method. For example,</p><br>
+
+<pre class="java-exec">
+<code>
+    <textarea> ThisExample {
+// declare variables
+int x;
+int y;
+
+ThisExample(int x, int y) {
+// assign values of variables inside constructor
+this.x = x;
+this.y = y;
+
+// value of x and y before calling add()
+System.out.println("Before passing this to addTwo() method:");
+System.out.println("x = " + this.x + ", y = " + this.y);
+
+// call the add() method passing this as argument
+add(this);
+
+// value of x and y after calling add()
+System.out.println("After passing this to addTwo() method:");
+System.out.println("x = " + this.x + ", y = " + this.y);
+}
+
+void add(ThisExample o){
+o.x += 2;
+o.y += 2;
+}
+}
+
+class Main {
+public static void main( String[] args ) {
+ThisExample obj = new ThisExample(1, -2);
+}
+}</textarea></code></pre><br>
+
+<p><strong>Output</strong>:</p><br>
+
+<pre>
+<samp>Before passing this to addTwo() method:
+x = 1, y = -2
+After passing this to addTwo() method:
+x = 3, y = 0</samp></pre><br>
+
+<p>In the above example, inside the constructor <code>ThisExample()</code>, notice the line,</p><br>
+
+<pre>
+<code>add(this);</code></pre><br>
+
+<p>Here, we are calling the <code>add()</code> method by passing this as an argument. Since this keyword contains the reference to the object <var>obj</var> of the class, we can change the value of <var>x</var> and <var>y</var> inside the <code>add()</code> method.</p><br>
+</div>
+
+
+
+</div>
+
+                <div><ul class="pager">
+                <li class="previous">
+                   
+                <a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">&larr; Prev</a>
+                </li>
+                <li class="next">
+                <a href="#">Next &rarr;</a>
+                </li>
+                </ul></div>
+                <hr/>
+
+
+            </div>
+        </div>
+    </div>
+<div class="slidenew active" id="slide-1">
+    <div class="row">
+        <div class="col-md-8 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/" alt="C Tutorial" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mt-2">
+            <div class="p-3">
+                <div class="mb-3">
+                    <a href="/c/programs/" alt="C programs" class="mega-link"><h3 class="text-muted fs-6"> </h3></a>
+                </div>
+                <div class="mega-url-list">
+                 
+                </div>
+            </div>
+        </div>
+ 
+    </div></div>
+        </div></div>
+
+  
+    <br> <div class="container-fluid">
+      
+      <div class="row">
+       
+         <div class="col-sm-4">
+          <h5>JAVA TUTORIAL</h5>
+          <li><a href="file:///D:/example/Java_Tutorial.html">WHAT IS JAVA</a></li>
+     
+      <li><a href="file:///D:/example/History_of_Java.html">HISTORY OF JAVA</a></li>
+      <li><a href="file:///D:/example/feature_of_java.html">FEATURE OF JAVA</a></li>
+      <li><a href="file:///D:/example/Introduction_To_JVM.html">INTRODUCTION TO JVM</a></li>
+          <h5>OPPS IN JAVA</h5>  <li><a href="file:///D:/example/Object%20And%20Class.html">Object and Class</a></li>
+           <li><a href="file:///D:/example/Object%20And%20Class.html">Methods in Java</a></li>
+           <li><a  href="file:///D:/example/Java%20is%20Strictly%20pass%20by%20value.html">Java is Strictly Pass by Value</a></li>
+           <li><a href="file:///D:/example/Constructor%20in%20Java.html">Constructors in Java</a></li>
+           <li><a href="file:///D:/example/Java%20Modifiers.html">Access Modifiers in Java</a></li>
+           <li><a href="file:///D:/example/Inheritance%20in%20Java.html">Java Inheritance</a></li>
+           <li><a href="file:///D:/example/Aggrigation%20in%20Java.html">Aggregation in java</a></li>
+           <li><a href="file:///D:/example/Method%20Overloading%20in%20Java.html">Method Overloading </a></li>
+           <li><a href="file:///D:/example/Method%20Overriding%20in%20Java.html">Method Overriding</a></li>
+           <li><a href="file:///D:/example/Runtime%20Polymorphism%20in%20Java.html">Runtime Polymorphism</a></li>
+           <li><a href="file:///D:/example/This%20Keyword%20in%20Java.html">Java this Keyword</a></li>
+           <li><a href="file:///D:/example/Garbage%20Collection%20in%20Java.html">Garbage Collection</a></li>
+           <li><a href="file:///D:/example/StaticBlock%20in%20Java.html">Static Block in Java</a></li>
+           <li><a href="file:///D:/example/FinalModifier%20in%20Java.html">Final Java</a></li>
+           <li><a href="file:///D:/example/Package%20in%20java.html">Java Package</a></li>
+           <li><a href="file:///D:/example/Sub%20Package%20and%20static%20Import%20in%20Java.html">Java Sub Package and Static Import</a></li>
+           <li><a href="file:///D:/example/Abstract%20Class%20in%20java.html">Abstract class</a></li>
+           <li><a href="file:///D:/example/java%20Interfaces.html">Java Interfaces </a></li>
+           <li><a href="file:///D:/example/Nested%20Classes%20in%20java.html">Nested Class</a></li>
+           <li><a href="file:///D:/example/t%20classes%20and%20interface.html">Difference Between Concrete Class, Abstract Class, Final Class, Interface.</a></li> </div>
+           <div class="col-sm-4"><h5>String Handling in Java</h5><li><a href="file:///D:/example/Introduction%20to%20String.html">Introduction to Java String</a></li>
+             <li><a href="file:///D:/example/String%20Class%20Function.html">String class functions</a></li>
+             <li><a href="file:///D:/example/StriingBuffer%20class.html">StringBuffer class </a></li>
+             <li><a href="file:///D:/example/StringBuilder%20class.html">StringBuilder class</a></li>
+             <li><a href="file:///D:/example/String%20tokenizer.html">String tokenizer</a></li>
+           <br><h5>Exception Handling</h5><li><a href="file:///D:/example/Exception%20Handling.html">Exception handling</a></li>
+           <li><a href="file:///D:/example/Types%20of%20exception%20handling.html">Types of Exception</a></li>
+             <h5>Multithreading in Java</h5> <li><a href="file:///D:/example/Introduction%20to%20Multithreading.html">Introduction to Multithreading</a></li>
+               <li><a href="file:///D:/example/Thread%20class.html">Thread Class</a></li>
+               <li><a href="file:///D:/example/Create%20a%20thread.html">How to create a thread</a></li>
+               <li><a href="file:///D:/example/Join%20thread.html">join() method</a></li>
+               <li><a href="file:///D:/example/Sleeping%20a%20thread.html">Sleeping Thread</a></li>
+               <li><a href="file:///D:/example/Naming%20a%20thread.html">Naming Thread</a></li>
+               <li><a href="file:///D:/example/Priority%20of%20a%20thread%20in%20java.html">Priority of a Thread </a></li>
+               <li><a href="file:///D:/example/Daemon%20thread%20.html">Daemon Thread </a></li>
+               <li><a href="file:///D:/example/Synchronization.html">Synchronization</a></li>
+               <li><a href="file:///D:/example/Inter%20thread.html">Interthread Communication</a></li></div>
+              
+             
+          <div class="col-sm-4"><h3>C++ TUTORIAL</h3><li><a href="file:///D:/example/c++%20Data%20Types.html">C++ Data Types</a></li>
+            <li> <a href="file:///D:/example/Input%20Output.html">Input Output </a></li>
+          <li> <a  href="D:/example/Function%20in%20c++.html">Function </a></li>
+            <li> <a href="file:///D:/example/Decision%20Making.html">Decision Making</a></li>
+             <li> <a href="file:///D:/example/c++%20string.html">C++ String</a></li>
+            <li><a href="file:///D:/example/Pointer%20in%20c++.html">C++ Pointers</a></li>
+           <li>  <a href="file:///D:/example/opps.html">OOPS in C++</a></li>
+            <li>  <a href="file:///D:/example/C++%20STL.html">C++ STL.</a></li>
+           <li> <a href="file:///D:/example/C++%20Templets.html">C++ Templates</a></li>
+           <li> <a href="file:///D:/example/Array.html">C++ Arrays</a></li>
+           <li> <a href="file:///D:/example/50%20c++%20programming%20questions%20(2).html">50 C++ Programming Q/A</a></li>
+           <li> <a href="file:///D:/example/50%20C++Interview%20Questions%20and%20Answers(2023).html">50 C++ Interview Q/A</a></li></div>
+      
+     </div> 
+    </div><br><br><br><br><br><br><br><br><br>
+    <section class="hero" id="about">
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          My name is Gautam, I’ve been studying computer science for Three years. In order to kick-start my career with graduate, I am looking for a job of a web developer, since that’s what I’ve been doing already for one years in my free time. Designing websites for friends, developing simple e-shops with the help of some open source content-management systems, and so on. Besides that I am a normal guy who enjoys hiking and spending time with friends, while not working or studying, which takes most of my time of course. If I should pick the best website I’ve designed up to this point, it will be this one: [name of the website]. I am ambitious and hard-working and believe you’ll give me a chance to prove my words.
+    
+        </p>
+      </div>
+    </section><br>
+    <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+    
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\c++.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\java.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\html.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="C:\Users\Admin\Pictures\css-3.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\js.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="C:\Users\Admin\Pictures\icons-heroo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+    </section>
+    <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="instagram-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Instagram Clone</h3>
+        <p class="project-details">
+          I make Instagram clone using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\quiz.jpg"
+          alt="quiz-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">QUIZ</h3>
+        <p class="project-details">
+          I make  QUIZ APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="C:\Users\Admin\Pictures\todo.jpg"
+          alt="todo-app"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">TO DO APP</h3>
+        <p class="project-details">
+          I make TO DO APP using HTML, CSS. Fully responsive. I create it's for enjoys and improve my knowledge.It's make only for enjoys.
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
+    </section><section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST" name="submit-to-google-sheet">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /><br>
+            <span id="success"></span>
+          </form>
+        </div>
+      </div>
+    </section><br><br><br>
+    <div class="container">
+      <div class="all flex-row">
+        <div class="menu flex-column">
+          <div class="profil-img"><img src="D:\example\image4.jpg" class="proimg"></div>
+          <div class="profil-info">
+            <h2 class="name">Gautam Kumar</h2>
+            <h3 class="city">Patna,Bihar</h3>
+          </div></div></div></div></div>
+    <div class="socials">
+      <a href="https://www.instagram.com/gau1235tm?utm source=gr&r=nametag" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\insta.png"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      />Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=100079046366880&mibextid=ZbWKwL" target="_blank"
+        ><img
+          src="C:\Users\Admin\Pictures\facebookk.png"
+          alt="Facebook"
+          loading="lazy"
+          class="socicon"
+      />Facebook</a>
+      <a href="https:youtube.com/@Gautamsmartboy-vf2qd" target="_blank"
+        ><img src="C:\Users\Admin\Pictures\youtubee.png" alt="Youtube" class="socicon"
+      />Youtube</a>
+      <footer>
+          <p class="copy">&copy; Copyright 2024</p>
+          <p class="copy">
+            Built with &#x2661; by CODE WITH GAUTAM</Code>
+           
+          </p>
+    </footer>
+    <i class="scroll-up" id="scroll-up"
+    ><img
+      src="assets/icons/icons8-upward-arrow.gif"
+      class="socicon up-arrow"
+      alt="scroll-up"
+    /></i>
+    <script src="portfolio.js">
+    </script>
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>
